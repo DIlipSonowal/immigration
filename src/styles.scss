@@ -2,3 +2,10 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #6c7178;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 28px;
+}

@@ -1,0 +1,86 @@
+$font:16px;
+$margin: 30px;
+$color:#7e8083;
+.footer{
+    width:100%;
+    left:0;
+    bottom:0;
+    background:#222426;
+    color:#fff;
+    padding-top:40px;
+}
+.margin-footer{
+ margin-bottom:$margin;
+}
+.immigration-title{
+ font-size:$font;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+}
+ul{
+    list-style-type: none;
+    padding:0;
+    li{
+        color:$color;
+        margin-bottom:10px;
+        margin-left: 0;
+        &:hover{
+            color:#fff;
+        }
+        &:before{
+            content:"\f105";
+            font-family: FontAwesome;
+            margin-right:10px;
+            width:1.3em;
+        }
+        a{
+            color:$color;   
+        }
+    }
+}
+p, address {
+    font-size: $font;
+    color:$color; 
+    a{
+        color:$color;  
+    }
+}
+.btnStyle{
+    background-color: #ff532e;
+    border-color: #ff532e;
+    color: #fff !important;
+    padding:10px;
+    cursor:pointer;
+}
+input{
+    margin-bottom: 1rem;
+    background: #f7f7f7;
+    border: 1px solid #e4e4e4;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, .075);
+}
+.btn{
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 19px;
+}
+.allRights{
+    background: #1c1e20;
+    padding: 15px 0px;
+    font-size: 12px;
+    color: #898b8e;
+}
+.allRights p:last-child{
+    margin-bottom: 0px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    a{
+        color:#ff532e
+    }
+}
+
