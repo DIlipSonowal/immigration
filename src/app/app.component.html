@@ -4,13 +4,16 @@
 <app-footer></app-footer>
 
 <div id="Sidenav_chatbox_id" class="sidenav_chatbox">
-    <div id="chattop"><img src="./assets/chat.JPG" style="float:left" /> Company name<span style="margin-left:170px;cursor:pointer" (click)="close_chatbox()">&times;</span></div><br/>
+    <div id="chattop">
+        <img src="./assets/chat.JPG" style="float:left" /> V9 Immigration 
+        <span style="float:right;cursor:pointer" (click)="close_chatbox()">&times;</span>
+    </div>
 	<div id="chat_box_individual_id">
         <app-chatbot></app-chatbot>
     </div>
 </div>
 <div id="main">
-<div class="fixchatbox">
-	   <img src="./assets/chat.png"  (click)="open_chatbox()" alt="Chat" />
-</div> 
+    <div class="fixchatbox">
+        <img src="./assets/chat.png"  (click)="open_chatbox()" alt="Chat" />
+    </div> 
 </div>
