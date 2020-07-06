@@ -5,11 +5,11 @@
         {{ message.content }}
         </div>
     </ng-container>
-    <!-- -- <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Your message</label>
-    
+    <label *ngIf="messages.length == 0; " for="nameField">How can I help you</label>
+    <!--else dialogInfo
     <ng-template #dialogInfo>
     <span [className]="'float-right'">Total messages: {{messages.length}}</span>
-    </ng-template>-->
+    </ng-template> -->
 </div>
 <div class="chatinput">
     <input class="form-control chatinput" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text">  
