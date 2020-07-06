@@ -1,0 +1,29 @@
+.fixchatbox{
+	position:fixed;
+	height:auto;
+    width:auto;		
+    right:0;
+	bottom: -4px;
+}
+
+.sidenav_chatbox {
+    height: 385px;
+    width: 0;
+	position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;	
+    background-color:#F5F5F5;
+    overflow-x: hidden;   
+    transition: 0.5s;
+	border-bottom: 1px solid #808080;
+	border-left: 1px solid #808080;
+	border-top: 1px solid #808080;
+}
+  
+#chattop{
+	background:#404040;
+	padding:5px;
+	font-size:16px;
+	color:#fff
+}  

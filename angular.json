@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "immigration": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "immigration"
+    }
+  },
+  "defaultProject": "immigration",
+  "cli": {
+    "analytics": "70597ebc-8522-4d31-8a85-9cb3b6dffdc0"
+  }
 }

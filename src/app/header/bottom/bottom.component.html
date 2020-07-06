@@ -1,0 +1,32 @@
+            <nav class="navbar navbar-expand-md navbar-dark hdr-bgcolor">
+                <div class="container">
+                <a class="navbar-brand" href="#" ></a>
+                <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
+                  <ul class="navbar-nav mr-auto">
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item dropdown" ngbDropdown>
+                      <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Coaching</a>
+                      <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+                        <a class="dropdown-item" href="#">Coaching List</a>
+                        <a class="dropdown-item" href="#">Coaching Sidebar</a>
+                        <a class="dropdown-item" href="#">Coaching Full Page</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown" ngbDropdown>
+                        <a class="nav-link dropdown-toggle" id="id02" href="#" ngbDropdownToggle>Visa</a>
+                        <div class="dropdown-menu" aria-labelledby="id02" ngbDropdownMenu>
+                          <a class="dropdown-item" href="#">Visa Immigration List</a>
+                          <a class="dropdown-item" href="#">Visa Immigration Single Page</a>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="#">Page</a></li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                    <li><a class="nav-link" href="#">Country</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                  </ul>
+                </div>
+                </div>
+              </nav>

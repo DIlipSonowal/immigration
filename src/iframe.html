@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Assignment : By Dilip</title>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script> 
+    <style>
+    body { 
+		font: 12px Helvetica, Arial; 
+		margin : 0;
+		padding : 0;
+	}
+    form { 
+		background: gray; 
+		padding: 1px; 
+		position: fixed; 
+		bottom: 41px; 
+		width: 100%;
+	}
+    form input { 
+		border: 0; 
+		padding: 8px; 
+		width: 74%; 
+		margin-right: .5%
+	}
+    form button { 
+		width: 18%; 
+		background: #16a085; 
+		border: none; 
+		padding: 8px
+	}
+    #messages { 
+		list-style-type: none; 
+		margin:45px 0 72px 0; 
+		padding-left:0px; 
+		top:0;
+		padding-bottom:27px
+	}
+    #messages li { 
+		padding: 5px 10px; 
+		margin-bottom:8px; 
+		border-radius:5px
+	}
+    
+	#header_top{
+			position:fixed;
+			height : 30px;
+			width : 100%;
+			background: #eee;
+			top : 0;
+			padding : 5px;
+			font-size : 18px;
+	}
+	
+	#footer{
+		position:fixed;
+			height : 30px;
+			width : 100%;
+			background: #eee;
+			bottom : 0;
+			padding : 5px;
+			font-size : 18px;
+	}
+	 
+    </style>
+	
+  </head>
+  <body>
+    <div id="header_top">Header</div>
+    <ul id="messages"></ul>
+    <form action="#" onsubmit="return false">
+		<input id="input_message_id" autocomplete="off" placeholder="Type a message" required /><button>Send</button>
+    </form>
+	<div id="footer">Footer</div>
+	<script>		
+	document.getElementById("input_message_id").focus();
+		$(function () {
+		       $('#input_message_id').focus;
+				$('form').submit(function(){
+					var d = new Date();
+					var curr_hr = d.getHours();
+					var curr_min = d.getMinutes();
+					var curr_sc = d.getSeconds();	
+					var ampm;
+					if(curr_hr >= 12){
+						ampm = 'pm';
+						if(curr_hr == 12){}
+						else{
+							curr_hr = curr_hr - 12;
+						}
+					}
+					else{
+						ampm = 'am';
+					}
+					var dttttm = curr_hr + ":" + curr_min +' '+ampm;
+					var message = $('#input_message_id').val();
+					$('#messages').append('<div style="margin:8px;padding: 0 8px; background-image:url(image1.png); background-repeat: no-repeat; background-position:top right;" align="right"><div style="font-size:15px;background:#dcf8c6;padding: 5px 10px;border-radius:5px 0 5px 5px;">'+message+'<br/><b style="font-size:8px;">'+dttttm+'</b></div></div>');
+					window.scrollTo(0, document.body.scrollHeight);
+					$('#input_message_id').val('');
+				});
+		});		
+	</script>
+	
+  </body>
+</html>
