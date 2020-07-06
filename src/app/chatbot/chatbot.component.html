@@ -1,18 +1,17 @@
-<div class="container">
+<div style="padding-top: 10px;" class="container">
     <ng-container *ngFor="let message of messages">
         <div class="message"
             [ngClass]="{ 'from': message.author === 'bot', 'to': message.author === 'user' }">
         {{ message.content }}
         </div>
     </ng-container>
-    <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Your message</label>
+    <!-- -- <label *ngIf="messages.length == 0; else dialogInfo" for="nameField">Your message</label>
     
     <ng-template #dialogInfo>
     <span [className]="'float-right'">Total messages: {{messages.length}}</span>
-    </ng-template>
+    </ng-template>-->
 </div>
 <div class="chatinput">
     <input class="form-control chatinput" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text">  
     <!--<i class="fa fa-paper-plane-o chatinput1" aria-hidden="true"></i> -->
-
 </div>
