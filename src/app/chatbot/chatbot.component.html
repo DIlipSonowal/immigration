@@ -1,17 +1,26 @@
-<div style="padding-top: 10px;" class="container">
+<div style="padding: 10px 10px 40px 30px;" class="container">
+    <table>
+        <tr>
+            <td><img class="bot" src="./assets/bot.jpeg"/> </td>
+            <td>How can I help you today?</td>
+        </tr>
+    </table>
     <ng-container *ngFor="let message of messages">
-        <div class="message"
+        <!-- <div [ngClass]="{ 'textl': message.author === 'bot', 'textr': message.author === 'user' }"> -->
+            <div class="message"
             [ngClass]="{ 'from': message.author === 'bot', 'to': message.author === 'user' }">
-        {{ message.content }}
+                {{ message.content }} <br/>   
+                {{ message.tm }} 
         </div>
+        <!-- </div> -->
     </ng-container>
-    <label *ngIf="messages.length == 0; " for="nameField">How can I help you</label>
-    <!--else dialogInfo
+    <!--<label *ngIf="messages.length == 0; else dialogInfo" for="nameField">How can I help you</label>
+    
     <ng-template #dialogInfo>
     <span [className]="'float-right'">Total messages: {{messages.length}}</span>
     </ng-template> -->
 </div>
 <div class="chatinput">
-    <input class="form-control chatinput" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text">  
+    <input class="form-control chatinput" [(ngModel)]="value" (keyup.enter)="sendMessage()" type="text" placeholder="Ask something here"/>  
     <!--<i class="fa fa-paper-plane-o chatinput1" aria-hidden="true"></i> -->
 </div>

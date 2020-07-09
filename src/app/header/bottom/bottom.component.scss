@@ -7,3 +7,22 @@
     padding-right: 2rem !important;
     padding-left: 0 !important;
 }
+.sub-menu{
+    list-style: none;
+    padding-left: 10px;
+}
+
+.sub-menu-icon{
+    margin-right: 10px;
+    float:right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 20rem !important;
+}
+
+.navbar-brand {
+    margin-right: 0 !important;
+}

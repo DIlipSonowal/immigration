@@ -9,7 +9,7 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
 export class AppComponent {
   title = 'immigration';
   open_chatbox(){
-    document.getElementById("Sidenav_chatbox_id").style.width = "300px";
+    document.getElementById("Sidenav_chatbox_id").style.width = "350px";
     //document.getElementById("chat_box_individual_id").innerHTML = '<iframe style="width:300px;bottom:3px;position:absolute;height:350px;border: 0px;" name="" src="iframe.html"></iframe>';
   }
 
