@@ -9,18 +9,18 @@
                     <li><a class="nav-link" href="#">Home</a></li>
                     <li><a class="nav-link" href="#">About Us</a></li>
                     <li class="nav-item dropdown" ngbDropdown>
-                      <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Immigrate</a>
+                      <a class="nav-link dropdown-toggle" id="id01" href="#"   ngbDropdownToggle>Immigrate</a>
                       <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a href="#">Express Entry</a></li>
-                          <li><a href="#" (click)="familysponsorship = !familysponsorship">Family Sponsorship</a> <span (click)="familysponsorship = !familysponsorship" class="sub-menu-icon"><b *ngIf="!familysponsorship">+</b><b *ngIf="familysponsorship">-</b></span>
+                          <li><a routerLink="/upload">Express Entry</a></li>
+                          <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship"><a href="#" >Family Sponsorship</a> <span  class="sub-menu-icon"><b *ngIf="!familysponsorship">+</b><b *ngIf="familysponsorship">-</b></span>
                             <ul *ngIf="familysponsorship" class="sub-menu">
                               <li><a href="#"> - Sponsor your spouse</a></li>
                               <li><a href="#"> - Sponsor your Dependent children</a></li>
                               <li><a href="#"> - Parents &amp; Grandparents</a></li>
                               <li><a href="#"> - Relatives</a></li>
                               <li><a href="#"> - Adopted child</a></li>
-                            </ul>
+                            </ul><span class="clearfix"></span>
                           </li>
                           <li><a href="#" (click)="nrovincialnominees = !nrovincialnominees">Provincial Nominees</a> <span (click)="nrovincialnominees = !nrovincialnominees" class="sub-menu-icon"><b *ngIf="!nrovincialnominees">+</b><b *ngIf="nrovincialnominees">-</b></span>
                             <ul *ngIf="nrovincialnominees" class="sub-menu">
@@ -35,7 +35,7 @@
                               <li><a href="#"> - Saskatchewan (SINP)</a></li>
                               <li><a href="#"> - Yukon (YNP)</a></li>
                               <li><a href="#"> - Quebec</a></li>
-                            </ul>
+                            </ul><span class="clearfix"></span>
                           </li>
                           <li id="menu-item-2445" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2445"><a href="http://v9immigration.com/service/atlantic-immigration-pilot-program/">Atlantic Immigration Pilot Program</a></li>
                           <li id="menu-item-2567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2567"><a href="#">Caregivers</a></li>
