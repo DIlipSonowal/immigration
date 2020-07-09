@@ -1,5 +1,18 @@
+$colors:(
+    primary:#f12a02,
+    accent:#fff,
+    primary-light:lighten(#f12a02, 40%),
+    primary-dark:darken(#f12a02, 40%),
+    dark:#22242691,
+    transparentDark: #222426e3
+);
+$padding:15px;
+$borders: 15px;
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
 .hdr-bgcolor{
-    background-color: #f12a02;
+    background-color: color(primary);
 }
 
 .nav-link{
@@ -9,20 +22,62 @@
 }
 .sub-menu{
     list-style: none;
-    padding-left: 10px;
+    padding-left: 4px;
 }
 
 .sub-menu-icon{
     margin-right: 10px;
     float:right;
-    font-size: 25px;
     cursor: pointer;
+    color:color(accent);
 }
 
 .dropdown-menu {
     min-width: 20rem !important;
+    background: color(transparentDark);
+    top:113%;
 }
 
 .navbar-brand {
     margin-right: 0 !important;
+}
+ .sub-menu > li{
+    line-height: 40px;
+ 
+}
+ul.sub-menu> li{
+    position :relative;
+    a{
+        text-decoration: none;
+        color:color(accent);
+        font-family: "Poppins",Arial,Helvetica,sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 16px;
+        margin: 0;
+       padding: 15px 10px 15px 10px;
+       position: relative;
+    }&:hover{
+      background-color:color(primary); 
+      color: color(accent);
+    }
+}
+li>ul{
+    margin-left:100%;
+    position: absolute;
+    padding:10px;
+    background: color(transparentDark);
+    width:100%;
+    a{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+        display: block;
+        padding: 15px 10px 15px 10px;
+        position: relative;
+    }
+}
+.clearfix{
+    clear:both;
 }

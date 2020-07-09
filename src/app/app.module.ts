@@ -14,6 +14,8 @@ import { VisaComponent } from './visa/visa.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
+import { UploadComponent } from './components/upload/upload.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { LoginComponent } from './components/login/login.component';
     VisaComponent,
     ChatbotComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    UploadComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
