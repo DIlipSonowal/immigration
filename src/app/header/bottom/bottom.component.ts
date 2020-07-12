@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BottomComponent implements OnInit {
   isNavbarCollapsed=true;
-  familysponsorship=false;
-  nrovincialnominees=false;
+  familysponsorship=true;
+  nrovincialnominees=true;
   
   constructor() { }
 

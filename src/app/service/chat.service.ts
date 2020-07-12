@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
 export class Message {
-  constructor(public author: string, public content: string, public tm:string) {}
+  constructor(public author: string, public content: string, public tm:string, public id: string) {}
 }
 
 @Injectable({
   providedIn: 'root'
 })
 export class ChatService {
-
+  dyid: number = 1;
   constructor() { }
   conversation = new Subject<Message[]>();
   
@@ -25,13 +25,15 @@ export class ChatService {
                 + currentdate.getMinutes() + ":" 
                 + currentdate.getSeconds();
        
-    const userMessage = new Message('user', msg, datetime);  
+    const userMessage = new Message('user', msg, datetime, `myid${this.dyid}`);  
     this.conversation.next([userMessage]);
+    
     setTimeout(()=>{
       var datetime1 = currentdate.getHours() + ":"  
+      this.dyid = this.dyid + 1;
       + currentdate.getMinutes() + ":" 
       + currentdate.getSeconds();    
-      const botMessage = new Message('bot', this.getBotMessage(msg),datetime1);
+      const botMessage = new Message('bot', this.getBotMessage(msg),datetime1, `myid${this.dyid}`);
       this.conversation.next([botMessage]);
     }, 1500);
   }

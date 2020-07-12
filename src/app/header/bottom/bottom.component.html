@@ -1,5 +1,5 @@
             <nav class="navbar navbar-expand-md navbar-dark hdr-bgcolor">
-                <div class="container">
+              <div class="container">
                 <a class="navbar-brand" href="#" ></a>
                 <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -13,8 +13,9 @@
                       <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
                         <ul class="sub-menu">
                           <li><a routerLink="/upload">Express Entry</a></li>
-                          <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship"><a href="#" >Family Sponsorship</a> <span  class="sub-menu-icon"><b *ngIf="!familysponsorship">+</b><b *ngIf="familysponsorship">-</b></span>
-                            <ul *ngIf="familysponsorship" class="sub-menu">
+                          <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
+                            <a href="#" >Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
+                            <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
                               <li><a href="#"> - Sponsor your spouse</a></li>
                               <li><a href="#"> - Sponsor your Dependent children</a></li>
                               <li><a href="#"> - Parents &amp; Grandparents</a></li>
@@ -22,8 +23,8 @@
                               <li><a href="#"> - Adopted child</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
-                          <li><a href="#" (click)="nrovincialnominees = !nrovincialnominees">Provincial Nominees</a> <span (click)="nrovincialnominees = !nrovincialnominees" class="sub-menu-icon"><b *ngIf="!nrovincialnominees">+</b><b *ngIf="nrovincialnominees">-</b></span>
-                            <ul *ngIf="nrovincialnominees" class="sub-menu">
+                          <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a href="#">Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 
+                            <ul [ngClass]="{'sub-menu1-tgl':nrovincialnominees}" class="sub-menu1">
                               <li><a href="#"> - Alberta (AINP)</a></li>
                               <li><a href="#"> - British Columbia (BC PNP)</a></li>
                               <li><a href="#"> - Manitoba (MPNP)</a></li>
@@ -86,5 +87,5 @@
                     <li><a class="nav-link" href="#">Contact Us</a></li>
                   </ul>
                 </div>
-                </div>
-              </nav> 
+              </div>
+            </nav> 
