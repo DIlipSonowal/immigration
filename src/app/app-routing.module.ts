@@ -6,20 +6,16 @@ import { UploadComponent } from './components/upload/upload.component';
 
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
+import { HomehomeComponent } from './home/home/home.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, children:[
-   
-  ] },
-  { path: 'login', component: LoginComponent },
-  {path: 'upload', component: UploadComponent},
+  {path: '', component: HomeComponent, children:[
+    {path: '', component: HomehomeComponent },  
+    {path: 'upload', component: UploadComponent},
+    {path: 'login', component: LoginComponent },
+  ]}, 
   {path :'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
-  
-  
-  {path: '', component:DashboardComponent, children:[{
-    path:'dashboard',component:DashboardComponent,
-  }]},
-  { path: 'chatbot', component: ChatbotComponent },
+  {path: 'chatbot', component: ChatbotComponent },
 ];
 
 @NgModule({

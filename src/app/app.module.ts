@@ -16,7 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { HomeContentComponent } from './home-content/home-content.component';
-
+import { HomehomeComponent } from './home/home/home.component';
 
 
 @NgModule({
@@ -34,6 +34,7 @@ import { HomeContentComponent } from './home-content/home-content.component';
     LoginComponent,
     UploadComponent,
     HomeContentComponent,
+    HomehomeComponent
   ],
   imports: [
     BrowserModule,
