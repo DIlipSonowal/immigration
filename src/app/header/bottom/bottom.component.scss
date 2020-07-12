@@ -14,7 +14,9 @@ $borders: 15px;
 .hdr-bgcolor{
     background-color: color(primary);
 }
-
+.blh{
+    line-height: 40px;
+}
 .nav-link{
     color: #ffffff !important;
     padding-right: 2rem !important;
@@ -25,6 +27,15 @@ $borders: 15px;
     padding-left: 4px;
 }
 
+.sub-menu1{
+    list-style: none;
+    margin-left: -10px;
+    margin-top: -40px;
+}
+
+.sub-menu1-tgl{
+    display: none;
+}
 .sub-menu-icon{
     margin-right: 10px;
     float:right;
