@@ -89,7 +89,7 @@
 }
 
 .popup-box .popup-messages {
-   background: #3f9684 none repeat scroll 0 0;
+   background-image: linear-gradient(to right, #ff512f2e 0%, #dd2476bf 51%, #ff512f8a 100%);
    height: 275px;
    overflow: auto;
 }
@@ -97,7 +97,7 @@
    overflow: auto;
    padding: 10px;
    transform: translate(0px, 0px);
-   
+  
 }
 .popup-messages .chat-box-single-line {
    border-bottom: 1px solid #a4c6b5;
@@ -107,7 +107,8 @@
    text-align: center;
 }
 .popup-messages abbr.timestamp {
-   background: #3f9684 none repeat scroll 0 0;
+   /*background: #3f9684 none repeat scroll 0 0;*/
+   background-image: linear-gradient(to right, #ff512f2e 0%, #dd2476bf 51%, #ff512f8a 100%);
    color: #fff;
    padding: 0 11px;
 }
@@ -137,7 +138,8 @@
 }
 
 .popup-messages abbr.timestamp {
-   background: #3f9684  none repeat scroll 0 0;
+  /* background: #3f9684  none repeat scroll 0 0;*/
+   background-image: linear-gradient(to right, #ff512f2e 0%, #dd2476bf 51%, #ff512f8a 100%);
    color: #fff;
    padding: 0 11px;
 }
@@ -152,7 +154,7 @@
    height: auto;
 }
 .popup-messages .direct-chat-text {
-   background: #dfece7 none repeat scroll 0 0;
+   background: #f9fffd none repeat scroll 0 0;
    border: 1px solid #dfece7;
    border-radius: 2px;
    color: #1f2121;
@@ -264,14 +266,15 @@
    margin-top: -5px;
 }
 .popup-messages .direct-chat-text {
-   background: #dfece7 none repeat scroll 0 0;
+   background: #f9fffd none repeat scroll 0 0;
    border: 1px solid #dfece7;
    border-radius: 2px;
    color: #1f2121;
+   font-size:13px;
 }
 .direct-chat-text {
-   background: #d2d6de none repeat scroll 0 0;
-   border: 1px solid #d2d6de;
+   background: #f9fffd none repeat scroll 0 0;
+   border: 1px solid #dfece7;
    border-radius: 5px;
    color: #444;
    margin: 5px 0 0 50px;
