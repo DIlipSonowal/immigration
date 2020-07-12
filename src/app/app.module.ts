@@ -15,7 +15,9 @@ import { ChatbotComponent } from './chatbot/chatbot.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { UploadComponent } from './components/upload/upload.component';
-import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { HomeContentComponent } from './home-content/home-content.component';
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
     FooterComponent,
     LoginComponent,
     UploadComponent,
-    DashboardComponent
+    HomeContentComponent,
   ],
   imports: [
     BrowserModule,
