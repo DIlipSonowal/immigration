@@ -1,0 +1,69 @@
+.row:first-child{
+    padding: 64px 10px;
+    margin:0
+}
+.row{
+    padding: 10px;
+    margin:0   
+}
+div.card{
+    text-align: center;
+    box-shadow: 6px 11px 24px -16px rgba(0, 0, 0, 0.75);
+    border-radius: 6px;
+    .btn-grad {
+        background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+        color:#fff;
+    }
+    .btn-grad:hover { background-position: right center; }  
+    .circle{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: rgba(0, 255, 170, 0.1);
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        display: inline-block;
+        overflow: hidden;
+        transform: translate(-50%,-50%);
+        .inside{
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            position: absolute;
+            display: table;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 5%);
+            .icon{
+                display: table-cell;
+                vertical-align: middle;
+                color: white;
+            }
+        }
+        .icon1{
+            background-image: linear-gradient(to bottom right, #ce583f, #b14f96);
+        }
+        .icon2{
+            background-image: linear-gradient(to bottom right, #4d00e4, #7a978e);
+        }
+        .icon3{
+            background-image: linear-gradient(to bottom right, #00e49e,#98f0d6);
+        }
+        .icon4{
+            background-image: linear-gradient(to bottom right, #dacf43, #ff4545);
+        }
+
+   }
+   .card-title{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 12% 0 2% 0;
+    text-align:center;
+   }
+   h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align:center; 
+   }
+}

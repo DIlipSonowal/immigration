@@ -1,1 +1,75 @@
-<p>chatbot works!</p>
+<div style="bottom: 10px; position: fixed; right: 20px; z-index: 999;">
+    <div id="addClass" class="chatOpener">
+        Chat with Us &nbsp;&nbsp;&nbsp; <i class="fa fa-window-maximize" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="popup-box chat-popup" id="qnimate">
+    <div class="popup-head">
+		<div class="pull-left">
+            <img src="./assets/v9-logo.png" style="height: 40px;"/>
+        </div>
+		<div class="popup-head-right pull-right">
+			<button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button">
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+            </button>
+        </div>
+	</div>
+	<div class="popup-messages">
+    	<div id="msgContainer" class="direct-chat-messages">
+            <div class="chat-box-single-line">
+				<abbr class="timestamp">{{todayDate}}</abbr>
+			</div>
+					
+			<div class="direct-chat-msg doted-border">
+                <div class="direct-chat-info clearfix">
+                    <span class="direct-chat-name pull-left">V9 Bot</span>
+                </div>
+                      <!-- /.direct-chat-info -->
+                <img alt="message user image" src="./assets/v9logo.JPG" class="direct-chat-img"><!-- /.direct-chat-img -->
+                <div class="direct-chat-text">
+                    Welcome to V9 Immigration,<br/> How may I help you?
+                </div>
+				<div class="direct-chat-info clearfix">
+                    <span class="direct-chat-timestamp pull-right">{{curTime()}}</span>
+                </div>
+ 
+            </div>
+                    <!-- /.direct-chat-msg -->
+            <div class="direct-chat-msg doted-border">
+                <ng-container *ngFor="let m of messages"> 
+                    <div *ngIf="m.utype == 'bot'"  class="direct-chat-info clearfix">
+                        <span class="direct-chat-name pull-left">V9 Bot</span>
+                    </div>
+                    <img *ngIf="m.utype == 'bot'" alt="iamgurdeeposahan" src="./assets/v9logo.JPG" class="direct-chat-img">
+                    <div *ngIf="m.utype == 'bot'" class="direct-chat-text">
+                        {{m.msg}} 
+                    </div>
+				    <div *ngIf="m.utype == 'bot'" class="direct-chat-info clearfix">
+                        <span class="direct-chat-timestamp pull-right">{{m.tm}}</span>
+                    </div>          
+				    <div *ngIf="m.utype == 'user'" class="direct-chat-info clearfix">
+						<span class="direct-chat-img-reply-small pull-left text-center">
+							<i style="color: #fff;" class="fa fa-user-circle-o" aria-hidden="true"></i>
+						</span>
+                        <span class="direct-chat-reply-name">User</span>                 
+                    </div>
+                    <div *ngIf="m.utype == 'user'" class="direct-chat-text">
+                        {{m.msg}} 
+                    </div>
+                    <div *ngIf="m.utype == 'user'" class="direct-chat-info clearfix">
+                        <span class="direct-chat-timestamp pull-right">{{m.tm}}</span>
+                    </div>
+                </ng-container>
+            </div>
+        </div>	
+	</div>
+	<div class="popup-messages-footer">
+		<input class="form-control" (keyup.enter)="sendMessage($event)" placeholder="Type a message..." />
+        <div class="btn-footer">
+            <button class="bg_none"><i class="fa fa-camera" aria-hidden="true"></i></button>
+            <button class="bg_none"><i class="fa fa-paperclip" aria-hidden="true"></i></button>
+            <button class="bg_none pull-right"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+        </div>
+	</div>
+</div>

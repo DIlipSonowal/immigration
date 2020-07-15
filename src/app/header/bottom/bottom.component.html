@@ -1,5 +1,5 @@
             <nav class="navbar navbar-expand-md navbar-dark hdr-bgcolor">
-                <div class="container">
+              <div class="container">
                 <a class="navbar-brand" href="#" ></a>
                 <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -7,26 +7,85 @@
                 <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
                   <ul class="navbar-nav mr-auto">
                     <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link"routerLink="/about">About Us</a></li>
                     <li class="nav-item dropdown" ngbDropdown>
-                      <a class="nav-link dropdown-toggle" id="id01" href="#" ngbDropdownToggle>Coaching</a>
+                      <a class="nav-link dropdown-toggle" id="id01" href="#"   ngbDropdownToggle>Immigrate</a>
                       <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
-                        <a class="dropdown-item" href="#">Coaching List</a>
-                        <a class="dropdown-item" href="#">Coaching Sidebar</a>
-                        <a class="dropdown-item" href="#">Coaching Full Page</a>
+                        <ul class="sub-menu">
+                          <li><a routerLink="/upload">Express Entry</a></li>
+                          <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
+                            <a href="javscript:void(0)" >Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
+                            <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
+                              <li><a routerLink="/familySponsership"> - Sponsor your spouse</a></li>
+                              <li><a routerLink="/familySponsership"> - Sponsor your Dependent children</a></li>
+                              <li><a routerLink="/familySponsership"> - Parents &amp; Grandparents</a></li>
+                              <li><a routerLink="/familySponsership"> - Relatives</a></li>
+                              <li><a routerLink="/familySponsership"> - Adopted child</a></li>
+                            </ul><span class="clearfix"></span>
+                          </li>
+                          <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a href="#">Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 
+                            <ul [ngClass]="{'sub-menu1-tgl':nrovincialnominees}" class="sub-menu1">
+                              <li><a href="#"> - Alberta (AINP)</a></li>
+                              <li><a href="#"> - British Columbia (BC PNP)</a></li>
+                              <li><a href="#"> - Manitoba (MPNP)</a></li>
+                              <li><a href="#"> - New Brunswick (NBPNP)</a></li>
+                              <li><a href="#"> - Newfoundland and Labrador (NLPNP)</a></li>
+                              <li><a href="#"> - Nova Scotia (NSNP)</a></li>
+                              <li><a href="#"> - Ontario (OINP)</a></li>
+                              <li><a href="#"> - Prince Edward Island (PEI PNP)</a></li>
+                              <li><a href="#"> - Saskatchewan (SINP)</a></li>
+                              <li><a href="#"> - Yukon (YNP)</a></li>
+                              <li><a href="#"> - Quebec</a></li>
+                            </ul><span class="clearfix"></span>
+                          </li>
+                          <li id="menu-item-2445" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2445"><a href="http://v9immigration.com/service/atlantic-immigration-pilot-program/">Atlantic Immigration Pilot Program</a></li>
+                          <li id="menu-item-2567" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2567"><a href="#">Caregivers</a></li>
+                          <li id="menu-item-2545" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2545"><a href="http://v9immigration.com/service/start-up-visa-program/">Start Up Visa Program</a></li>
+                          <li id="menu-item-2544" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2544"><a href="http://v9immigration.com/service/self-employed-immigration/">Self Employed Immigration</a></li>
+                          <li id="menu-item-2543" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2543"><a href="http://v9immigration.com/service/rural-and-northern-immigration-pilot/">Rural and Northern Immigration Pilot</a></li>
+                          <li id="menu-item-2542" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2542"><a href="http://v9immigration.com/service/refugees/">Refugees</a></li>
+                          <li id="menu-item-2568" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2568"><a href="#">Appeals</a></li>
+                          <li id="menu-item-2569" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2569"><a href="#">Pet Immigration</a></li>
+                        </ul>
                       </div>
                     </li>
                     <li class="nav-item dropdown" ngbDropdown>
-                        <a class="nav-link dropdown-toggle" id="id02" href="#" ngbDropdownToggle>Visa</a>
+                        <a class="nav-link dropdown-toggle" id="id02" href="#" ngbDropdownToggle>Work</a>
                         <div class="dropdown-menu" aria-labelledby="id02" ngbDropdownMenu>
-                          <a class="dropdown-item" href="#">Visa Immigration List</a>
-                          <a class="dropdown-item" href="#">Visa Immigration Single Page</a>
+                          <ul class="sub-menu">
+                            <li id="menu-item-2541" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2541"><a href="http://v9immigration.com/service/open-work-permit/">Open Work Permit</a></li>
+                            <li id="menu-item-2537" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2537"><a href="http://v9immigration.com/service/employer-specific-work-permit/">Employer Specific Work Permit</a></li>
+                            <li id="menu-item-2540" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2540"><a href="http://v9immigration.com/service/labour-marker-impact-assessments-lmia/">Labour Marker Impact Assessments (LMIA)</a></li>
+                            <li id="menu-item-2547" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2547"><a href="http://v9immigration.com/service/work-permit-extension/">Work Permit Extension</a></li>
+                            <li id="menu-item-2432" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2432"><a href="http://v9immigration.com/service/agricultural-workers/">Agricultural Workers</a></li>
+                            <li id="menu-item-2571" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2571"><a href="#">Live-in Caregiver Program</a></li>
+                            <li id="menu-item-2436" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2436"><a href="http://v9immigration.com/service/international-experience-canada/">International Experience Canada</a></li>
+                            <li id="menu-item-2539" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2539"><a href="http://v9immigration.com/service/global-skills-strategy/">Global Skills Strategy</a></li>
+                          </ul>
                         </div>
                     </li>
-                    <li><a class="nav-link" href="#">Page</a></li>
-                    <li><a class="nav-link" href="#">Blog</a></li>
-                    <li><a class="nav-link" href="#">Country</a></li>
-                    <li><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item dropdown" ngbDropdown>
+                      <a class="nav-link dropdown-toggle" id="id03" href="#" ngbDropdownToggle>Study</a>
+                      <div class="dropdown-menu" aria-labelledby="id03" ngbDropdownMenu>
+                        <ul class="sub-menu">
+                          <li id="menu-item-2546" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2546"><a href="http://v9immigration.com/service/super-visa/">Super Visa</a></li>
+                          <li id="menu-item-2435" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2435"><a href="http://v9immigration.com/service/student-direct-stream/">Student Direct Stream</a></li>
+                          <li id="menu-item-2433" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2433"><a href="http://v9immigration.com/service/coop-work-permit/">Coop Work Permit</a></li>
+                          <li id="menu-item-2434" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2434"><a href="http://v9immigration.com/service/on-campus-work/">On Campus Work</a></li>
+                          <li id="menu-item-2573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2573"><a href="#">Student Direct Stream (SDS)</a></li>
+                          <li id="menu-item-2574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2574"><a href="#">Change of DLI</a></li>
+                          <li id="menu-item-2575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2575"><a href="#">Work off Campus</a></li>
+                          <li id="menu-item-2576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2576"><a href="#">Spousal Work Permit</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a class="nav-link" href="#">Visit</a></li>
+                    <li><a class="nav-link" href="#">Citizenship</a></li>
+                    <li><a class="nav-link" href="#">Other</a></li>
+                    <li><a class="nav-link" href="#">Calculator</a></li>
+                    <li><a class="nav-link" href="#">News</a></li>
+                    <li><a class="nav-link" href="#">Contact Us</a></li>
                   </ul>
                 </div>
-                </div>
-              </nav>
+              </div>
+            </nav> 
