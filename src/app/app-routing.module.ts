@@ -7,10 +7,12 @@ import { UploadComponent } from './components/upload/upload.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { HomehomeComponent } from './home/home/home.component';
+import { FamilySponsershipComponent } from './pages/family-sponsership/family-sponsership.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, children:[
     {path: '', component: HomehomeComponent },  
+    {path: 'familySponsership', component: FamilySponsershipComponent },  
     {path: 'upload', component: UploadComponent},
     {path: 'login', component: LoginComponent },
   ]}, 

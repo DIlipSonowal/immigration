@@ -14,13 +14,13 @@
                         <ul class="sub-menu">
                           <li><a routerLink="/upload">Express Entry</a></li>
                           <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
-                            <a href="#" >Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
+                            <a href="javscript:void(0)" >Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
                             <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
-                              <li><a href="#"> - Sponsor your spouse</a></li>
-                              <li><a href="#"> - Sponsor your Dependent children</a></li>
-                              <li><a href="#"> - Parents &amp; Grandparents</a></li>
-                              <li><a href="#"> - Relatives</a></li>
-                              <li><a href="#"> - Adopted child</a></li>
+                              <li><a routerLink="/familySponsership"> - Sponsor your spouse</a></li>
+                              <li><a routerLink="/familySponsership"> - Sponsor your Dependent children</a></li>
+                              <li><a routerLink="/familySponsership"> - Parents &amp; Grandparents</a></li>
+                              <li><a routerLink="/familySponsership"> - Relatives</a></li>
+                              <li><a routerLink="/familySponsership"> - Adopted child</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
                           <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a href="#">Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 

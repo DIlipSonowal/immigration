@@ -17,6 +17,7 @@ import { LoginComponent } from './components/login/login.component';
 import { UploadComponent } from './components/upload/upload.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { HomehomeComponent } from './home/home/home.component';
+import { FamilySponsershipComponent } from './pages/family-sponsership/family-sponsership.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { HomehomeComponent } from './home/home/home.component';
     LoginComponent,
     UploadComponent,
     HomeContentComponent,
-    HomehomeComponent
+    HomehomeComponent,
+    FamilySponsershipComponent
   ],
   imports: [
     BrowserModule,

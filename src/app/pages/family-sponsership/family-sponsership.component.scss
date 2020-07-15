@@ -1,0 +1,121 @@
+$colors:(
+    primary:#f12a02,
+    accent:#fff,
+    primary-light:lighten(#f12a02, 40%),
+    primary-dark:darken(#f12a02, 40%),
+    dark:#22242691,
+    transparentDark: #222426e3
+);
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+  .my-container {
+    position: relative;
+    background: color(primary);
+    overflow: hidden;
+    hr.line {
+        border-top: 2px dashed rgb(210, 207, 223);
+      }
+}
+/* You could use :after - it doesn't really matter */
+    .main {
+    
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/content/titlebar-bg.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height:300px;
+    } 
+  .hero-text {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+  .immg_wrapper{
+    margin-top: 28px;
+    .content_wrapper{
+        padding: 12px 0px 100px 0px;
+    }
+    h3{
+        font-family: "Poppins",Arial,Helvetica,sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        color: #0e1032;
+    }
+  }
+  /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 7px 12px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: color(primary);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  form {
+    background: #fdeecd;
+    .container{
+       padding:10px;
+      }
+  }
+  //custom select
+  
