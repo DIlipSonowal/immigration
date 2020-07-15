@@ -18,6 +18,7 @@ import { UploadComponent } from './components/upload/upload.component';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { HomehomeComponent } from './home/home/home.component';
 import { FamilySponsershipComponent } from './pages/family-sponsership/family-sponsership.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FamilySponsershipComponent } from './pages/family-sponsership/family-sp
     UploadComponent,
     HomeContentComponent,
     HomehomeComponent,
-    FamilySponsershipComponent
+    FamilySponsershipComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
