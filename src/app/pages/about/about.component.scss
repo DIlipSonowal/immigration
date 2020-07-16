@@ -4,12 +4,14 @@ $colors:(
     primary-light:lighten(#f12a02, 40%),
     primary-dark:darken(#f12a02, 40%),
     dark:#22242691,
-    transparentDark: #222426e3
+    transparentDark: #222426e3,
+    grey: #7e7171,
+    lightGrey:#ddd
 );
 @function color($color-name){
     @return map-get($colors, $color-name)
 };
-  .my-container {
+ .my-container {
     position: relative;
     background: color(primary);
     overflow: hidden;
@@ -18,9 +20,12 @@ $colors:(
       }
 }
 /* You could use :after - it doesn't really matter */
-    .main {
+.row{
+    padding:10px 0px 10px 0px;
+}
+ .main {
     
-        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/content/titlebar-bg.jpg');
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/content/about.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
         -ms-background-size: cover;
@@ -29,27 +34,88 @@ $colors:(
         -webkit-background-size: cover;
         background-size: cover;
         height:300px;
-    } 
+   } 
     .content {
         position: absolute;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        color: #f1f1f1;
+        background: #46415f38;
+        // background: #361eb838;
+        color: #fff;
         width: 100%;
-        padding: 20px;
-      }
+        padding: 10px 40px;
+    }
       
-      #myBtn {
+    #myBtn {
         width: 200px;
         font-size: 18px;
         padding: 10px;
         border: none;
-        background: #000;
-        color: #fff;
+        background: color(grey);
+        color: color(accent);
         cursor: pointer;
-      }
+    }
       
-      #myBtn:hover {
-        background: #ddd;
+    #myBtn:hover {
+        background: color(lightGrey);
         color: black;
-      }
+   }
+.content-wrapper{
+       p{
+        font-family: "Poppins",Arial,Helvetica,sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #687076;
+       }
+       ul{
+           list-style-type: none;
+           padding: 0;
+           padding-left: 0;
+           li{
+            position: relative;
+            padding-bottom: 12px;
+            .icon{
+                color: color(primary) !important;
+            }
+            span{
+                display: inline-block;
+                padding-left: 27px;
+                font-weight: 400;
+                color: #8d9297
+            }
+           }
+       }
+   }
+.mainbg{
+        background-image:linear-gradient(rgba(218, 21, 21, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/content/road-220058_1280.jpg');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        .bgBanner{
+          background: color(accent);
+          margin-bottom: 20px;
+          padding:20px 40px;
+        }
+        .header-content{
+            text-align : center;
+            padding:20px 0 10px 0;
+            &:after{
+                display: block;
+                content: "";
+                position: absolute;
+                width: 43px;
+                bottom: -20px;
+                height: 4px;
+                left: 50%;
+                margin-left: -21px;
+                top: auto;
+                background-color: #fff;
+            }
+        }
+     }  
+
+    
