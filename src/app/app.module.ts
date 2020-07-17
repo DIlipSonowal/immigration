@@ -19,6 +19,9 @@ import { HomeContentComponent } from './home-content/home-content.component';
 import { HomehomeComponent } from './home/home/home.component';
 import { FamilySponsershipComponent } from './pages/family-sponsership/family-sponsership.component';
 import { AboutComponent } from './pages/about/about.component';
+import { AgriculturalWorkersComponent } from './pages/agricultural-workers/agricultural-workers.component';
+import { AtlantiImmigrationPilotProgramComponent } from './pages/atlanti-immigration-pilot-program/atlanti-immigration-pilot-program.component';
+import { EmployeeSpecificWorkPermitComponent } from './pages/employee-specific-work-permit/employee-specific-work-permit.component';
 
 
 @NgModule({
@@ -38,7 +41,10 @@ import { AboutComponent } from './pages/about/about.component';
     HomeContentComponent,
     HomehomeComponent,
     FamilySponsershipComponent,
-    AboutComponent
+    AboutComponent,
+    AgriculturalWorkersComponent,
+    AtlantiImmigrationPilotProgramComponent,
+    EmployeeSpecificWorkPermitComponent
   ],
   imports: [
     BrowserModule,
