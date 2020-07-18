@@ -113,31 +113,17 @@ $colors:(
 }
 
 h4{
-
     font-family: "Poppins",Arial,Helvetica,sans-serif;
-
     font-weight: 600;
-
     font-size: 32px;
-
     line-height: 44px;
-
-    color: #0e1032;
-
 } 
 
 h3{
-
     font-family: "Poppins",Arial,Helvetica,sans-serif;
-
     font-weight: 600;
-
     font-size: 32px;
-
     line-height: 44px;
-
-    color: #fff;
-
 } 
 
 .header-content{
@@ -362,11 +348,7 @@ input[type=text], input[type=password] {
 
  
 
-  .ordered-list-alpha{
-
-      list-style-type: lower-alpha;
-
-      padding-left: 20px;
-
-  }
-
+.ordered-list-alpha{
+  list-style-type: lower-alpha;
+  padding-left: 20px;
+}
