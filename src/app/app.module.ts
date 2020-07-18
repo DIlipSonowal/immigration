@@ -22,6 +22,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { AgriculturalWorkersComponent } from './pages/agricultural-workers/agricultural-workers.component';
 import { AtlantiImmigrationPilotProgramComponent } from './pages/atlanti-immigration-pilot-program/atlanti-immigration-pilot-program.component';
 import { EmployeeSpecificWorkPermitComponent } from './pages/employee-specific-work-permit/employee-specific-work-permit.component';
+import { OpenWorkPermitComponent } from './pages/open-work-permit/open-work-permit.component';
+import { LaberMarketImpactAssestmentComponent } from './pages/laber-market-impact-assestment/laber-market-impact-assestment.component';
+import { WorkPermitExtensionComponent } from './pages/work-permit-extension/work-permit-extension.component';
+import { InternationalExperiencesComponent } from './pages/international-experiences/international-experiences.component';
 
 
 @NgModule({
@@ -44,7 +48,11 @@ import { EmployeeSpecificWorkPermitComponent } from './pages/employee-specific-w
     AboutComponent,
     AgriculturalWorkersComponent,
     AtlantiImmigrationPilotProgramComponent,
-    EmployeeSpecificWorkPermitComponent
+    EmployeeSpecificWorkPermitComponent,
+    OpenWorkPermitComponent,
+    LaberMarketImpactAssestmentComponent,
+    WorkPermitExtensionComponent,
+    InternationalExperiencesComponent
   ],
   imports: [
     BrowserModule,

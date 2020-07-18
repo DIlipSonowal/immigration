@@ -12,6 +12,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { AgriculturalWorkersComponent } from './pages/agricultural-workers/agricultural-workers.component';
 import { AtlantiImmigrationPilotProgramComponent } from './pages/atlanti-immigration-pilot-program/atlanti-immigration-pilot-program.component';
 import { EmployeeSpecificWorkPermitComponent } from './pages/employee-specific-work-permit/employee-specific-work-permit.component';
+import { OpenWorkPermitComponent } from './pages/open-work-permit/open-work-permit.component';
+import { LaberMarketImpactAssestmentComponent } from './pages/laber-market-impact-assestment/laber-market-impact-assestment.component';
+import { WorkPermitExtensionComponent } from './pages/work-permit-extension/work-permit-extension.component';
+import { InternationalExperiencesComponent } from './pages/international-experiences/international-experiences.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent, children:[
@@ -22,7 +27,11 @@ const routes: Routes = [
     {path: 'login', component: LoginComponent },
     {path:'agricultural-workers', component:AgriculturalWorkersComponent },
     {path:'employee-specific-work-permit', component:EmployeeSpecificWorkPermitComponent },
-    {path: 'atlanti-immigration-pilot-program', component:AtlantiImmigrationPilotProgramComponent }
+    {path: 'atlanti-immigration-pilot-program', component:AtlantiImmigrationPilotProgramComponent },
+    {path: 'open-work-permit', component:OpenWorkPermitComponent },
+    {path: 'laber-market-impact-assestment', component:LaberMarketImpactAssestmentComponent },
+    {path: 'work-permit-extension', component:WorkPermitExtensionComponent },
+    {path: 'international-experiences', component:InternationalExperiencesComponent }
   ]}, 
   {path :'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
   {path: 'chatbot', component: ChatbotComponent },
