@@ -352,3 +352,74 @@ input[type=text], input[type=password] {
   list-style-type: lower-alpha;
   padding-left: 20px;
 }
+
+
+.themetechmount-boxes-row-wrapper.tm-processbox-wrapper {
+  margin: 60px 0;
+  height: 263px;
+  background-image: url('./assets/proccess-box-arrow.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tm-processbox {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 270px;
+  height: 270px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: 0 10px 50px 0 rgba(29,79,206,.1);
+  transition: all 500ms ease;
+}
+.tm-processbox-wrapper  .process-num {
+  background-color: #f71735;
+  margin-right: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: auto;
+  right: 30px;
+  top: 20px;
+  z-index: 10;
+  transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;;
+}
+.tm-processbox-wrapper .tm-processbox:hover {
+  box-shadow: 0 -10px 39px 0 rgba(8,18,109,.1);
+  transform: translateY(-10px);
+}
+
+.tm-box-content {
+  position: relative;
+  border-radius: 50%;
+  padding: 45px 15px 60px 15px;
+  width: 230px;
+  height: 230px;
+  border: 6px solid #e8ecef;
+  vertical-align: middle;
+}
+.tm-box-content:hover {
+  border: 6px solid #f71735;
+}
+.tm-processbox:hover .process-num{
+  background-color: #000000 !important;
+  color: #fff;
+}
+.tm-box-title h5{
+    font-weight: 700;;
+}
