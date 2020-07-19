@@ -40,6 +40,7 @@ import { SponsorDependentChildComponent } from './pages/sponsor-dependent-child/
 import { SponsorParentsGrandparentsComponent } from './pages/sponsor-parents-grandparents/sponsor-parents-grandparents.component';
 import { SponsorRelativesComponent } from './pages/sponsor-relatives/sponsor-relatives.component';
 import { AdoptedChildComponent } from './pages/adopted-child/adopted-child.component';
+import { SideBarComponent } from './pages/side-bar/side-bar.component';
 
 
 @NgModule({
@@ -80,7 +81,8 @@ import { AdoptedChildComponent } from './pages/adopted-child/adopted-child.compo
     SponsorDependentChildComponent,
     SponsorParentsGrandparentsComponent,
     SponsorRelativesComponent,
-    AdoptedChildComponent
+    AdoptedChildComponent,
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
