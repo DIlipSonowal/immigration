@@ -1,11 +1,11 @@
 $font:16px;
 $margin: 30px;
-$color:#7e8083;
+$color:#898b8e;
 .footer{
     width:100%;
     left:0;
     bottom:0;
-    background:#222426;
+    background:#0b0c26;
     color:#fff;
     padding-top:40px;
 }
@@ -34,15 +34,15 @@ ul{
             width:1.3em;
         }
         a{
-            color:$color;   
+            color:$color;
         }
     }
 }
 p, address {
     font-size: $font;
-    color:$color; 
+    color:$color;
     a{
-        color:$color;  
+        color:$color;
     }
 }
 .btnStyle{
