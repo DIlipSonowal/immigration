@@ -24,7 +24,7 @@ $colors:(
     padding:10px 0px 10px 0px;
 }
  .main {
-    
+
         background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/content/about.jpg');
         background-repeat: no-repeat;
         background-position: 50% 0;
@@ -34,7 +34,7 @@ $colors:(
         -webkit-background-size: cover;
         background-size: cover;
         height:300px;
-   } 
+   }
     .content {
         position: absolute;
         bottom: 0;
@@ -42,8 +42,12 @@ $colors:(
         // background: #361eb838;
         color: #fff;
         width: 100%;
+        padding:20px;
+        p{
+          width:45%;
+        }
     }
-      
+
     #myBtn {
         width: 200px;
         font-size: 18px;
@@ -53,7 +57,7 @@ $colors:(
         color: color(accent);
         cursor: pointer;
     }
-      
+
     #myBtn:hover {
         background: color(lightGrey);
         color: black;
@@ -115,6 +119,137 @@ $colors:(
                 background-color: #fff;
             }
         }
-     }  
+     }
+.bg#bg{
+  clip-path: polygon(0 11%, 100% 0, 100% 86%, 0 99%, 0% 38%);
+  header{
+    position: relative;
+    top:30%;
+  }
+};
+//time line
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #0b0c26;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.tm-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.tm-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #0b0c26;
+  border: 4px solid #98222f;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #0b0c26;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #0b0c26;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #0b0c26;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #0b0c26 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.tm-content {
+  padding: 10px 30px;
+  background-color: #0b0c26;
+  position: relative;
+  border-radius: 6px;
+  color:white;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .tm-container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .tm-container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}

@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
- 
+
 
 /* Importing Bootstrap SCSS file. */
 
@@ -16,7 +16,7 @@ body {
 
     font-family: "Poppins",Arial,Helvetica,sans-serif;
 
-    color: #204476;
+    color: #22262b;
 
     font-size: 17px;
 
@@ -26,9 +26,9 @@ body {
 
 $colors:(
 
-    primary:#f12a02,
-
-    accent:#fff,
+    primary:#204061,
+    secondary:#0b0c26,
+     accent:#fff,
 
     primary-light:lighten(#f12a02, 40%),
 
@@ -45,14 +45,16 @@ $colors:(
     @return map-get($colors, $color-name)
 
 };
-
+.heading-white{
+  color:#fff;
+}
 .text-small{
 
-    
+
 
     &-white{
 
-       color:#fff; 
+       color:#fff;
 
        font-family: "Poppins",Arial,Helvetica,sans-serif;
 
@@ -117,14 +119,14 @@ h4{
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-} 
+}
 
 h3{
     font-family: "Poppins",Arial,Helvetica,sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 44px;
-} 
+}
 
 .header-content{
 
@@ -144,25 +146,15 @@ h3{
 
   }
 
-}
-
-header{
-
-    margin-bottom: 47px;
-
-}
-
+};
 img{
 
-    height:100%;
+    height:auto;
 
     width:100%;
 
-}
-
- 
-
-  .my-container {
+};
+ .my-container {
 
     position: relative;
 
@@ -180,7 +172,7 @@ img{
 
 /* You could use :after - it doesn't really matter */
 
- 
+
 
   .hero-text {
 
@@ -192,7 +184,7 @@ img{
 
   }
 
-  
+
 
   .hero-text button {
 
@@ -214,7 +206,7 @@ img{
 
   }
 
-  
+
 
   .hero-text button:hover {
 
@@ -254,7 +246,7 @@ input[type=text], input[type=password] {
 
   }
 
-  
+
 
   input[type=text], select {
 
@@ -282,7 +274,7 @@ input[type=text], input[type=password] {
 
   }
 
-  
+
 
   /* Overwrite default styles of hr */
 
@@ -294,7 +286,7 @@ input[type=text], input[type=password] {
 
   }
 
-  
+
 
   /* Set a style for the submit button */
 
@@ -318,7 +310,7 @@ input[type=text], input[type=password] {
 
   }
 
-  
+
 
   .registerbtn:hover {
 
@@ -326,7 +318,7 @@ input[type=text], input[type=password] {
 
   }
 
- 
+
 
   .hero-text .pages-ul-li{
 
@@ -336,7 +328,7 @@ input[type=text], input[type=password] {
 
   }
 
- 
+
 
   .pages-ul-li li{
 
@@ -346,9 +338,56 @@ input[type=text], input[type=password] {
 
  }
 
- 
+
 
 .ordered-list-alpha{
   list-style-type: lower-alpha;
   padding-left: 20px;
 }
+.card{
+  text-align: center;
+  box-shadow: 6px 11px 24px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 6px;
+
+}
+.visa-card-title{
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 44px;
+  a {
+    color:#0b0c26 !important
+    }
+  }
+ .visa-card-para{
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #687076;
+ }
+ .visa-hr{
+  border-top: 2px solid #f12a02;
+  width: 20px;
+  margin-bottom: 7px;
+  margin-top: 0px;
+  width: 67px;
+ }
+ .carousel-indicators{
+  bottom:60px !important;
+}
+section.bg{
+  background: #0b0c26;
+  padding:15px;
+}
+section{
+  padding:20px;
+}
+.tm-custom-heading-blue {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 44px;
+  color: #24265f;
+}
+
