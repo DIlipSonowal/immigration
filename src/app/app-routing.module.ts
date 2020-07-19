@@ -16,7 +16,20 @@ import { OpenWorkPermitComponent } from './pages/open-work-permit/open-work-perm
 import { LaberMarketImpactAssestmentComponent } from './pages/laber-market-impact-assestment/laber-market-impact-assestment.component';
 import { WorkPermitExtensionComponent } from './pages/work-permit-extension/work-permit-extension.component';
 import { InternationalExperiencesComponent } from './pages/international-experiences/international-experiences.component';
-
+import { GlobalSkillsStrategyComponent } from './pages/global-skills-strategy/global-skills-strategy.component';
+import { OnCampusWorkComponent } from './pages/on-campus-work/on-campus-work.component';
+import { CoopWorkPermitComponent } from './pages/coop-work-permit/coop-work-permit.component';
+import { SelfEmployedImmigrationComponent } from './pages/self-employed-immigration/self-employed-immigration.component';
+import { StartupVisaProgComponent } from './pages/startup-visa-prog/startup-visa-prog.component';
+import { RuralImmigrationPilotProgComponent } from './pages/rural-immigration-pilot-prog/rural-immigration-pilot-prog.component';
+import { StudentDirectStreamComponent } from './pages/student-direct-stream/student-direct-stream.component';
+import { SuperVisaComponent } from './pages/super-visa/super-visa.component';
+import { RefugeesComponent } from './pages/refugees/refugees.component';
+import { SponsorYourFamilyComponent } from './pages/sponsor-your-family/sponsor-your-family.component';
+import { SponsorDependentChildComponent } from './pages/sponsor-dependent-child/sponsor-dependent-child.component';
+import { SponsorParentsGrandparentsComponent } from './pages/sponsor-parents-grandparents/sponsor-parents-grandparents.component';
+import { SponsorRelativesComponent } from './pages/sponsor-relatives/sponsor-relatives.component';
+import { AdoptedChildComponent } from './pages/adopted-child/adopted-child.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, children:[
@@ -25,13 +38,27 @@ const routes: Routes = [
     {path: 'about', component:AboutComponent},
     {path: 'upload', component: UploadComponent},
     {path: 'login', component: LoginComponent },
-    {path:'agricultural-workers', component:AgriculturalWorkersComponent },
-    {path:'employee-specific-work-permit', component:EmployeeSpecificWorkPermitComponent },
+    {path: 'agricultural-workers', component:AgriculturalWorkersComponent },
+    {path: 'employee-specific-work-permit', component:EmployeeSpecificWorkPermitComponent },
     {path: 'atlanti-immigration-pilot-program', component:AtlantiImmigrationPilotProgramComponent },
     {path: 'open-work-permit', component:OpenWorkPermitComponent },
     {path: 'laber-market-impact-assestment', component:LaberMarketImpactAssestmentComponent },
     {path: 'work-permit-extension', component:WorkPermitExtensionComponent },
-    {path: 'international-experiences', component:InternationalExperiencesComponent }
+    {path: 'international-experiences', component:InternationalExperiencesComponent },
+    {path: 'global-skills-strategy', component:GlobalSkillsStrategyComponent },
+    {path: 'oncampus-work', component:OnCampusWorkComponent },
+    {path: 'coop-work-permit', component:CoopWorkPermitComponent },
+    {path: 'self-employed-immigration-prog', component:SelfEmployedImmigrationComponent },
+    {path: 'startup-visa-prog', component:StartupVisaProgComponent },
+    {path: 'rural-immigration-pilot-prog', component:RuralImmigrationPilotProgComponent },
+    {path: 'student-direct-stream', component:StudentDirectStreamComponent },
+    {path: 'super-visa', component:SuperVisaComponent },
+    {path: 'refugees', component:RefugeesComponent },
+    {path: 'sponsor-your-spouse', component:SponsorYourFamilyComponent },
+    {path: 'sponsor-dependent-child', component:SponsorDependentChildComponent },
+    {path: 'sponsor-parents-grandparents', component:SponsorParentsGrandparentsComponent },
+    {path: 'sponsor-relatives', component:SponsorRelativesComponent },
+    {path: 'adopted-child', component:AdoptedChildComponent },
   ]}, 
   {path :'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
   {path: 'chatbot', component: ChatbotComponent },

@@ -14,13 +14,13 @@
                         <ul class="sub-menu">
                           <li><a routerLink="/upload">Express Entry</a></li>
                           <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
-                            <a href="javscript:void(0)" >Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
+                            <a routerLink="/familySponsership">Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
                             <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
-                              <li><a routerLink="/familySponsership"> - Sponsor your spouse</a></li>
-                              <li><a routerLink="/familySponsership"> - Sponsor your Dependent children</a></li>
-                              <li><a routerLink="/familySponsership"> - Parents &amp; Grandparents</a></li>
-                              <li><a routerLink="/familySponsership"> - Relatives</a></li>
-                              <li><a routerLink="/familySponsership"> - Adopted child</a></li>
+                              <li><a routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li>
+                              <li><a routerLink="/sponsor-dependent-child"> - Sponsor your Dependent children</a></li>
+                              <li><a routerLink="/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a></li>
+                              <li><a routerLink="/sponsor-relatives"> - Relatives</a></li>
+                              <li><a routerLink="/adopted-child"> - Adopted child</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
                           <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a href="#">Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 
@@ -40,10 +40,10 @@
                           </li>
                           <li><a routerLink="/atlanti-immigration-pilot-program">Atlantic Immigration Pilot Program</a></li>
                           <li><a href="#">Caregivers</a></li>
-                          <li><a href="http://v9immigration.com/service/start-up-visa-program/">Start Up Visa Program</a></li>
-                          <li><a href="http://v9immigration.com/service/self-employed-immigration/">Self Employed Immigration</a></li>
-                          <li><a href="http://v9immigration.com/service/rural-and-northern-immigration-pilot/">Rural and Northern Immigration Pilot</a></li>
-                          <li><a href="http://v9immigration.com/service/refugees/">Refugees</a></li>
+                          <li><a routerLink="/startup-visa-prog">Start Up Visa Program</a></li>
+                          <li><a routerLink="/self-employed-immigration-prog">Self Employed Immigration</a></li>
+                          <li><a routerLink="/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a></li>
+                          <li><a routerLink="/refugees">Refugees</a></li>
                           <li><a href="#">Appeals</a></li>
                           <li><a href="#">Pet Immigration</a></li>
                         </ul>
@@ -60,7 +60,7 @@
                             <li><a routerLink="/agricultural-workers">Agricultural Workers</a></li>
                             <li><a href="#">Live-in Caregiver Program</a></li>
                             <li><a routerLink="/international-experiences">International Experience Canada</a></li>
-                            <li><a href="http://v9immigration.com/service/global-skills-strategy/">Global Skills Strategy</a></li>
+                            <li><a routerLink="/global-skills-strategy">Global Skills Strategy</a></li>
                           </ul>
                         </div>
                     </li>
@@ -68,11 +68,11 @@
                       <a class="nav-link dropdown-toggle" id="id03" ngbDropdownToggle>Study</a>
                       <div class="dropdown-menu" aria-labelledby="id03" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li id="menu-item-2546" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2546"><a href="http://v9immigration.com/service/super-visa/">Super Visa</a></li>
+                          <li><a routerLink="/super-visa">Super Visa</a></li>
                           <li id="menu-item-2435" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2435"><a href="http://v9immigration.com/service/student-direct-stream/">Student Direct Stream</a></li>
-                          <li id="menu-item-2433" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2433"><a href="http://v9immigration.com/service/coop-work-permit/">Coop Work Permit</a></li>
-                          <li id="menu-item-2434" class="menu-item menu-item-type-post_type menu-item-object-tm_service menu-item-2434"><a href="http://v9immigration.com/service/on-campus-work/">On Campus Work</a></li>
-                          <li id="menu-item-2573" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2573"><a href="#">Student Direct Stream (SDS)</a></li>
+                          <li><a routerLink="/coop-work-permit">Coop Work Permit</a></li>
+                          <li><a routerLink="/oncampus-work">On Campus Work</a></li>
+                          <li><a routerLink="/student-direct-stream">Student Direct Stream (SDS)</a></li>
                           <li id="menu-item-2574" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2574"><a href="#">Change of DLI</a></li>
                           <li id="menu-item-2575" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2575"><a href="#">Work off Campus</a></li>
                           <li id="menu-item-2576" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2576"><a href="#">Spousal Work Permit</a></li>

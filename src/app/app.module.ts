@@ -26,6 +26,20 @@ import { OpenWorkPermitComponent } from './pages/open-work-permit/open-work-perm
 import { LaberMarketImpactAssestmentComponent } from './pages/laber-market-impact-assestment/laber-market-impact-assestment.component';
 import { WorkPermitExtensionComponent } from './pages/work-permit-extension/work-permit-extension.component';
 import { InternationalExperiencesComponent } from './pages/international-experiences/international-experiences.component';
+import { GlobalSkillsStrategyComponent } from './pages/global-skills-strategy/global-skills-strategy.component';
+import { OnCampusWorkComponent } from './pages/on-campus-work/on-campus-work.component';
+import { CoopWorkPermitComponent } from './pages/coop-work-permit/coop-work-permit.component';
+import { SelfEmployedImmigrationComponent } from './pages/self-employed-immigration/self-employed-immigration.component';
+import { StartupVisaProgComponent } from './pages/startup-visa-prog/startup-visa-prog.component';
+import { RuralImmigrationPilotProgComponent } from './pages/rural-immigration-pilot-prog/rural-immigration-pilot-prog.component';
+import { StudentDirectStreamComponent } from './pages/student-direct-stream/student-direct-stream.component';
+import { SuperVisaComponent } from './pages/super-visa/super-visa.component';
+import { RefugeesComponent } from './pages/refugees/refugees.component';
+import { SponsorYourFamilyComponent } from './pages/sponsor-your-family/sponsor-your-family.component';
+import { SponsorDependentChildComponent } from './pages/sponsor-dependent-child/sponsor-dependent-child.component';
+import { SponsorParentsGrandparentsComponent } from './pages/sponsor-parents-grandparents/sponsor-parents-grandparents.component';
+import { SponsorRelativesComponent } from './pages/sponsor-relatives/sponsor-relatives.component';
+import { AdoptedChildComponent } from './pages/adopted-child/adopted-child.component';
 
 
 @NgModule({
@@ -52,7 +66,21 @@ import { InternationalExperiencesComponent } from './pages/international-experie
     OpenWorkPermitComponent,
     LaberMarketImpactAssestmentComponent,
     WorkPermitExtensionComponent,
-    InternationalExperiencesComponent
+    InternationalExperiencesComponent,
+    GlobalSkillsStrategyComponent,
+    OnCampusWorkComponent,
+    CoopWorkPermitComponent,
+    SelfEmployedImmigrationComponent,
+    StartupVisaProgComponent,
+    RuralImmigrationPilotProgComponent,
+    StudentDirectStreamComponent,
+    SuperVisaComponent,
+    RefugeesComponent,
+    SponsorYourFamilyComponent,
+    SponsorDependentChildComponent,
+    SponsorParentsGrandparentsComponent,
+    SponsorRelativesComponent,
+    AdoptedChildComponent
   ],
   imports: [
     BrowserModule,
