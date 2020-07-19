@@ -19,7 +19,7 @@ body {
     color: #22262b;
 
     font-size: 17px;
-
+    overflow-x: hidden;
     font-weight: 300;
 
 }
@@ -50,7 +50,7 @@ $colors:(
 }
 .text-small{
 
-
+  padding-top:10px;
 
     &-white{
 
@@ -172,9 +172,7 @@ img{
 
 /* You could use :after - it doesn't really matter */
 
-
-
-  .hero-text {
+ .hero-text {
 
     padding-top: 50px;
 
@@ -182,48 +180,46 @@ img{
 
     color: white;
 
-  }
-
-
-
-  .hero-text button {
-
+  };
+.hero-text button {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
     border: none;
-
-    outline: 0;
-
-    display: inline-block;
-
-    padding: 10px 25px;
-
-    color: black;
-
-    background-color: #ddd;
-
-    text-align: center;
-
+    background: #fff;
+    color: #000;
     cursor: pointer;
-
+    transition: 0.3s;
+   &:hover{
+    background: rgb(228, 14, 14);
+    color: rgb(255, 251, 251);
+    a{
+      color: rgb(255, 251, 251);
+    }
+   }
+  };
+  button:focus {
+    outline:none;
+   }
+button{
+  transition: 0.3s;
+ a{
+  text-decoration: none;
+  color:#000;
+  &:hover{
+    color: rgb(255, 251, 251);
+    text-decoration: none;
   }
-
-
-
-  .hero-text button:hover {
-
-    background-color: #555;
-
-    color: white;
-
-  }
-
-  .immg_wrapper{
+ }
+}
+ .immg_wrapper{
     margin-top: 28px;
     .content_wrapper{
         padding: 12px 0px 100px 0px;
     }
   }
 
-  .img-container{
+.img-container{
       width: 100%;
       max-height: 410px;
   }
@@ -395,7 +391,7 @@ section{
 
 .themetechmount-boxes-row-wrapper.tm-processbox-wrapper {
   margin: 60px 0;
-  height: 263px;
+  height: auto;
   background-image: url('./assets/proccess-box-arrow.png');
   background-size: cover;
   background-position: center;
@@ -416,7 +412,7 @@ section{
   transition: all 500ms ease;
 }
 .tm-processbox-wrapper  .process-num {
-  background-color: #f71735;
+  background-color: #142275 !important;
   margin-right: 5px;
   font-size: 20px;
   font-weight: 500;
@@ -453,7 +449,7 @@ section{
   vertical-align: middle;
 }
 .tm-box-content:hover {
-  border: 6px solid #f71735;
+  border: 4px solid #142275
 }
 .tm-processbox:hover .process-num{
   background-color: #000000 !important;
@@ -462,3 +458,41 @@ section{
 .tm-box-title h5{
     font-weight: 700;;
 }
+.marginTopCls{
+  margin-top:25px;
+}
+
+header{
+  margin-bottom:20px;
+}
+.bgHome{
+  background-image: url('/assets/bg-row-circle-pattern.png');
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-position: center;
+}
+.background{
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.mainColor{
+  background-color:#675a5773;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  background: #46415f38;
+  // background: #361eb838;
+  color: #fff;
+  width: 100%;
+  padding:20px;
+  p{
+    width:45%;
+  }
+};
