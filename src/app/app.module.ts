@@ -41,6 +41,12 @@ import { SponsorParentsGrandparentsComponent } from './pages/sponsor-parents-gra
 import { SponsorRelativesComponent } from './pages/sponsor-relatives/sponsor-relatives.component';
 import { AdoptedChildComponent } from './pages/adopted-child/adopted-child.component';
 import { SideBarComponent } from './pages/side-bar/side-bar.component';
+import { TermsConditionComponent } from './components/terms-condition/terms-condition.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { CopyrightComponent } from './components/copyright/copyright.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
+import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
 
 
 @NgModule({
@@ -82,7 +88,13 @@ import { SideBarComponent } from './pages/side-bar/side-bar.component';
     SponsorParentsGrandparentsComponent,
     SponsorRelativesComponent,
     AdoptedChildComponent,
-    SideBarComponent
+    SideBarComponent,
+    TermsConditionComponent,
+    DisclaimerComponent,
+    CopyrightComponent,
+    PrivacyPolicyComponent,
+    CookiePolicyComponent,
+    AntiFraudPolicyComponent
   ],
   imports: [
     BrowserModule,

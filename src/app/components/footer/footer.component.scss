@@ -83,4 +83,22 @@ input{
         color:#ff532e
     }
 }
-
+.footer-nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-nav-menu li {
+    display: inline-block;
+    padding-left: 2px;
+    padding-right: 16px;
+    padding-bottom: 0;
+}
+ul.footer-nav-menu li:after {
+    position: absolute;
+    content: "|";
+    padding-left: 7px;
+}
+ul.footer-nav-menu li:before {
+    content: "";
+}

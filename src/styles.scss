@@ -496,3 +496,17 @@ header{
     width:45%;
   }
 };
+.carousel-caption:after{
+  outline: 0;
+}
+
+.carousel-caption:focus{
+  outline: 0 !important;
+}
+.ang-tag{
+  text-decoration: none;
+  cursor: pointer;
+}
+.bold-class{
+  font-weight: 700;
+}

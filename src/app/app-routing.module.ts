@@ -30,6 +30,12 @@ import { SponsorDependentChildComponent } from './pages/sponsor-dependent-child/
 import { SponsorParentsGrandparentsComponent } from './pages/sponsor-parents-grandparents/sponsor-parents-grandparents.component';
 import { SponsorRelativesComponent } from './pages/sponsor-relatives/sponsor-relatives.component';
 import { AdoptedChildComponent } from './pages/adopted-child/adopted-child.component';
+import { TermsConditionComponent } from './components/terms-condition/terms-condition.component';
+import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
+import { CopyrightComponent } from './components/copyright/copyright.component';
+import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
+import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
+import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, children:[
@@ -59,6 +65,12 @@ const routes: Routes = [
     {path: 'sponsor-parents-grandparents', component:SponsorParentsGrandparentsComponent },
     {path: 'sponsor-relatives', component:SponsorRelativesComponent },
     {path: 'adopted-child', component:AdoptedChildComponent },
+    {path: 'terms-and-condition', component:TermsConditionComponent },
+    {path: 'disclaimer', component:DisclaimerComponent },
+    {path: 'copyright', component:CopyrightComponent },
+    {path: 'privacy-policy', component:PrivacyPolicyComponent },
+    {path: 'cookie-policy', component:CookiePolicyComponent },
+    {path: 'anti-fraud-policy', component:AntiFraudPolicyComponent },
   ]}, 
   {path :'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
   {path: 'chatbot', component: ChatbotComponent },
