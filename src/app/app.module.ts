@@ -48,6 +48,8 @@ import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-poli
 import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
 import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
 import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { BusinessIdeasComponent } from './pages/business-ideas/business-ideas.component';
 
 
 @NgModule({
@@ -96,7 +98,9 @@ import { CommingSoonComponent } from './components/comming-soon/comming-soon.com
     PrivacyPolicyComponent,
     CookiePolicyComponent,
     AntiFraudPolicyComponent,
-    CommingSoonComponent
+    CommingSoonComponent,
+    ContactUsComponent,
+    BusinessIdeasComponent
   ],
   imports: [
     BrowserModule,

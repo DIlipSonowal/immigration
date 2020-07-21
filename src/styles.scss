@@ -270,14 +270,8 @@ input[type=text], input[type=password] {
   /* Overwrite default styles of hr */
 
   hr {
-
-    border: 1px solid #f1f1f1;
-
-    margin-bottom: 25px;
-
+    margin-bottom: 20px;
   }
-
-
 
   /* Set a style for the submit button */
 
@@ -667,4 +661,15 @@ header{
 .btn-small:hover {
   background-color: #f12a02;
   color: white;
+}
+
+.color-bar{
+  display: inline-block;
+  width: 40px;
+  line-height: 6px;
+  border-bottom: 5px solid #ff532e;
+}
+
+hr.divider{
+  height: 0;
 }
