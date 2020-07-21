@@ -505,7 +505,6 @@ header{
 .bold-class{
   font-weight: 700;
 }
-<<<<<<< Updated upstream
 
 .social-parent{
   list-style: none;
@@ -551,8 +550,7 @@ header{
 .foot-date{
   color:#8d9297;
   font-size: 12px;
-}
-=======
+};
 // buttonAnimated
 .buttonAnimated {
   border-radius: 4px;
@@ -590,8 +588,7 @@ header{
   padding-right: 25px;
 }
 
-.button:hover span:after {
+.buttonAnimated:hover span:after {
   opacity: 1;
   right: 0;
-}
->>>>>>> Stashed changes
+};
