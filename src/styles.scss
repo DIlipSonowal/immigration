@@ -550,4 +550,45 @@ header{
 .foot-date{
   color:#8d9297;
   font-size: 12px;
+};
+// buttonAnimated
+.buttonAnimated {
+  border-radius: 4px;
+  background-color: #204061;
+  border: none;
+  color: #FFFFFF;
+  margin: 4px 2px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+
+.buttonAnimated span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonAnimated span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  color: #fff;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonAnimated:hover span {
+  padding-right: 25px;
+}
+
+.buttonAnimated:hover span:after {
+  opacity: 1;
+  right: 0;
+};

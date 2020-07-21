@@ -38,6 +38,9 @@
        div#icon{
          width:10%;
        }
+       div#icon-detail{
+         width:1%;
+       }
        div#para{
          width:90%;
          padding-left: 27px;
@@ -57,6 +60,9 @@
            color: color(primary) !important;
            font-size: 27px;
        }
+       .icon-small{
+        font-size: 20px;
+       }
        span{
            display: inline-block;
            font-weight: 400;
@@ -68,7 +74,7 @@
       }
   }
 }
-.btn {
+.btn-small {
   background-color: #ddd;
   border: none;
   color: black;
@@ -79,7 +85,10 @@
   transition: 0.3s;
 }
 
-.btn:hover {
-  background-color: #3e8e41;
+.btn-small:hover {
+  background-color: #f12a02;
   color: white;
+}
+.rowTop{
+  padding:20px 0 20px 0;
 }
