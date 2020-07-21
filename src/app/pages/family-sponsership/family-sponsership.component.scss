@@ -13,3 +13,73 @@
   box-shadow: 6px 11px 24px -16px rgba(0, 0, 0, 0.75);
   background:#fff;
 }
+.address-wrapper{
+  p{
+   font-family: "Poppins",Arial,Helvetica,sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 26px;
+   color: #687076;
+  }
+  ul{
+      list-style-type: none;
+      padding: 0;          /* Override defaults for lists */
+      margin: 0;           /* Override defaults for lists */
+      width: 100%;
+          /* Get the row full width */ /* Centre align grid items */
+      li{
+       position: relative;
+       display:table ;
+       width:100%;
+       padding-bottom: 12px;
+       div{
+        display:table-cell ;
+       }
+       div#icon{
+         width:10%;
+       }
+       div#para{
+         width:90%;
+         padding-left: 27px;
+         text-align: left;
+         vertical-align: middle;
+       }
+       div#paraImg{
+        width:60%;
+        padding-left: 27px;
+        text-align: left;
+        vertical-align: middle;
+      }
+       div#img{
+        width:40%;
+       }
+       .icon{
+           color: color(primary) !important;
+           font-size: 27px;
+       }
+       span{
+           display: inline-block;
+           font-weight: 400;
+           color: #705b57;
+           font-size: 14px;
+           text-align: left;
+           font-weight: 600;
+       }
+      }
+  }
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 5px 8px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
