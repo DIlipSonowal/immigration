@@ -47,6 +47,7 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
 import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
+import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
 
 
 @NgModule({
@@ -94,7 +95,8 @@ import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fr
     CopyrightComponent,
     PrivacyPolicyComponent,
     CookiePolicyComponent,
-    AntiFraudPolicyComponent
+    AntiFraudPolicyComponent,
+    CommingSoonComponent
   ],
   imports: [
     BrowserModule,

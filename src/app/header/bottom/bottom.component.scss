@@ -50,7 +50,7 @@ li>a{
 
 .dropdown-menu {
     min-width: 20rem !important;
-    background: color(transparentDark);
+    background: color(primary);
     top:113%;
 }
 
@@ -77,13 +77,16 @@ ul.sub-menu> li{
     }&:hover{
       background-color:color(primary);
       color: color(accent);
+      &::before{
+          content: '\276F';
+      }
     }
 }
 li>ul{
     margin-left:100%;
     position: absolute;
     padding:10px;
-    background: color(transparentDark);
+    background: color(primary);
     width:100%;
     a{
         padding-left: 20px;
@@ -94,6 +97,20 @@ li>ul{
         position: relative;
     }
 }
+
+li>ul li:hover{
+   padding-left: 3px;
+}
 .clearfix{
     clear:both;
+}
+
+@media screen and (max-width: 768px){
+    li>ul{
+        margin-left:0 !important;
+        padding:20px 10px 10px 10px;
+        background: color(primary);
+        width:100%;
+        position: relative !important;
+    }
 }

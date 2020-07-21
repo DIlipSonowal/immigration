@@ -13,15 +13,10 @@ body, html{
 }
 
 body {
-
     font-family: "Poppins",Arial,Helvetica,sans-serif;
-
     color: #22262b;
-
-    font-size: 17px;
     overflow-x: hidden;
     font-weight: 300;
-
 }
 
 $colors:(
@@ -33,7 +28,7 @@ $colors:(
     primary-light:lighten(#f12a02, 40%),
 
     primary-dark:darken(#f12a02, 40%),
-
+    blue:#2b2f90,
     dark:#22242691,
 
     transparentDark: #222426e3
@@ -509,4 +504,50 @@ header{
 }
 .bold-class{
   font-weight: 700;
+}
+
+.social-parent{
+  list-style: none;
+}
+.social-parent .social-icon{
+  display: inline-grid;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+  width: 30px;
+  height: 30px;
+  background-color: #212239;
+  border-radius: 50%;
+  &:hover{
+    background-color: #f12a02;
+  }
+  &::before{
+    content: '' !important;
+  }
+}
+
+.fa-facebook, .fa-twitter, .fa-flickr, .fa-linkedin{
+  color:#ffffff;
+}
+
+.display-table{
+  display: table;
+  margin-bottom: 10px;
+}
+
+.display-table .display-column{
+  display: table-cell;
+  font-size: 13px !important;
+  padding: 0;
+  vertical-align: top;
+  a{
+    color: #fff;
+  }
+}
+.display-table .display-column .img{
+  width: 70px;
+  margin-right: 18px;
+}
+.foot-date{
+  color:#8d9297;
+  font-size: 12px;
 }
