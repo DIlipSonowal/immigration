@@ -36,6 +36,7 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
 import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
 import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
 import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
+import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, children:[
@@ -71,6 +72,7 @@ const routes: Routes = [
     {path: 'privacy-policy', component:PrivacyPolicyComponent },
     {path: 'cookie-policy', component:CookiePolicyComponent },
     {path: 'anti-fraud-policy', component:AntiFraudPolicyComponent },
+    {path: 'coming-soon', component:CommingSoonComponent },
   ]}, 
   {path :'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
   {path: 'chatbot', component: ChatbotComponent },
