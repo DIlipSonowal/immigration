@@ -1,38 +1,54 @@
 <ngb-carousel *ngIf="images" >
     <ng-template ngbSlide>
       <div class="main">
-        <img class="img picsum-img-wrapper1" src="./assets/bg1.jpg" alt="Random first slide">
+          <img class="img picsum-img-wrapper1" src="./assets/home-main-slider2.jpg" alt="Random first slide">
       </div>
       <div class="carousel-caption">
-        <h3 class="carousel-header">World Most Trusted Immigration Company</h3>
-        <p>This carousel uses customized default values.</p>
+        <div class="carousel-content">
+          <p class="carousel-small text-left">WE SHOW YOU</p>
+          <h3 class="carousel-textcolor text-left">Fastest Way to  <br/>Achieve Your Goal</h3>
+          <p class="carousel-textcolor">Comprehensive immigration advice and post arrival services<br/>
+            that are tailored to meet your individual needs.
+          </p>
+          <button class="btn carousel-btn-background">Our Services</button>
+        </div>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="main">
-        <img class="img picsum-img-wrapper1" src="./assets/bg2.jpg" alt="Random second slide">
+        <img class="img picsum-img-wrapper1" src="./assets/home-main-slider3.jpg" alt="Random second slide">
       </div>
       <div class="carousel-caption">
-        <h3>No mouse events...</h3>
-        <p>This carousel doesn't pause or resume on mouse events</p>
+        <div class="carousel-content">
+          <p class="carousel-small text-left">BUSINESS IMMIGRATION</p>
+          <h3 class="carousel-textcolor text-left">Manage and Grow <br/>Your Business with us</h3>
+          <button class="btn carousel-btn-background">Our Services</button>
+        </div>
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="main">
-        <img class="img picsum-img-wrapper1" src="./assets/bg3.jpg"  alt="Random third slide">
+        <img class="img picsum-img-wrapper1" src="./assets/home-main-slider4.jpg"  alt="Random third slide">
       </div>
       <div class="carousel-caption">
-        <h3>No keyboard...</h3>
-        <p>This carousel uses customized default values.</p>
+
+            <p class="carousel-small text-right">GREAT EXPERIENCE</p>
+            <h3 class="carousel-textcolor3 text-right">We Provide The Best <br/>Immigration Advice</h3>
+            <p class="carousel-textcolor3 text-right">We have professional consultants who provide Quality<br/>
+              services that’s free of stress and confusion in time. 
+            </p>
+            <p class="text-right"><button class="btn carousel-btn-background">Our Services</button>&nbsp;
+              <a routerLink="/contact-us"><button class="btn carousel-btn-background3">Contact Us</button></a>
+            </p>
       </div>
     </ng-template>
-    <ng-template ngbSlide>
+    <!-- <ng-template ngbSlide>
       <div class="main">
         <img class="img picsum-img-wrapper1" src="./assets/rawpixel-682403-unsplash.jpg" alt="Random fourth slide">
       </div>
       <div class="carousel-caption">
-        <h3>And no wrap after last slide.</h3>
+        <h3 class="carousel-header">And no wrap after last slide.</h3>
         <p>This carousel uses customized default values.</p>
       </div>
-    </ng-template>
+    </ng-template> -->
   </ngb-carousel>

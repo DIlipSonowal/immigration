@@ -17,18 +17,44 @@
       -moz-background-size: cover;
       -webkit-background-size: cover;
       background-size: cover;
+      
   }
   &:focus{
     outline: none;
   }
 }
 .carousel-caption{
-  top:35% !important;
- /* background: #3d3d4459;
-  bottom:54% !important;*/
+  top:20px !important;
+  // background: #3d3d4459;
+  // height: 200px;
+  /*bottom:54% !important;*/
   h3{
-    font-size: 50px
+    font-size: 50px;
+    line-height: 60px;
   }
 }
+.carousel-content{
+  background: #3d3d4417;
+  padding: 20px 5px;  
+  text-align: left;
+}
+.carousel-textcolor{
+  color: #ebf3eb;
+}
+.carousel-textcolor3{
+  color: #000000;
+}
+.carousel-small{
+  color:rgb(247, 23, 53)
+}
 
+.carousel-btn-background{
+  background-color:rgb(247, 23, 53);
+  color: #ffffff;
+}
+.carousel-btn-background3{
+  background-color: #312d3c;
+  color: #ebf3eb;
+  margin-left: 8px;
+}
 

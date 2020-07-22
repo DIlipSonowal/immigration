@@ -1,11 +1,13 @@
-<div class="elementor-widget-container card-main">
-    <div class="visa-card card">
-        <div class="zoomimg mb-0">
-            <img class="cusimg" [src]="imagename"/>
+<div class="card-main">
+    <div class="card">
+        <div style="height: 180px;">
+            <div class="zoomimg mb-0">
+                <img class="cusimg" [src]="imagename"/>
+            </div>
         </div>
         <div class="visa-card-content">
-            <h3 class="visa-card-title"><a class="visa-card-title" href="https://visahub.wporganic.com/elementor/visa-immigration-single-page/" class="title">{{visatitle}}</a></h3>
-           <hr class="visa-hr"> <p class="visa-card-para">{{visasummary}}</p>
+            <h3 class="visa-card-title"><a style="text-decoration:none" [routerLink]="link">{{visatitle}}</a></h3>
+           <hr class="visa-hr"> <a style="text-decoration:none" [routerLink]="link"><p class="visa-card-para">{{visasummary}}</p></a>
         </div>
     </div>
 </div>
