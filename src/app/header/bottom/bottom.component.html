@@ -1,3 +1,4 @@
+
             <nav class="navbar navbar-expand-md navbar-dark hdr-bgcolor">
               <div class="container">
                 <a class="navbar-brand" routerLink="/"></a>
@@ -8,145 +9,145 @@
                   <ul class="navbar-nav mr-auto">
                     <li><a class="nav-link" routerLink="/">Home</a></li>
                     <li><a class="nav-link" routerLink="/about">About Us</a></li>
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-01" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Immigrate</a>
-                      <div class="dropdown-menu" aria-labelledby="id01" ngbDropdownMenu>
+                      <div class="dropdown-menu" id="id-011" aria-labelledby="id01" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a routerLink="/upload">Express Entry</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/upload">Express Entry</a></li>
                           <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
                             <a routerLink="/familySponsership">Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
                             <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
-                              <li><a routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li>
-                              <li><a routerLink="/sponsor-dependent-child"> - Sponsor your Dependent children</a></li>
-                              <li><a routerLink="/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a></li>
-                              <li><a routerLink="/sponsor-relatives"> - Relatives</a></li>
-                              <li><a routerLink="/adopted-child"> - Adopted child</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/sponsor-dependent-child"> - Sponsor your Dependent children</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/sponsor-relatives"> - Relatives</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/adopted-child"> - Adopted child</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
-                          <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a href="#">Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 
+                          <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a>Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 
                             <ul [ngClass]="{'sub-menu1-tgl':nrovincialnominees}" class="sub-menu1">
-                              <li><a routerLink="/coming-soon"> - Alberta (AINP)</a></li>
-                              <li><a routerLink="/coming-soon"> - British Columbia (BC PNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Manitoba (MPNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - New Brunswick (NBPNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Newfoundland and Labrador (NLPNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Nova Scotia (NSNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Ontario (OINP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Prince Edward Island (PEI PNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Saskatchewan (SINP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Northwest Territories (NTNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Yukon (YNP)</a></li>
-                              <li><a routerLink="/coming-soon"> - Quebec</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Alberta (AINP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - British Columbia (BC PNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Manitoba (MPNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - New Brunswick (NBPNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Newfoundland and Labrador (NLPNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Nova Scotia (NSNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Ontario (OINP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Prince Edward Island (PEI PNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Saskatchewan (SINP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Northwest Territories (NTNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Yukon (YNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon"> - Quebec</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
-                          <li><a routerLink="/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li>
-                          <li><a routerLink="/coming-soon">Caregivers</a></li>
-                          <li><a routerLink="/startup-visa-prog">Start Up Visa</a></li>
-                          <li><a routerLink="/self-employed-immigration-prog">Self Employed Immigration</a></li>
-                          <li><a routerLink="/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a></li>
-                          <li><a routerLink="/refugees">Refugees</a></li>
-                          <li><a routerLink="/coming-soon">Appeals</a></li>
-                          <li><a routerLink="/coming-soon">Pet Immigration</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon">Caregivers</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/startup-visa-prog">Start Up Visa</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/self-employed-immigration-prog">Self Employed Immigration</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/refugees">Refugees</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon">Appeals</a></li>
+                          <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon">Pet Immigration</a></li>
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-02" ngbDropdown>
                         <a class="nav-link dropdown-toggle" id="id02" ngbDropdownToggle>Work</a>
-                        <div class="dropdown-menu" aria-labelledby="id02" ngbDropdownMenu>
+                        <div class="dropdown-menu" id="id-021" aria-labelledby="id02" ngbDropdownMenu>
                           <ul class="sub-menu">
-                            <li><a routerLink="/open-work-permit">Open Work Permit</a></li>
-                            <li><a routerLink="/employee-specific-work-permit">Employer Specific Work Permit</a></li>
-                            <li><a routerLink="/laber-market-impact-assestment">Labour Marker Impact Assessments</a></li>
-                            <li><a routerLink="/work-permit-extension">Work Permit Extension</a></li>
-                            <li><a routerLink="/agricultural-workers">Agricultural Workers</a></li>
-                            <li><a routerLink="/coming-soon">Live-in Caregiver Program</a></li>
-                            <li><a routerLink="/international-experiences">International Experience Canada</a></li>
-                            <li><a routerLink="/global-skills-strategy">Global Skills Strategy</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/open-work-permit">Open Work Permit</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/employee-specific-work-permit">Employer Specific Work Permit</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/laber-market-impact-assestment">Labour Marker Impact Assessments</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/work-permit-extension">Work Permit Extension</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/agricultural-workers">Agricultural Workers</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/coming-soon">Live-in Caregiver Program</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/international-experiences">International Experience Canada</a></li>
+                            <li><a (click)="controlmenufn('id-02')" routerLink="/global-skills-strategy">Global Skills Strategy</a></li>
                           </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-03" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id03" ngbDropdownToggle>Study</a>
-                      <div class="dropdown-menu" aria-labelledby="id03" ngbDropdownMenu>
+                      <div class="dropdown-menu" id="id-031" aria-labelledby="id03" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a routerLink="/coming-soon">Study Permit</a></li>
-                          <li><a routerLink="/student-direct-stream">Student Direct Stream(SDS)</a></li>         
-                          <li><a routerLink="/coming-soon">Study Permit Extension</a></li>
-                          <li><a routerLink="/coming-soon">Change of DLI</a></li>  
-                          <li><a routerLink="/oncampus-work">Work on Campus</a></li>
-                          <li><a routerLink="/coming-soon">Work off Campus</a></li>
-                          <li><a routerLink="/coop-work-permit">Co Op Work Permit</a></li>          
-                          <li><a routerLink="/coming-soon">Spousal Work Permit</a></li>
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/coming-soon">Study Permit</a></li>
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/student-direct-stream">Student Direct Stream(SDS)</a></li>         
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/coming-soon">Study Permit Extension</a></li>
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/coming-soon">Change of DLI</a></li>  
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/oncampus-work">Work on Campus</a></li>
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/coming-soon">Work off Campus</a></li>
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/coop-work-permit">Co Op Work Permit</a></li>          
+                          <li><a (click)="controlmenufn('id-03')" routerLink="/coming-soon">Spousal Work Permit</a></li>
                         </ul>
                       </div>
                     </li>  
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-04" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id04" ngbDropdownToggle>Visit</a>
-                      <div class="dropdown-menu" aria-labelledby="id04" ngbDropdownMenu>
+                      <div class="dropdown-menu" id="id-041" aria-labelledby="id04" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a routerLink="/super-visa">Super Visa</a></li>
-                          <li><a routerLink="/coming-soon">Visit Visa</a></li>         
-                          <li><a routerLink="/coming-soon">Business Visa</a></li>
-                          <li><a routerLink="/coming-soon">Transit Visa</a></li>  
-                          <li><a routerLink="/coming-soon">ETA- Electronic Travel Authorisation</a></li>
-                          <li><a routerLink="/coming-soon">Visitor Visa extension</a></li>
+                          <li><a (click)="controlmenufn('id-04')" routerLink="/super-visa">Super Visa</a></li>
+                          <li><a (click)="controlmenufn('id-04')" routerLink="/coming-soon">Visit Visa</a></li>         
+                          <li><a (click)="controlmenufn('id-04')" routerLink="/coming-soon">Business Visa</a></li>
+                          <li><a (click)="controlmenufn('id-04')" routerLink="/coming-soon">Transit Visa</a></li>  
+                          <li><a (click)="controlmenufn('id-04')" routerLink="/coming-soon">ETA- Electronic Travel Authorisation</a></li>
+                          <li><a (click)="controlmenufn('id-04')" routerLink="/coming-soon">Visitor Visa extension</a></li>
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-05" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id05" ngbDropdownToggle>Other</a>
-                      <div class="dropdown-menu" aria-labelledby="id05" ngbDropdownMenu>
+                      <div class="dropdown-menu" id="id-051" aria-labelledby="id05" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a routerLink="/super-visa">GCMS Notes/ ATIP notes</a></li>
-                          <li><a routerLink="/coming-soon">Police Clearance Certificate</a></li>
-                          <li><a routerLink="/coming-soon">Canadian Passport (Application & Renewal</a></li>
-                          <li><a routerLink="/coming-soon">ECA</a></li>
-                          <li><a routerLink="/coming-soon">OCI</a></li>
-                          <li><a routerLink="/coming-soon">Renounce Indian citizenship</a></li>
-                          <li><a routerLink="/coming-soon">US Visa (B1/B2)</a></li>
-                          <li><a routerLink="/coming-soon">GIC</a></li>
-                          <li><a routerLink="/coming-soon">Notary Service</a></li>
-                          <li><a routerLink="/coming-soon">Translation Service</a> </li>
-                          <li><a routerLink="/coming-soon">Transcript Service</a></li>
-                          <li><a routerLink="/coming-soon">Exam Slot Booking</a></li>
-                          <li><a routerLink="/coming-soon">Banking Services</a></li>
-                          <li><a routerLink="/coming-soon">International Sim Card</a></li>
-                          <li><a routerLink="/coming-soon">Foreign Exchange</a></li>
-                          <li><a routerLink="/coming-soon">Insurance</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/super-visa">GCMS Notes/ ATIP notes</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Police Clearance Certificate</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Canadian Passport (Application & Renewal</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">ECA</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">OCI</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Renounce Indian citizenship</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">US Visa (B1/B2)</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">GIC</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Notary Service</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Translation Service</a> </li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Transcript Service</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Exam Slot Booking</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Banking Services</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">International Sim Card</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Foreign Exchange</a></li>
+                          <li><a (click)="controlmenufn('id-05')" routerLink="/coming-soon">Insurance</a></li>
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-06" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id06" ngbDropdownToggle>Citizenship</a>
-                      <div class="dropdown-menu" aria-labelledby="id06" ngbDropdownMenu>
+                      <div class="dropdown-menu" id="id-061" aria-labelledby="id06" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a routerLink="/coming-soon">Canadian Citizenship</a></li>
-                          <li><a routerLink="/coming-soon">Proof of citizenship</a></li>         
-                          <li><a routerLink="/coming-soon">Give up citizenship</a></li>
-                          <li><a routerLink="/coming-soon">Resume citizenship</a></li>  
-                          <li><a routerLink="/coming-soon">Citizenship test </a></li>
+                          <li><a (click)="controlmenufn('id-06')" routerLink="/coming-soon">Canadian Citizenship</a></li>
+                          <li><a (click)="controlmenufn('id-06')" routerLink="/coming-soon">Proof of citizenship</a></li>         
+                          <li><a (click)="controlmenufn('id-06')" routerLink="/coming-soon">Give up citizenship</a></li>
+                          <li><a (click)="controlmenufn('id-06')" routerLink="/coming-soon">Resume citizenship</a></li>  
+                          <li><a (click)="controlmenufn('id-06')" routerLink="/coming-soon">Citizenship test </a></li>
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-07" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id07" ngbDropdownToggle>Calculator</a>
-                      <div class="dropdown-menu" aria-labelledby="id07" ngbDropdownMenu>
+                      <div class="dropdown-menu" id="id-071" aria-labelledby="id07" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a routerLink="/coming-soon">Express Entry-CRS</a></li>
-                          <li><a routerLink="/coming-soon">BCPNP-SIRS</a></li>         
-                          <li><a routerLink="/coming-soon">BCPNP-Business Immigration</a></li>
-                          <li><a routerLink="/coming-soon">Canada Skilled Worker</a></li>  
-                          <li><a routerLink="/coming-soon">Quebec Skilled Worker</a></li>
-                          <li><a routerLink="/coming-soon">Nova Scotia point calculator</a></li>
-                          <li><a routerLink="/coming-soon">Saskatchewan Points </a></li>
-                          <li><a routerLink="/coming-soon">Language Converter</a></li>
-                          <li><a routerLink="/coming-soon">Canada Wage Calculator</a></li>
-                          <li><a routerLink="/coming-soon">Canadian Citizenship Calculator</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Express Entry-CRS</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">BCPNP-SIRS</a></li>         
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">BCPNP-Business Immigration</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Canada Skilled Worker</a></li>  
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Quebec Skilled Worker</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Nova Scotia point calculator</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Saskatchewan Points </a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Language Converter</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Canada Wage Calculator</a></li>
+                          <li><a (click)="controlmenufn('id-07')" routerLink="/coming-soon">Canadian Citizenship Calculator</a></li>
                         </ul>
                       </div>
                     </li>
                     <li><a class="nav-link"  routerLink="/coming-soon">News</a></li>
-                    <li><a class="nav-link"  routerLink="/coming-soon">Contact Us</a></li>
+                    <li><a class="nav-link"  routerLink="/contact-us">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
