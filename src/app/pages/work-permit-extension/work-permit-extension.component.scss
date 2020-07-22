@@ -4,15 +4,7 @@ form {
        padding:10px;
       }
   }
-  //custom select
-  .main-f-s {  
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/content/titlebar-bg.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    height:300px;
-} 
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.15)), url(/assets/cmg-soon.jpg);
+  height:350px;
+}

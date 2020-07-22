@@ -1,4 +1,19 @@
 .main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.15)), url(/assets/content/about.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.15)), url(/assets/contact.jpg);
     height:300px;
+}
+.icon{
+ font-size:38px;
+}
+.spacing{
+  padding:10px;
+}
+.heading{
+  font-size: 20px;
+  font-weight: bold;
+  color: #595656;
+}
+label{
+  font-weight: bold;
+  color: #204061;
 }
