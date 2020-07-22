@@ -9,6 +9,7 @@ export class VisaComponent implements OnInit {
   @Input() imagename:string;
   @Input() visatitle:string;
   @Input() visasummary:string;
+  @Input() link:string;
   constructor() { }
 
   ngOnInit(): void {
