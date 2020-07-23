@@ -50,6 +50,14 @@ import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fr
 import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BusinessIdeasComponent } from './pages/business-ideas/business-ideas.component';
+import { OurServicesComponent } from './pages/our-services/our-services.component';
+import { ServicePlansComponent } from './pages/service-plans/service-plans.component';
+import { QuebecComponent } from './pages/quebec/quebec.component';
+import { B1afswComponent } from './pages/b1afsw/b1afsw.component';
+import { B1bcecComponent } from './pages/b1bcec/b1bcec.component';
+import { B1cfstComponent } from './pages/b1cfst/b1cfst.component';
+import { B2pnpComponent } from './pages/b2pnp/b2pnp.component';
+import { CareGiverComponent } from './pages/care-giver/care-giver.component';
 
 
 @NgModule({
@@ -100,7 +108,15 @@ import { BusinessIdeasComponent } from './pages/business-ideas/business-ideas.co
     AntiFraudPolicyComponent,
     CommingSoonComponent,
     ContactUsComponent,
-    BusinessIdeasComponent
+    BusinessIdeasComponent,
+    OurServicesComponent,
+    ServicePlansComponent,
+    QuebecComponent,
+    B1afswComponent,
+    B1bcecComponent,
+    B1cfstComponent,
+    B2pnpComponent,
+    CareGiverComponent
   ],
   imports: [
     BrowserModule,

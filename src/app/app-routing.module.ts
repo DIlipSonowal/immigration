@@ -39,7 +39,13 @@ import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fr
 import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { BusinessIdeasComponent } from './pages/business-ideas/business-ideas.component';
-
+import { OurServicesComponent } from './pages/our-services/our-services.component';
+import { QuebecComponent } from './pages/quebec/quebec.component';
+import { B1afswComponent } from './pages/b1afsw/b1afsw.component';
+import { B1bcecComponent } from './pages/b1bcec/b1bcec.component';
+import { B1cfstComponent } from './pages/b1cfst/b1cfst.component';
+import { B2pnpComponent } from './pages/b2pnp/b2pnp.component';
+import { CareGiverComponent } from './pages/care-giver/care-giver.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent, children:[
@@ -78,6 +84,13 @@ const routes: Routes = [
     {path: 'coming-soon', component:CommingSoonComponent },
     {path: 'contact-us', component:ContactUsComponent },
     {path: 'business-ideas', component:BusinessIdeasComponent },
+    {path: 'our-services', component:OurServicesComponent },
+    {path: 'quebec', component:QuebecComponent },
+    {path: 'b1afsw', component:B1afswComponent },
+    {path: 'b1bcec', component:B1bcecComponent },
+    {path: 'b1cfst', component:B1cfstComponent },
+    {path: 'b2pnp', component:B2pnpComponent },
+    {path: 'care-giver', component:CareGiverComponent },
   ]}, 
   {path :'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
   {path: 'chatbot', component: ChatbotComponent },
