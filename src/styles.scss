@@ -672,3 +672,45 @@ header{
 hr.divider{
   height: 0;
 }
+
+.font12{
+  font-size: 12px !important;
+  letter-spacing: 0 !important;
+}
+.carousel-small{
+  color:rgb(247, 23, 53)
+}
+
+.medium-header{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.display-only-table{
+  display: table;
+  .display-only-column{
+    display: table-cell;
+    vertical-align: middle !important;
+  }
+}
+.font12{
+  font-size: 12px;
+}
+.font16{
+  font-size: 16px;
+}
+
+.font25{
+  font-size: 25px;
+}
+
+.light-blue{
+  color: #0e1032;;
+}
+
+.ligh-gray{
+  color:#687076
+}
+.ligh-white{
+  color: #ffffff;
+}
