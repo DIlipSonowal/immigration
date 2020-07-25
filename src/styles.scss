@@ -9,13 +9,17 @@
 body, html{
   scroll-behavior: smooth;
   height:100%;
+
+
 }
 
 body {
     font-family: "Poppins",Arial,Helvetica,sans-serif;
-    color: #22262b;
+    color: #615a5a;
     overflow-x: hidden;
-    font-weight: 300;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
 }
 
 $colors:(
@@ -364,12 +368,12 @@ section.bg{
   padding:15px;
 }
 section{
-  padding:20px;
+  padding:25px;
 }
 .tm-custom-heading-blue {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 38px;
+  font-size: 32px;
   line-height: 44px;
   color: #24265f;
 }
@@ -549,18 +553,26 @@ header{
 };
 // buttonAnimated
 .buttonAnimated {
-  border-radius: 4px;
-  background-color: #204061;
+ /* background-color: #204061;
   border: none;
   color: #FFFFFF;
   margin: 10px 0;
   text-align: center;
   font-size: 14px;
   padding: 10px;
-  width: 100%;
   transition: all 0.5s;
-  cursor: pointer;
+  cursor: pointer;*/
+  display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    color: #333030 !important;
+    margin: 0 5px 10px;
+    text-align: center;
+    font-size: 14px;
+    padding: 4px 10px;
+    transition: all 0.5s;
 }
+
 
 .buttonAnimated span {
   cursor: pointer;
@@ -578,11 +590,15 @@ header{
   right: -20px;
   transition: 0.5s;
 }
-
+.buttonAnimated:hover{
+  background: #f71735;
+  color: #fff;
+  border: none;
+}
 .buttonAnimated:hover span {
   padding-right: 25px;
+  color: #fff;
 }
-
 .buttonAnimated:hover span:after {
   opacity: 1;
   right: 0;
@@ -640,7 +656,6 @@ header{
        span{
            display: inline-block;
            font-weight: 400;
-           color: #705b57;
            font-size: 14px;
            text-align: left;
            font-weight: 600;
@@ -722,7 +737,7 @@ hr.divider{
   color: #22262b;
   &:hover{
     color: rgb(247, 23, 53);
-    
+
   }
 }
 
@@ -733,4 +748,21 @@ hr.divider{
     padding-left: 15px;
   }
 }
-
+.content-wrapper{
+  p{
+   font-family: "Poppins",Arial,Helvetica,sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 26px;
+  }
+}
+.allPages-heading{
+ color: #0e1032;
+ font-weight: 600;
+ font-size: 25px;
+ line-height: 30px;
+ margin-bottom: 15px;
+}
+.entry-content{
+  padding-left: 10px;
+}
