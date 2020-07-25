@@ -74,6 +74,7 @@ li>a{
     line-height: 40px;
     &:hover{
         transition: all 0.5s;
+        color:#f71735;
     }
 }
 ul.sub-menu> li{
@@ -83,6 +84,7 @@ ul.sub-menu> li{
       transition: all 0.5s;
       &::before{
           content: '\276F';
+          color:#f71735;
       }
     }
     a{
