@@ -1,5 +1,5 @@
 
-            <nav class="navbar navbar-expand-md navbar-dark hdr-bgcolor">
+            <nav (window:scroll)="onWindowScroll($event)" #navbarNative class="navbar navbar-expand-md hdr-bgcolor">
               <div class="container">
                 <a class="navbar-brand" routerLink="/"></a>
                 <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,8 +9,8 @@
                   <ul class="navbar-nav mr-auto">
                     <li><a class="nav-link" routerLink="/">Home</a></li>
                     <li><a class="nav-link" routerLink="/about">About Us</a></li>
-                    <li class="nav-item dropdown" id="id-01" ngbDropdown>
-                      <a class="nav-link dropdown-toggle" id="id01" ngbDropdownToggle>Immigrate</a>
+                    <li class="nav-item dropdown" id="id-01" (mouseover)="displaymenufn('id-01')" (mouseout)="controlmenufn('id-01')" ngbDropdown>
+                      <a class="nav-link dropdown-toggle" id="id01"   ngbDropdownToggle>Immigrate</a>
                       <div class="dropdown-menu" id="id-011" aria-labelledby="id01" ngbDropdownMenu>
                         <ul class="sub-menu">
                           <li><a (click)="controlmenufn('id-01')" routerLink="/coming-soon">Express Entry</a></li>
@@ -51,7 +51,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-02" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-02" (mouseover)="displaymenufn('id-02')" (mouseout)="controlmenufn('id-02')" ngbDropdown>
                         <a class="nav-link dropdown-toggle" id="id02" ngbDropdownToggle>Work</a>
                         <div class="dropdown-menu" id="id-021" aria-labelledby="id02" ngbDropdownMenu>
                           <ul class="sub-menu">
@@ -66,7 +66,7 @@
                           </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-03" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-03" (mouseover)="displaymenufn('id-03')" (mouseout)="controlmenufn('id-03')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id03" ngbDropdownToggle>Study</a>
                       <div class="dropdown-menu" id="id-031" aria-labelledby="id03" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -81,7 +81,7 @@
                         </ul>
                       </div>
                     </li>  
-                    <li class="nav-item dropdown" id="id-04" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-04" (mouseover)="displaymenufn('id-04')" (mouseout)="controlmenufn('id-04')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id04" ngbDropdownToggle>Visit</a>
                       <div class="dropdown-menu" id="id-041" aria-labelledby="id04" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -94,7 +94,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-05" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-05" (mouseover)="displaymenufn('id-05')" (mouseout)="controlmenufn('id-05')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id05" ngbDropdownToggle>Other</a>
                       <div class="dropdown-menu" id="id-051" aria-labelledby="id05" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -117,7 +117,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-06" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-06" (mouseover)="displaymenufn('id-06')" (mouseout)="controlmenufn('id-06')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id06" ngbDropdownToggle>Citizenship</a>
                       <div class="dropdown-menu" id="id-061" aria-labelledby="id06" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -129,7 +129,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-07" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-07" (mouseover)="displaymenufn('id-07')" (mouseout)="controlmenufn('id-07')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id07" ngbDropdownToggle>Calculator</a>
                       <div class="dropdown-menu" id="id-071" aria-labelledby="id07" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -146,7 +146,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-08" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-08" (mouseover)="displaymenufn('id-08')" (mouseout)="controlmenufn('id-08')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id08" ngbDropdownToggle>Provincial</a>
                       <div class="dropdown-menu" id="id-081" aria-labelledby="id08" ngbDropdownMenu>
                         <ul class="sub-menu">

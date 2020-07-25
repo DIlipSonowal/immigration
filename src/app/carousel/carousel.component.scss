@@ -8,7 +8,6 @@
       width: 100%;
       margin-top: -9px;
       z-index:-1;
-      width:100%;
       background-repeat: no-repeat;
       background-size:100% 100vh;
       background-position: 50% 0;
@@ -33,11 +32,7 @@
     line-height: 60px;
   }
 }
-.carousel-content{
-  background: #3d3d4417;
-  padding: 20px 5px;  
-  text-align: left;
-}
+
 .carousel-textcolor{
   color: #ebf3eb;
 }
@@ -49,10 +44,22 @@
 .carousel-btn-background{
   background-color:rgb(247, 23, 53);
   color: #ffffff;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 .carousel-btn-background3{
   background-color: #312d3c;
   color: #ebf3eb;
   margin-left: 8px;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.carousel-caption-table-cell{
+  width: 50%;
+  vertical-align: middle;
+  text-align: left !important;
 }
 

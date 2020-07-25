@@ -1,17 +1,21 @@
-<div class="container mid-pad">
+<div class="container">
     <div class="row">
-        <div class="col-md-7 col-lg-7 text-left">
-            <a routerLink="/"><img src="./assets/v9-logo.png" style="height: 46px;width:35%"/></a>
+        <div class="col-md-6 col-lg-6 text-left pt-2 pb-2">
+            <a routerLink="/"><img src="./assets/v9-logo.png" style="height: auto;width:250px"/></a>
         </div>
-        <div class="col-md-3 col-lg-3">
-            <span class="middle-logo"><i class="fa fa-phone middle-phone" aria-hidden="true"></i></span>
-            <span class="mid-hed">Business Phone</span><br/>
-            {{phone}}
-        </div>
-        <div class="col-md-2 col-lg-2">
-            <span class="middle-logo"><i class="fa fa-envelope-open-o middle-phone" aria-hidden="true"></i></span>
-            <span class="mid-hed">Mail Us</span><br/>
-            {{email}}
+        <div class="col-md-6 col-lg-6 pt-2 pb-2">
+            <div style="float: right;" class="display-only-table">
+                <div style="padding-right: 30px;" class="display-only-column">
+                    <span class="middle-logo"><i class="fa fa-phone middle-phone" aria-hidden="true"></i></span>
+                    <span class="mid-hed">Business Phone</span><br/>
+                    {{phone}}
+                </div>
+                <div class="display-only-column">
+                    <span class="middle-logo"><i class="fa fa-envelope-open-o middle-phone" aria-hidden="true"></i></span>
+                    <span class="mid-hed">Email Us</span><br/>
+                    <a class="mail-to" href="mailto:{{email}}">{{email}}</a>
+                </div>
+            </div>    
         </div>
     </div>
 </div>

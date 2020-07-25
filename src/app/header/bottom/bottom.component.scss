@@ -12,17 +12,25 @@ $borders: 15px;
     @return map-get($colors, $color-name)
 };
 .hdr-bgcolor{
-    background-color: color(primary);
+    background-color: #f9f9f9;
+    z-index: 999;
 }
 .blh{
     line-height: 40px;
 }
 .nav-link{
-    color: #ffffff !important;
-    padding-right: 1.5rem !important;
+    color:  color(primary) !important;
+    padding-right: 18px !important;
     padding-left: 0 !important;
     font-size: 12px;
+    font-weight: 800 !important;
     text-transform: uppercase;
+}
+ul li a:hover {
+    color: #f71735 !important;
+}
+.nav-item.dropdown:hover a.nav-link{
+    color: #f71735 !important;
 }
 .sub-menu{
     list-style: none;
@@ -37,7 +45,10 @@ li>a{
     margin-left: -10px;
     margin-top: -40px;
 }
-
+.sub-menu1 li{
+    border-bottom: 1px solid #31161612;
+    transition: all 0.5s;
+}
 .sub-menu1-tgl{
     display: none;
 }
@@ -45,48 +56,53 @@ li>a{
     margin-right: 10px;
     float:right;
     cursor: pointer;
-    color:color(accent);
+    color:#f71735;
 }
 
 .dropdown-menu {
     min-width: 20rem !important;
-    background: color(primary);
+    background: color(accent);
     top:113%;
+    padding-left:10px;
+    margin-top: -5px;
 }
 
 .navbar-brand {
     margin-right: 0 !important;
 }
- .sub-menu > li{
+.sub-menu > li{
     line-height: 40px;
-
+    &:hover{
+        transition: all 0.5s;
+    }
 }
 ul.sub-menu> li{
     position :relative;
-    a{
-        text-decoration: none;
-        color:color(accent);
-        font-family: "Poppins",Arial,Helvetica,sans-serif;
-        font-weight: 400;
-        font-size: 14px;
-        letter-spacing: 1px;
-        line-height: 16px;
-        margin: 0;
-       padding: 15px 10px 15px 10px;
-       position: relative;
-    }&:hover{
-      background-color:color(primary);
-      color: color(accent);
+    border-bottom: 1px solid #31161612;
+    &:hover{
+      transition: all 0.5s;
       &::before{
           content: '\276F';
       }
+    }
+    a{
+        text-decoration: none;
+        color:color(primary);
+        font-family: "Poppins",Arial,Helvetica,sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0;
+        line-height: 16px;
+        margin: 0;
+        padding: 15px 10px 15px 10px;
+        position: relative;
     }
 }
 li>ul{
     margin-left:100%;
     position: absolute;
     padding:10px;
-    background: color(primary);
+    background: color(accent);
     width:100%;
     a{
         padding-left: 20px;
@@ -101,6 +117,9 @@ li>ul{
 li>ul li:hover{
    padding-left: 3px;
 }
+
+
+
 .clearfix{
     clear:both;
 }
@@ -115,3 +134,8 @@ li>ul li:hover{
     }
 }
 
+.stiky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
