@@ -1,45 +1,49 @@
 <ngb-carousel *ngIf="images" >
     <ng-template ngbSlide>
       <div class="main">
-          <img class="img picsum-img-wrapper1" src="./assets/home-main-slider2.jpg" alt="Random first slide">
+          <img class="img picsum-img-wrapper1" src="./assets/home-main-slider2.jpg" alt="WE SHOW YOU">
       </div>
       <div class="carousel-caption">
-        <div class="carousel-content">
+        <table style="height: 100%;"><tr><td class="carousel-caption-table-cell">
           <p class="carousel-small text-left">WE SHOW YOU</p>
           <h3 class="carousel-textcolor text-left">Fastest Way to  <br/>Achieve Your Goal</h3>
           <p class="carousel-textcolor">Comprehensive immigration advice and post arrival services<br/>
             that are tailored to meet your individual needs.
           </p>
           <a routerLink="/our-services"><button class="btn carousel-btn-background">Our Services</button></a>
-        </div>
+        </td><td class="carousel-caption-table-cell"></td></tr>
+      </table>   
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="main">
-        <img class="img picsum-img-wrapper1" src="./assets/home-main-slider3.jpg" alt="Random second slide">
+        <img class="img picsum-img-wrapper1" src="./assets/home-main-slider3.jpg" alt="BUSINESS IMMIGRATION">
       </div>
       <div class="carousel-caption">
-        <div class="carousel-content">
-          <p class="carousel-small text-left">BUSINESS IMMIGRATION</p>
-          <h3 class="carousel-textcolor text-left">Manage and Grow <br/>Your Business with us</h3>
-          <a routerLink="/our-services"><button class="btn carousel-btn-background">Our Services</button></a>
-        </div>
+        <table style="height: 100%;"><tr><td class="carousel-caption-table-cell">
+          <div class="carousel-content">
+            <p class="carousel-small text-left">BUSINESS IMMIGRATION</p>
+            <h3 class="carousel-textcolor text-left">Manage and Grow <br/>Your Business with us</h3>
+            <a routerLink="/our-services"><button class="btn carousel-btn-background">Our Services</button></a>
+          </div>
+        </td><td class="carousel-caption-table-cell"></td></tr>
+        </table>   
       </div>
     </ng-template>
     <ng-template ngbSlide>
       <div class="main">
-        <img class="img picsum-img-wrapper1" src="./assets/home-main-slider4.jpg"  alt="Random third slide">
+        <img class="img picsum-img-wrapper1" src="./assets/home-main-slider4.jpg"  alt="Best immigration advice">
       </div>
       <div class="carousel-caption">
-
-            <p class="carousel-small text-right">GREAT EXPERIENCE</p>
-            <h3 class="carousel-textcolor3 text-right">We Provide The Best <br/>Immigration Advice</h3>
-            <p class="carousel-textcolor3 text-right">We have professional consultants who provide Quality<br/>
+        <table style="height: 100%;"><tr><td class="carousel-caption-table-cell"></td><td class="carousel-caption-table-cell">
+            <p class="carousel-small">GREAT EXPERIENCE</p>
+            <h3 class="carousel-textcolor3">We Provide The Best <br/>Immigration Advice</h3>
+            <p class="carousel-textcolor3">We have professional consultants who provide Quality<br/>
               services that’s free of stress and confusion in time. 
             </p>
-            <p class="text-right"><a routerLink="/our-services"><button class="btn carousel-btn-background">Our Services</button></a>&nbsp;
+            <p><a routerLink="/our-services"><button class="btn carousel-btn-background">Our Services</button></a>&nbsp;
               <a routerLink="/contact-us"><button class="btn carousel-btn-background3">Contact Us</button></a>
-            </p>
+            </p></td></tr></table>
       </div>
     </ng-template>
     <!-- <ng-template ngbSlide>

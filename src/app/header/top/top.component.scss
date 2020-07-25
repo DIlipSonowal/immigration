@@ -1,7 +1,8 @@
 .btm-dash-border{
-    border-bottom: 1px dashed  #e2e6ea;
-    padding: 8px 0;
-    font-size: 14px;
+    padding: 4px 0;
+    font-size: 12px;
+    background-color: #0b0c26;
+    color: rgba(255,255,255,.95);
 }
 
 
@@ -11,4 +12,23 @@
   border-color: #f12a02;
   padding: 8px 13px;
   margin-left: 16px;
+}
+
+.spinner-grow {
+  width: 1.5rem !important;
+  height: 1.5rem !important;;
+  margin-right:15px !important;
+}
+
+.top-s-i{
+  display: inline-block;
+  margin-left: 10px;
+}
+.top-icon-color{
+  color: rgba(255,255,255,.95) !important;
+}
+
+.top-icon-color:hover{
+  color: #f12a02 !important;
+  transform: scale(1.5) !important;
 }
