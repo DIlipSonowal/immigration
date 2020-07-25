@@ -1,3 +1,7 @@
+.main1{
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.15)) url("/assets/content/cmg-soon.jpg");
+  height:530px; 
+}
 .text {
   color: #fff;
   margin: 0 auto;
@@ -16,11 +20,7 @@ h1 {
   line-height: 1;
   font-weight: 700;
 }
-.main-f-s {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/cmg-soon.jpg');
-  height:530px;
-  position: relative;
-}
+
 @keyframes fadeIn {
   from {top: 20%; opacity: 0;}
   to {top: 100; opacity: 1;}
@@ -90,4 +90,25 @@ ul{
   margin-right:10px;
   width: 110px;
   color:#fff
+}
+  
+@media screen and (max-width: 768px){
+  .wrapper {
+    text-align: center;
+    position: relative;
+    animation: fadeIn 1000ms ease;
+    -webkit-animation: fadeIn 1000ms ease;
+  }
+
+  .para{
+      padding: 10px;
+      margin-right: 10px;
+      font-size: 30px;
+      border: 2px solid #fff;
+      color: #fff;
+  }
+
+  .para1{
+    width:60px !important;
+  }
 }
