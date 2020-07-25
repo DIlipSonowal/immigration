@@ -305,3 +305,110 @@ $stars-big: stars(100);
  font-size: 20px;
  margin-right:20px;
 }
+//slider
+.slideshow-container {
+  position: relative;
+ // background: #f1f1f1f1;
+ img{
+   border-radius: 50%;
+    margin: auto;
+    float: none;
+    display: block;
+    width:100px;
+    height:100px;
+    border: 2px solid #fff;
+ }
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 49px;
+  text-align: center;
+  div.quotes{
+    font-size:18px;
+    text-align: center;
+    padding: 0 25px;
+    color: #fff;
+    margin: 12px 10px 33px;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+.stars{
+  padding-top:20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  background: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #ffffff;
+}
+.checked {
+  color: #fff;
+}
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.authorCls:first-child {
+ color: #fff;font-weight:400;
+ font-size:17px;
+}
+.authorCls{
+  color: #fff;font-weight:400;
+  font-size:17px;
+ }
+ .title{
+  color: #fff;
+  font-size:14px;
+ }
+.fa-start{
+  font-size: 20px;
+}
