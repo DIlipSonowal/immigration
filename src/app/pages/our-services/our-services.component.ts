@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../../service/common.service';
 
 @Component({
   selector: 'app-our-services',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurServicesComponent implements OnInit {
   basicOptions = ["1 person", "24 / 7 Support *", "Advance Options *"];
-  constructor() { }
-
+  constructor(private cs:CommonService) {}
   ngOnInit(): void {
+    this.cs.contentReady.next(false);
+    setTimeout(()=>{
+      this.cs.contentReady.next(true);
+    }, 500);
   }
-  
 }

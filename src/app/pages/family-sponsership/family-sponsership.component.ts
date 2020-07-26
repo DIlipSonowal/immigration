@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../../service/common.service';
 
 @Component({
   selector: 'app-family-sponsership',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FamilySponsershipComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cs:CommonService) {}
 
   ngOnInit(): void {
+    this.cs.contentReady.next(false);
+    setTimeout(()=>{
+      this.cs.contentReady.next(true);
+    }, 500);
+
     var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
