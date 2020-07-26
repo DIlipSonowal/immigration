@@ -20,9 +20,22 @@ export class BottomComponent implements OnInit {
     document.getElementById(id).classList.add('show');
     document.getElementById(id+1).classList.add('show');
   }
-  controlmenufn(id){
-     document.getElementById(id).classList.remove('show');
-     document.getElementById(id+1).classList.remove('show');
+  controlmenufn(id, type = 'click'){
+     const tmpid = id.toLowerCase().replace(/[^a-z0-9]+/g, '');
+     console.log(tmpid);
+     const idArr = ["id01","id02", "id03", "id04", "id05", "id06", "id07", "id08", "id09", "id10", "id11", "id12"];
+     if(tmpid !=="id09" && tmpid !=="id10" && tmpid !=="id11" && tmpid !=="id12"){
+        document.getElementById(id).classList.remove('show');
+        document.getElementById(id+1).classList.remove('show');
+     }
+     if(type === 'click'){
+      document.getElementById(tmpid).classList.add('active-link');
+      idArr.forEach( (tid) => {
+        if(tid !== tmpid){
+          document.getElementById(tid).classList.remove('active-link');
+        }
+      });
+     }
   }
   @HostListener('scroll', ['$event'])
   onWindowScroll($event) {
