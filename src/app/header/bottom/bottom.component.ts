@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef  } from '@angular/core';
-
+import { CommonService } from '../../service/common.service';
 @Component({
   selector: 'app-bottom',
   templateUrl: './bottom.component.html',
@@ -12,9 +12,11 @@ export class BottomComponent implements OnInit {
   nrovincialnominees=true;
   immigrateMenu=false;
   @ViewChild('navbarNative', {static:false}) navbarNative: ElementRef;
-  constructor() { }
+  constructor(private cs:CommonService) { }
 
   ngOnInit(): void {
+    this.cs.contentReady.next(false);
+    setTimeout(()=> {this.cs.contentReady.next(true);  }, 1000);   
   }
   displaymenufn(id){
     document.getElementById(id).classList.add('show');
@@ -22,7 +24,7 @@ export class BottomComponent implements OnInit {
   }
   controlmenufn(id, type = 'click'){
      const tmpid = id.toLowerCase().replace(/[^a-z0-9]+/g, '');
-     console.log(tmpid);
+     // console.log(tmpid);
      const idArr = ["id01","id02", "id03", "id04", "id05", "id06", "id07", "id08", "id09", "id10", "id11", "id12"];
      if(tmpid !=="id09" && tmpid !=="id10" && tmpid !=="id11" && tmpid !=="id12"){
         document.getElementById(id).classList.remove('show');

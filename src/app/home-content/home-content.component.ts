@@ -17,7 +17,7 @@ export class HomeContentComponent implements OnInit, AfterViewInit {
 ngAfterViewInit() {
   this.slides = document.getElementsByClassName('mySlides');
   this.dots = document.getElementsByClassName('dot');
-  console.log('slides', this.slides);
+  // console.log('slides', this.slides);
   this.showSlides(this.slideIndex);
 }
   showSlides(n) {
