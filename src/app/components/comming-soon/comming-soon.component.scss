@@ -1,6 +1,6 @@
 .main1{
   //background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.15)) url("/assets/content/cmg-soon.jpg");
-  height:530px; 
+  height:530px;
 }
 .text {
   color: #fff;
@@ -19,6 +19,7 @@ h1 {
   margin-bottom: 0;
   line-height: 1;
   font-weight: 700;
+  padding: 29px;
 }
 
 @keyframes fadeIn {
@@ -91,7 +92,7 @@ ul{
   width: 110px;
   color:#fff
 }
-  
+
 @media screen and (max-width: 768px){
   .wrapper {
     text-align: center;
