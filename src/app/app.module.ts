@@ -59,6 +59,7 @@ import { B1bcecComponent } from './pages/b1bcec/b1bcec.component';
 import { B1cfstComponent } from './pages/b1cfst/b1cfst.component';
 import { B2pnpComponent } from './pages/b2pnp/b2pnp.component';
 import { CareGiverComponent } from './pages/care-giver/care-giver.component';
+import { NewsComponent } from './components/news/news.component';
 
 
 @NgModule({
@@ -117,7 +118,8 @@ import { CareGiverComponent } from './pages/care-giver/care-giver.component';
     B1bcecComponent,
     B1cfstComponent,
     B2pnpComponent,
-    CareGiverComponent
+    CareGiverComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

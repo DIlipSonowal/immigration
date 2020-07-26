@@ -22,9 +22,15 @@ body {
     line-height: 25px;
 }
 
+@media screen and (max-width: 768px){
+  .mobile-hide{
+    display: none !important;
+  }
+}
+
 $colors:(
 
-    primary:#f71735,
+    primary:#204061,
     secondary:#0b0c26,
      accent:#fff,
 
@@ -70,7 +76,7 @@ $colors:(
 
     &-red{
 
-        color: #f71735;
+        color: #f12a02;
 
         font-family: "Poppins",Arial,Helvetica,sans-serif;
 
@@ -354,7 +360,7 @@ input[type=text], input[type=password] {
   color: #687076;
  }
  .visa-hr{
-  border-top: 2px solid #f71735;
+  border-top: 2px solid #f12a02;
   width: 20px;
   margin-bottom: 7px;
   margin-top: 0px;
@@ -362,6 +368,7 @@ input[type=text], input[type=password] {
  }
  .carousel-indicators{
   bottom:60px !important;
+  display: none !important;
 }
 section.bg{
   background: #0b0c26;
@@ -482,8 +489,7 @@ header{
 .content {
   position: absolute;
   bottom: 0;
-  top:50%;
-  // background: #46415f38;
+  background: #46415f38;
   // background: #361eb838;
   color: #fff;
   width: 100%;
@@ -519,7 +525,7 @@ header{
   background-color: #212239;
   border-radius: 50%;
   &:hover{
-    background-color: #f71735;
+    background-color: #f12a02;
   }
   &::before{
     content: '' !important;
@@ -676,7 +682,7 @@ header{
 }
 
 .btn-small:hover {
-  background-color: #f71735;
+  background-color: #f12a02;
   color: white;
 }
 
@@ -684,7 +690,7 @@ header{
   display: inline-block;
   width: 40px;
   line-height: 6px;
-  border-bottom: 5px solid #f71735;
+  border-bottom: 5px solid #ff532e;
 }
 
 hr.divider{
@@ -767,37 +773,15 @@ hr.divider{
 .entry-content{
   padding-left: 10px;
 }
-.breadcrums{
-  .home{
-    font-size:14px;
-    font-weight:400;
-    line-height: 20px;
-    &:hover{
-      color: #f71735 !important;
-    }
-    a{
-      text-decoration: none;
-      color: #fff;
-     }
-
-  }
-  .breadCrums-icon{
-    font-size: 16px;
-    &:hover{
-      color: #f71735 !important;
-    }
-  }
-  .pages{
-    color: #f71735 !important;
-    font-size:14px;
-    font-weight:600;
-    line-height: 20px;
-  }
+.navbar-toggler-icon {
+  display: block;
+  width: 1em;
+  margin: 4px 0 !important;
+  height: 2px !important;
+  background: #000 !important;
 }
-.heading-allPages{
-    color: #fff;
-    font-weight: 600;
-    text-transform: capitalize;
-    font-size: 43px;
-    line-height: 50px;
+
+
+.active-link{
+  color: rgb(247, 23, 53) !important;
 }

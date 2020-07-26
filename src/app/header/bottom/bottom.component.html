@@ -9,9 +9,9 @@
                 </button>
                 <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
                   <ul class="navbar-nav mr-auto">
-                    <li><a class="nav-link" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/">Home</a></li>
-                    <li><a class="nav-link" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/about">About Us</a></li>
-                    <li class="nav-item dropdown" id="id-01" (mouseover)="displaymenufn('id-01')" (mouseout)="controlmenufn('id-01')" ngbDropdown>
+                    <li><a class="nav-link" id="id11" (click)="controlmenufn('id-11'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
+                    <li><a class="nav-link" id="id12" (click)="controlmenufn('id-12'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/about" routerLinkActive="active-link">About Us</a></li>
+                    <li class="nav-item dropdown" id="id-01" (mouseover)="displaymenufn('id-01')" (mouseout)="controlmenufn('id-01', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id01"   ngbDropdownToggle>Immigrate</a>
                       <div class="dropdown-menu" id="id-011" aria-labelledby="id01" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -19,7 +19,7 @@
                           <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
                             <a routerLink="/familySponsership">Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
                             <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li>
                               <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-dependent-child"> - Sponsor your Dependent children</a></li>
                               <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a></li>
                               <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-relatives"> - Relatives</a></li>
@@ -53,7 +53,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-02" (mouseover)="displaymenufn('id-02')" (mouseout)="controlmenufn('id-02')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-02" (mouseover)="displaymenufn('id-02')" (mouseout)="controlmenufn('id-02', 'out')" ngbDropdown>
                         <a class="nav-link dropdown-toggle" id="id02" ngbDropdownToggle>Work</a>
                         <div class="dropdown-menu" id="id-021" aria-labelledby="id02" ngbDropdownMenu>
                           <ul class="sub-menu">
@@ -68,7 +68,7 @@
                           </ul>
                         </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-03" (mouseover)="displaymenufn('id-03')" (mouseout)="controlmenufn('id-03')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-03" (mouseover)="displaymenufn('id-03')" (mouseout)="controlmenufn('id-03', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id03" ngbDropdownToggle>Study</a>
                       <div class="dropdown-menu" id="id-031" aria-labelledby="id03" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -83,7 +83,7 @@
                         </ul>
                       </div>
                     </li>  
-                    <li class="nav-item dropdown" id="id-04" (mouseover)="displaymenufn('id-04')" (mouseout)="controlmenufn('id-04')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-04" (mouseover)="displaymenufn('id-04')" (mouseout)="controlmenufn('id-04', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id04" ngbDropdownToggle>Visit</a>
                       <div class="dropdown-menu" id="id-041" aria-labelledby="id04" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -96,7 +96,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-05" (mouseover)="displaymenufn('id-05')" (mouseout)="controlmenufn('id-05')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-05" (mouseover)="displaymenufn('id-05')" (mouseout)="controlmenufn('id-05', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id05" ngbDropdownToggle>Other</a>
                       <div class="dropdown-menu" id="id-051" aria-labelledby="id05" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -119,7 +119,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-06" (mouseover)="displaymenufn('id-06')" (mouseout)="controlmenufn('id-06')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-06" (mouseover)="displaymenufn('id-06')" (mouseout)="controlmenufn('id-06', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id06" ngbDropdownToggle>Citizenship</a>
                       <div class="dropdown-menu" id="id-061" aria-labelledby="id06" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -131,7 +131,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-07" (mouseover)="displaymenufn('id-07')" (mouseout)="controlmenufn('id-07')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-07" (mouseover)="displaymenufn('id-07')" (mouseout)="controlmenufn('id-07', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id07" ngbDropdownToggle>Calculator</a>
                       <div class="dropdown-menu" id="id-071" aria-labelledby="id07" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -148,7 +148,7 @@
                         </ul>
                       </div>
                     </li>
-                    <li class="nav-item dropdown" id="id-08" (mouseover)="displaymenufn('id-08')" (mouseout)="controlmenufn('id-08')" ngbDropdown>
+                    <li class="nav-item dropdown" id="id-08" (mouseover)="displaymenufn('id-08')" (mouseout)="controlmenufn('id-08', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id08" ngbDropdownToggle>Provincial</a>
                       <div class="dropdown-menu" id="id-081" aria-labelledby="id08" ngbDropdownMenu>
                         <ul class="sub-menu">
@@ -160,8 +160,8 @@
                         </ul>
                       </div>
                     </li>
-                    <li><a class="nav-link" (click)="isNavbarCollapsed = !isNavbarCollapsed"  routerLink="/coming-soon">News</a></li>
-                    <li><a class="nav-link" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/contact-us">Contact Us</a></li>
+                    <li><a class="nav-link" id="id09" (click)="controlmenufn('id-09'); isNavbarCollapsed = !isNavbarCollapsed"  routerLink="/coming-soon" routerLinkActive="active-link">News</a></li>
+                    <li><a class="nav-link" id="id10" (click)="controlmenufn('id-10'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/contact-us" routerLinkActive="active-link">Contact Us</a></li>
                   </ul>
                 </div>
               </div>
