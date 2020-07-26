@@ -16,7 +16,7 @@
       -moz-background-size: cover;
       -webkit-background-size: cover;
       background-size: cover;
-      
+
   }
   &:focus{
     outline: none;
@@ -44,16 +44,30 @@
 .carousel-btn-background{
   background-color:rgb(247, 23, 53);
   color: #ffffff;
+  text-transform: lowercase;
+    font-size: 18px;
   &:hover{
     transform: scale(1.1);
+    margin-right: 20px;
+    font-size: 18px;
   }
 }
 .carousel-btn-background3{
-  background-color: #312d3c;
+  background-color: #0f0135;
   color: #ebf3eb;
   margin-left: 8px;
+  font-size: 18px;
   &:hover{
     transform: scale(1.1);
+    background-color: #0f0135;
+    color: #ffffff;
+    margin-left: 20px;
+    text-transform: lowercase;
+    font-size: 18px;
+    a{
+      font-size:18px;
+    }
+
   }
 }
 
@@ -62,4 +76,11 @@
   vertical-align: middle;
   text-align: left !important;
 }
-
+button{
+ a{
+  color:#fff;
+ }
+}
+.hero-text {
+    padding-top: 5px;
+}
