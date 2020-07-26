@@ -1,65 +1,86 @@
 .picsum-img-wrapper1{
-    width: 100%;
+  width: 100%;
 }
 .main{
-  margin:0;
-  .img{
-     clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%);
-      width: 100%;
-      margin-top: -9px;
-      z-index:-1;
-      background-repeat: no-repeat;
-      background-size:100% 100vh;
-      background-position: 50% 0;
-      -ms-background-size: cover;
-      -o-background-size: cover;
-      -moz-background-size: cover;
-      -webkit-background-size: cover;
-      background-size: cover;
-      
-  }
-  &:focus{
-    outline: none;
-  }
+margin:0;
+.img{
+   clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%);
+    width: 100%;
+    margin-top: -9px;
+    z-index:-1;
+    background-repeat: no-repeat;
+    background-size:100% 100vh;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+&:focus{
+  outline: none;
+}
 }
 .carousel-caption{
-  top:20px !important;
-  // background: #3d3d4459;
-  // height: 200px;
-  /*bottom:54% !important;*/
-  h3{
-    font-size: 50px;
-    line-height: 60px;
-  }
+top:20px !important;
+// background: #3d3d4459;
+// height: 200px;
+/*bottom:54% !important;*/
+h3{
+  font-size: 50px;
+  line-height: 60px;
+}
 }
 
 .carousel-textcolor{
-  color: #ebf3eb;
+color: #ebf3eb;
 }
 .carousel-textcolor3{
-  color: #000000;
+color: #000000;
 }
 
 
 .carousel-btn-background{
-  background-color:rgb(247, 23, 53);
-  color: #ffffff;
-  &:hover{
-    transform: scale(1.1);
-  }
+background-color:rgb(247, 23, 53);
+color: #ffffff;
+text-transform: lowercase;
+  font-size: 18px;
+&:hover{
+  transform: scale(1.1);
+  margin-right: 20px;
+  font-size: 18px;
+}
 }
 .carousel-btn-background3{
-  background-color: #312d3c;
-  color: #ebf3eb;
-  margin-left: 8px;
-  &:hover{
-    transform: scale(1.1);
+background-color: #0f0135;
+color: #ebf3eb;
+margin-left: 8px;
+font-size: 18px;
+&:hover{
+  transform: scale(1.1);
+  background-color: #0f0135;
+  color: #ffffff;
+  margin-left: 20px;
+  text-transform: lowercase;
+  font-size: 18px;
+  a{
+    font-size:18px;
   }
+
+}
 }
 
 .carousel-caption-table-cell{
-  width: 50%;
-  vertical-align: middle;
-  text-align: left !important;
+width: 50%;
+vertical-align: middle;
+text-align: left !important;
 }
-
+button{
+a{
+color:#fff;
+}
+}
+.hero-text {
+  padding-top: 5px;
+}
