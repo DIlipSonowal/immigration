@@ -1,7 +1,7 @@
 
             <nav (window:scroll)="onWindowScroll($event)" #navbarNative class="navbar navbar-expand-md hdr-bgcolor">
               <div class="container">
-                <a class="navbar-brand" routerLink="/"></a>
+                <a class="navbar-brand" routerLink="/"><img #navbrandImage style="display: none;" class="navbar-brand-id" src="./assets/v9-logo.png"/></a>
                 <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   <span class="navbar-toggler-icon"></span>
@@ -9,47 +9,50 @@
                 </button>
                 <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarsDefault">
                   <ul class="navbar-nav mr-auto">
-                    <li><a class="nav-link" id="id11" (click)="controlmenufn('id-11'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a></li>
-                    <li><a class="nav-link" id="id12" (click)="controlmenufn('id-12'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/about" routerLinkActive="active-link">About Us</a></li>
+                    <!-- <li><a class="nav-link" id="id11" (click)="controlmenufn('id-11'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a></li> -->
+                    <li><a class="nav-link" id="id11" href="./">Home</a></li>
+                    <li><a class="nav-link" id="id12" (click)="controlmenufn('id-12'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/information/about-us" routerLinkActive="active-link">About Us</a></li>
                     <li class="nav-item dropdown" id="id-01" (mouseover)="displaymenufn('id-01')" (mouseout)="controlmenufn('id-01', 'out')" ngbDropdown>
                       <a class="nav-link dropdown-toggle" id="id01"   ngbDropdownToggle>Immigrate</a>
                       <div class="dropdown-menu" id="id-011" aria-labelledby="id01" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed"  routerLink="/coming-soon">Express Entry</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed"  routerLink="/immigrate/coming-soon">Express Entry</a></li>
                           <li (mouseover)="familysponsorship = !familysponsorship" (mouseout)="familysponsorship = !familysponsorship">
-                            <a routerLink="/familySponsership">Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
+                            <a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/family/familySponsership">Family Sponsorship <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!familysponsorship}">+</b><b class="blh" [ngClass]="{'sub-menu1-tgl':familysponsorship}">-</b></span></a> 
                             <ul class="sub-menu1" [ngClass]="{'sub-menu1-tgl':familysponsorship}">
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-dependent-child"> - Sponsor your Dependent children</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-relatives"> - Relatives</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/adopted-child"> - Adopted child</a></li>
+                              <!-- <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/sponsor-your-spouse"> - Sponsor your spouse</a></li> -->
+                              <li><a (click)="controlmenufn('id-01');isNavbarCollapsed = !isNavbarCollapsed" href="/family/sponsor-your-spouse"> - Sponsor your spouse</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/family/sponsor-dependent-child"> - Sponsor your Dependent children</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/family/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/family/sponsor-relatives"> - Relatives</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/family/adopted-child"> - Adopted child</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
                           <li (mouseover)="nrovincialnominees = !nrovincialnominees" (mouseout)="nrovincialnominees = !nrovincialnominees"><a>Provincial Nominees <span class="sub-menu-icon"><b class="blh" [ngClass]="{'sub-menu1-tgl':!nrovincialnominees}">+</b><b class="blh"  [ngClass]="{'sub-menu1-tgl':nrovincialnominees}">-</b></span></a> 
                             <ul [ngClass]="{'sub-menu1-tgl':nrovincialnominees}" class="sub-menu1">
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Alberta (AINP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - British Columbia (BC PNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Manitoba (MPNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - New Brunswick (NBPNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Newfoundland and Labrador (NLPNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Nova Scotia (NSNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Ontario (OINP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Prince Edward Island (PEI PNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Saskatchewan (SINP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Northwest Territories (NTNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon"> - Yukon (YNP)</a></li>
-                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/quebec"> - Quebec</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Alberta (AINP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - British Columbia (BC PNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Manitoba (MPNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - New Brunswick (NBPNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Newfoundland and Labrador (NLPNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Nova Scotia (NSNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Ontario (OINP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Prince Edward Island (PEI PNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Saskatchewan (SINP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Northwest Territories (NTNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/coming-soon"> - Yukon (YNP)</a></li>
+                              <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial-nominees/quebec"> - Quebec</a></li>
                             </ul><span class="clearfix"></span>
                           </li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Caregivers</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/startup-visa-prog">Start Up Visa</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/self-employed-immigration-prog">Self Employed Immigration</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/refugees">Refugees</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Appeals</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Pet Immigration</a></li>
+                          <!-- <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li> -->
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/coming-soon">Caregivers</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/startup-visa-prog">Start Up Visa</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/self-employed-immigration-prog">Self Employed Immigration</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/refugees">Refugees</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/coming-soon">Appeals</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/coming-soon">Pet Immigration</a></li>
                         </ul>
                       </div>
                     </li>
@@ -57,14 +60,14 @@
                         <a class="nav-link dropdown-toggle" id="id02" ngbDropdownToggle>Work</a>
                         <div class="dropdown-menu" id="id-021" aria-labelledby="id02" ngbDropdownMenu>
                           <ul class="sub-menu">
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/open-work-permit">Open Work Permit</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/employee-specific-work-permit">Employer Specific Work Permit</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/laber-market-impact-assestment">Labour Marker Impact Assessments</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work-permit-extension">Work Permit Extension</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/agricultural-workers">Agricultural Workers</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Live-in Caregiver Program</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/international-experiences">International Experience Canada</a></li>
-                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/global-skills-strategy">Global Skills Strategy</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/open-work-permit">Open Work Permit</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/employee-specific-work-permit">Employer Specific Work Permit</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/laber-market-impact-assestment">Labour Marker Impact Assessments</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/work-permit-extension">Work Permit Extension</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/agricultural-workers">Agricultural Workers</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/coming-soon">Live-in Caregiver Program</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/international-experiences">International Experience Canada</a></li>
+                            <li><a (click)="controlmenufn('id-02'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/work/global-skills-strategy">Global Skills Strategy</a></li>
                           </ul>
                         </div>
                     </li>
@@ -72,14 +75,14 @@
                       <a class="nav-link dropdown-toggle" id="id03" ngbDropdownToggle>Study</a>
                       <div class="dropdown-menu" id="id-031" aria-labelledby="id03" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Study Permit</a></li>
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/student-direct-stream">Student Direct Stream(SDS)</a></li>         
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Study Permit Extension</a></li>
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Change of DLI</a></li>  
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/oncampus-work">Work on Campus</a></li>
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Work off Campus</a></li>
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coop-work-permit">Co Op Work Permit</a></li>          
-                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Spousal Work Permit</a></li>
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/coming-soon">Study Permit</a></li>
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/student-direct-stream">Student Direct Stream(SDS)</a></li>         
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/coming-soon">Study Permit Extension</a></li>
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/coming-soon">Change of DLI</a></li>  
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/oncampus-work">Work on Campus</a></li>
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/coming-soon">Work off Campus</a></li>
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/coop-work-permit">Co Op Work Permit</a></li>          
+                          <li><a (click)="controlmenufn('id-03'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/study/coming-soon">Spousal Work Permit</a></li>
                         </ul>
                       </div>
                     </li>  
@@ -87,12 +90,12 @@
                       <a class="nav-link dropdown-toggle" id="id04" ngbDropdownToggle>Visit</a>
                       <div class="dropdown-menu" id="id-041" aria-labelledby="id04" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/super-visa">Super Visa</a></li>
-                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Visit Visa</a></li>         
-                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Business Visa</a></li>
-                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Transit Visa</a></li>  
-                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">ETA- Electronic Travel Authorisation</a></li>
-                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Visitor Visa extension</a></li>
+                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/visit/super-visa">Super Visa</a></li>
+                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/visit/coming-soon">Visit Visa</a></li>         
+                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/visit/coming-soon">Business Visa</a></li>
+                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/visit/coming-soon">Transit Visa</a></li>  
+                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/visit/coming-soon">ETA- Electronic Travel Authorisation</a></li>
+                          <li><a (click)="controlmenufn('id-04'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/visit/coming-soon">Visitor Visa extension</a></li>
                         </ul>
                       </div>
                     </li>
@@ -100,22 +103,22 @@
                       <a class="nav-link dropdown-toggle" id="id05" ngbDropdownToggle>Other</a>
                       <div class="dropdown-menu" id="id-051" aria-labelledby="id05" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">GCMS Notes/ ATIP notes</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Police Clearance Certificate</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Canadian Passport (Application & Renewal</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">ECA</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">OCI</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Renounce Indian citizenship</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">US Visa (B1/B2)</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">GIC</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Notary Service</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Translation Service</a> </li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Transcript Service</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Exam Slot Booking</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Banking Services</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">International Sim Card</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Foreign Exchange</a></li>
-                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Insurance</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">GCMS Notes/ ATIP notes</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Police Clearance Certificate</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Canadian Passport (Application & Renewal</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">ECA</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">OCI</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Renounce Indian citizenship</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">US Visa (B1/B2)</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">GIC</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Notary Service</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Translation Service</a> </li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Transcript Service</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Exam Slot Booking</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Banking Services</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">International Sim Card</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Foreign Exchange</a></li>
+                          <li><a (click)="controlmenufn('id-05'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/other/coming-soon">Insurance</a></li>
                         </ul>
                       </div>
                     </li>
@@ -123,11 +126,11 @@
                       <a class="nav-link dropdown-toggle" id="id06" ngbDropdownToggle>Citizenship</a>
                       <div class="dropdown-menu" id="id-061" aria-labelledby="id06" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Canadian Citizenship</a></li>
-                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Proof of citizenship</a></li>         
-                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Give up citizenship</a></li>
-                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Resume citizenship</a></li>  
-                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Citizenship test </a></li>
+                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/citizenship/coming-soon">Canadian Citizenship</a></li>
+                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/citizenship/coming-soon">Proof of citizenship</a></li>         
+                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/citizenship/coming-soon">Give up citizenship</a></li>
+                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/citizenship/coming-soon">Resume citizenship</a></li>  
+                          <li><a (click)="controlmenufn('id-06'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/citizenship/coming-soon">Citizenship test </a></li>
                         </ul>
                       </div>
                     </li>
@@ -135,16 +138,16 @@
                       <a class="nav-link dropdown-toggle" id="id07" ngbDropdownToggle>Calculator</a>
                       <div class="dropdown-menu" id="id-071" aria-labelledby="id07" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Express Entry-CRS</a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">BCPNP-SIRS</a></li>         
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">BCPNP-Business Immigration</a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Canada Skilled Worker</a></li>  
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Quebec Skilled Worker</a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Nova Scotia point calculator</a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Saskatchewan Points </a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Language Converter</a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Canada Wage Calculator</a></li>
-                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/coming-soon">Canadian Citizenship Calculator</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Express Entry-CRS</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">BCPNP-SIRS</a></li>         
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">BCPNP-Business Immigration</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Canada Skilled Worker</a></li>  
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Quebec Skilled Worker</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Nova Scotia point calculator</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Saskatchewan Points </a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Language Converter</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Canada Wage Calculator</a></li>
+                          <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Canadian Citizenship Calculator</a></li>
                         </ul>
                       </div>
                     </li>
@@ -152,16 +155,17 @@
                       <a class="nav-link dropdown-toggle" id="id08" ngbDropdownToggle>Provincial</a>
                       <div class="dropdown-menu" id="id-081" aria-labelledby="id08" ngbDropdownMenu>
                         <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/b1afsw">B 1a FSW</a></li>
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/b1bcec">B 1b CEC</a></li>         
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/b1cfst">B 1c FST</a></li>
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/b2pnp">B 2 PNP</a></li>  
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/care-giver">B 5 Care Giver</a></li>  
+                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b1afsw">B 1a FSW</a></li>
+                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b1bcec">B 1b CEC</a></li>         
+                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b1cfst">B 1c FST</a></li>
+                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b2pnp">B 2 PNP</a></li>  
+                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/care-giver">B 5 Care Giver</a></li>  
                         </ul>
                       </div>
                     </li>
-                    <li><a class="nav-link" id="id09" (click)="controlmenufn('id-09'); isNavbarCollapsed = !isNavbarCollapsed"  routerLink="/coming-soon" routerLinkActive="active-link">News</a></li>
-                    <li><a class="nav-link" id="id10" (click)="controlmenufn('id-10'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/contact-us" routerLinkActive="active-link">Contact Us</a></li>
+                     <li><a class="nav-link" id="id09" href="coming-soon">News</a></li> 
+                    <!-- <li><a class="nav-link" id="id09" (click)="controlmenufn('id-09'); isNavbarCollapsed = !isNavbarCollapsed"  routerLink="/coming-soon" routerLinkActive="active-link">News</a></li> -->
+                    <li><a class="nav-link" id="id10" (click)="controlmenufn('id-10'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/information/contact-us" routerLinkActive="active-link">Contact Us</a></li>
                   </ul>
                 </div>
               </div>

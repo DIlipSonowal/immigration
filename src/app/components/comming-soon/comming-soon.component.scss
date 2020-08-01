@@ -34,15 +34,10 @@ h1 {
 }
 
 .wrapper {
+  padding-top: 120px;
   text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
   animation: fadeIn 1000ms ease;
   -webkit-animation: fadeIn 1000ms ease;
-
 }
 
 h1 {
@@ -60,6 +55,7 @@ h1 {
 }
 ul{
   padding-top:20px;
+  padding-left: 0;
 }
 .social-parent .social-icon{
   width: 50px;
@@ -95,13 +91,14 @@ ul{
 @media screen and (max-width: 768px){
   .wrapper {
     text-align: center;
-    position: relative;
     animation: fadeIn 1000ms ease;
     -webkit-animation: fadeIn 1000ms ease;
   }
-
+  .mob-size{
+    font-size: 35px !important;
+  }
   .para{
-      padding: 10px;
+      padding: 5px;
       margin-right: 10px;
       font-size: 30px;
       border: 2px solid #fff;
@@ -110,5 +107,6 @@ ul{
 
   .para1{
     width:60px !important;
+    margin-right: 0 !important;
   }
 }

@@ -3,16 +3,22 @@ import {DashboardComponent} from './dashboard.component';
 import {CommonModule} from '@angular/common';
 import {DashboardRoutingModule} from '../dashboard.routing.module';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {SharedModule} from '../../shared/shared.module';
+// import {FooterComponent} from '../../components/footer/footer.component';
+
 @NgModule({
     declarations: [
-      DashboardComponent
+      DashboardComponent,
+     //  FooterComponent
     ],
     imports: [
       CommonModule,
       DashboardRoutingModule,
       RouterModule,
-      FormsModule
+      FormsModule,
+      SharedModule,
+      ReactiveFormsModule
     ],
     providers: [],
     schemas: [ CUSTOM_ELEMENTS_SCHEMA ]

@@ -134,10 +134,18 @@ li>ul li:hover{
         width:100%;
         position: relative !important;
     }
+    .hide-nav-image{
+        display: inline-block !important;
+    }
 }
 
 .stiky{
     position: fixed;
     top:0;
     width: 100%;
+}
+
+.navbar-brand-id{
+    width: 175px;
+    height: auto;
 }

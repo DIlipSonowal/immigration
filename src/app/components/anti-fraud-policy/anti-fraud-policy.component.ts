@@ -13,7 +13,7 @@ export class AntiFraudPolicyComponent implements OnInit {
     this.cs.contentReady.next(false);
     setTimeout(()=>{
       this.cs.contentReady.next(true);
-    }, 500);
+    }, 200);
   }
 
 }
