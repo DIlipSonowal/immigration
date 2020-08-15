@@ -9,10 +9,11 @@ import { LandingComponent } from './landing.component';
 import { LandingRoutingModule } from './landing-routing.module';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ComnComponent } from '../../components/comn/comn.component';
+import { OurServicesComponent } from './our-services/our-services.component';
 
 @NgModule({
   declarations: [ HomeContentComponent, HomeComponent, 
-    LandingComponent, CarouselComponent, ComnComponent
+    LandingComponent, CarouselComponent, ComnComponent, OurServicesComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +23,7 @@ import { ComnComponent } from '../../components/comn/comn.component';
     ReactiveFormsModule,
     LandingRoutingModule
   ],
-  exports:[ HomeContentComponent, HomeComponent,
+  exports:[ HomeContentComponent, HomeComponent, OurServicesComponent,
      LandingComponent, CarouselComponent, ComnComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

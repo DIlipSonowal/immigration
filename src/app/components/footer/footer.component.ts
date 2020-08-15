@@ -13,8 +13,6 @@ export class FooterComponent implements OnInit {
   }
 
   navigationfunction(urlpath, idloc){
-    this.router.navigate([urlpath]);
-    this.container = document.getElementById(idloc);           
-    this.container.scrollIntoView(true);     
+    this.router.navigate([urlpath]);   
   }
 }

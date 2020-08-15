@@ -5,12 +5,13 @@
 margin:0;
 .img{
    clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%);
-    width: 100%;
+    width: 100% !important;
+    height: 700px !important;
     margin-top: -9px;
     z-index:-1;
     background-repeat: no-repeat;
     background-size:100% 100vh;
-    background-position: 50% 0;
+    
     -ms-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
@@ -109,4 +110,9 @@ color:#fff;
 }
 .hero-text {
   padding-top: 5px;
+}
+
+.swiper-container-top {
+  width:100% !important;
+  height: 80% !important;
 }

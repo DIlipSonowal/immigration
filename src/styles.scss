@@ -397,10 +397,7 @@ section{
 .themetechmount-boxes-row-wrapper.tm-processbox-wrapper {
   margin: 60px 0;
   height: auto;
-  background-image: url('./assets/proccess-box-arrow.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url('./assets/proccess-box-arrow.png') center center no-repeat;
 }
 
 .tm-processbox {
@@ -568,15 +565,6 @@ header{
 };
 // buttonAnimated
 .buttonAnimated {
- /* background-color: #204061;
-  border: none;
-  color: #FFFFFF;
-  margin: 10px 0;
-  text-align: center;
-  font-size: 14px;
-  padding: 10px;
-  transition: all 0.5s;
-  cursor: pointer;*/
   display: inline-block;
     background-color: #ffffff;
     border: 1px solid #000;

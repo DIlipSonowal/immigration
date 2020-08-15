@@ -27,6 +27,7 @@
       </form>
     </section> -->
   <section class="address-wrapper">
+    <div *ngIf="cpath"><app-sidebarlink></app-sidebarlink></div>
     <header>
       <div class="text-small">
         <h4 class="tm-custom-heading-blue" style="font-size:25px">Get In Touch</h4>
@@ -150,15 +151,15 @@
       <li>
 
         <div>
-          <button class="buttonAnimated">
+          <a routerLink="/quick-links/business-ideas/"><button class="buttonAnimated">
             <span>Business Idea</span>
-          </button>
+          </button></a>
           <button class="buttonAnimated">
             <span>consulting</span>
-          </button>
+          </button><br/>
           <button class="buttonAnimated">
             <span>Financial Support</span>
-          </button>
+          </button><br/>
           <button class="buttonAnimated">
             <span>Investing</span>
           </button>

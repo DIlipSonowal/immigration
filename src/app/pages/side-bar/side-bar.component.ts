@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-bar.component.scss']
 })
 export class SideBarComponent implements OnInit {
-
-  constructor() { }
+  cpath = false;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    const rp = this.router.url.split("/")[1];
+    console.log(rp);
+    if(rp === "family" || rp === "work" || rp === "immigrate"){
+      this.cpath = true;
+    }   
   }
 
 }

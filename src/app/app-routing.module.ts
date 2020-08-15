@@ -4,15 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { UploadComponent } from './components/upload/upload.component';
 
 import { ChatbotComponent } from './chatbot/chatbot.component';
-import { TermsConditionComponent } from './components/terms-condition/terms-condition.component';
-import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
-import { CopyrightComponent } from './components/copyright/copyright.component';
-import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
-import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
-import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
 import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
-import { BusinessIdeasComponent } from './pages/business-ideas/business-ideas.component';
-import { OurServicesComponent } from './pages/our-services/our-services.component';
 
 const routes: Routes = [
  /* {path: 'testtt', component: FamilySponsershipComponent, children:[  
@@ -43,7 +35,6 @@ const routes: Routes = [
     {path: 'anti-fraud-policy', component:AntiFraudPolicyComponent },
     {path: 'coming-soon', component:CommingSoonComponent },
     {path: 'business-ideas', component:BusinessIdeasComponent },
-    {path: 'our-services', component:OurServicesComponent },
     {path: 'quebec', component:QuebecComponent },
     {path: 'b1afsw', component:B1afswComponent },
     {path: 'b1bcec', component:B1bcecComponent },
@@ -63,7 +54,9 @@ const routes: Routes = [
   { path: 'other', loadChildren:()=>import('./modules/other/other.module').then(m=>m.OtherModule)},
   { path: 'citizenship', loadChildren:()=>import('./modules/citizenship/citizenship.module').then(m=>m.CitizenshipModule)},
   { path: 'calculator', loadChildren:()=>import('./modules/calculator/calculator.module').then(m=>m.CalculatorModule)},
-  { path: 'provincial', loadChildren:()=>import('./modules/provincial/provincial.module').then(m=>m.ProvincialModule)}
+  { path: 'provincial', loadChildren:()=>import('./modules/provincial/provincial.module').then(m=>m.ProvincialModule)},
+  { path: 'quick-links', loadChildren:()=>import('./modules/quick-links/quick-links.module').then(m=>m.QuickLinksModule)},
+  { path: 'policies-info', loadChildren:()=>import('./modules/policies-info/policies-info.module').then(m=>m.PoliciesInfoModule) }
   // { path: '***', redirectTo: '' , pathMatch: 'full'}
   // { path: 'chatbot', component: ChatbotComponent }
 ];

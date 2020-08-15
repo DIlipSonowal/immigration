@@ -10,14 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { LoginComponent } from './components/login/login.component';
 import { UploadComponent } from './components/upload/upload.component';
-import { TermsConditionComponent } from './components/terms-condition/terms-condition.component';
-import { DisclaimerComponent } from './components/disclaimer/disclaimer.component';
-import { CopyrightComponent } from './components/copyright/copyright.component';
-import { PrivacyPolicyComponent } from './components/privacy-policy/privacy-policy.component';
-import { CookiePolicyComponent } from './components/cookie-policy/cookie-policy.component';
-import { AntiFraudPolicyComponent } from './components/anti-fraud-policy/anti-fraud-policy.component';
-import { BusinessIdeasComponent } from './pages/business-ideas/business-ideas.component';
-import { OurServicesComponent } from './pages/our-services/our-services.component';
 import { ServicePlansComponent } from './pages/service-plans/service-plans.component';
 import { NewsComponent } from './components/news/news.component';
 import { DashboardModule } from './dashboard/dashboard/dashboard.module';
@@ -31,6 +23,8 @@ import { OtherModule } from './modules/other/other.module';
 import { CitizenshipModule } from './modules/citizenship/citizenship.module';
 import { CalculatorModule } from './modules/calculator/calculator.module';
 import { ProvincialModule } from './modules/provincial/provincial.module';
+import { QuickLinksModule } from './modules/quick-links/quick-links.module';
+import { PoliciesInfoModule } from './modules/policies-info/policies-info.module';
 
 @NgModule({
   declarations: [
@@ -39,16 +33,8 @@ import { ProvincialModule } from './modules/provincial/provincial.module';
     ChatbotComponent,
     LoginComponent,
     UploadComponent,
-    TermsConditionComponent,
-    DisclaimerComponent,
-    CopyrightComponent,
-    PrivacyPolicyComponent,
-    CookiePolicyComponent,
-    AntiFraudPolicyComponent,
-    BusinessIdeasComponent,
-    OurServicesComponent,
     ServicePlansComponent,
-    NewsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +52,9 @@ import { ProvincialModule } from './modules/provincial/provincial.module';
     OtherModule,
     CitizenshipModule,
     CalculatorModule,
-    ProvincialModule
+    ProvincialModule,
+    QuickLinksModule,
+    PoliciesInfoModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   //providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],

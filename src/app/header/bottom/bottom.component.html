@@ -1,7 +1,7 @@
 
             <nav (window:scroll)="onWindowScroll($event)" #navbarNative class="navbar navbar-expand-md hdr-bgcolor">
               <div class="container">
-                <a class="navbar-brand" routerLink="/"><img #navbrandImage style="display: none;" class="navbar-brand-id" src="./assets/v9-logo.png"/></a>
+                <a class="navbar-brand" routerLink="/"><img #navbrandImage style="display: none;" class="navbar-brand-id" src="./assets/logo/v9-7.png"/></a>
                 <button class="navbar-toggler hidden-sm-up" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   <span class="navbar-toggler-icon"></span>
@@ -46,7 +46,11 @@
                           </li>
                           <!-- <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li> -->
                           <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a></li>
-                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/coming-soon">Caregivers</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/care-giver">Caregivers</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/b1afsw">FSW</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/b1bcec">CEC</a></li>         
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/b1cfst">FST</a></li>
+                          <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/b2pnp">PNP</a></li>
                           <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/startup-visa-prog">Start Up Visa</a></li>
                           <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/self-employed-immigration-prog">Self Employed Immigration</a></li>
                           <li><a (click)="controlmenufn('id-01'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/immigrate/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a></li>
@@ -148,18 +152,6 @@
                           <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Language Converter</a></li>
                           <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Canada Wage Calculator</a></li>
                           <li><a (click)="controlmenufn('id-07'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/calculator/coming-soon">Canadian Citizenship Calculator</a></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="nav-item dropdown" id="id-08" (mouseover)="displaymenufn('id-08')" (mouseout)="controlmenufn('id-08', 'out')" ngbDropdown>
-                      <a class="nav-link dropdown-toggle" id="id08" ngbDropdownToggle>Provincial</a>
-                      <div class="dropdown-menu" id="id-081" aria-labelledby="id08" ngbDropdownMenu>
-                        <ul class="sub-menu">
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b1afsw">B 1a FSW</a></li>
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b1bcec">B 1b CEC</a></li>         
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b1cfst">B 1c FST</a></li>
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/b2pnp">B 2 PNP</a></li>  
-                          <li><a (click)="controlmenufn('id-08'); isNavbarCollapsed = !isNavbarCollapsed" routerLink="/provincial/care-giver">B 5 Care Giver</a></li>  
                         </ul>
                       </div>
                     </li>

@@ -1,17 +1,243 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12 col">          
-            <app-menu></app-menu>
+<div class="row">
+    <div class="col-md-12 col">
+    <div class="backImg">
+    <div class="mainBg">
+        <div style="padding-top:5px ;" class="float-left">
+                <!-- <button class="openbtn" (click)="openNav()">☰</button>            -->
+                <a routerLink="/"><img src="./assets/logo/v9-final-font-expand-4.png" style="height: auto;width:150px"/></a>
         </div>
+        <div class="float-right alignCls">
+            <ul>
+                <li><a class="daspurl" routerLink="./home" routerLinkActive="active-link">Home</a></li>
+                <li><a class="daspurl" routerLink="./about-us" routerLinkActive="active-link">About Us</a></li>
+                <li><a class="daspurl" routerLink="./about-us" routerLinkActive="active-link">Contact Us</a></li>
+                <li (mouseover)="submenuOpener('immigration')" (mouseout)="submenuOpener('immigration')">
+                    <a class="daspurl">Immigrate</a>
+                    <div #submenuimmigration class="sub-menu-area">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3"><br/>
+                                <div class="bg-white">
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Express Entry</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/atlanti-immigration-pilot-program">Atlantic Immigration Pilot</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/care-giver">Caregivers</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/b1afsw">FSW</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/b1bcec">CEC</a>         
+                                    <a class="dashboard-url" routerLink="/dashboard/b1cfst">FST</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/b2pnp">PNP</a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3">
+                              <br/>
+                              <div class="bg-white">
+                                <a class="dashboard-url" routerLink="/dashboard/familySponsership"> - Family Sponsorship </a>    
+                                <a class="dashboard-url" routerLink="/dashboard/sponsor-your-spouse"> - Sponsor your spouse</a>
+                                <a class="dashboard-url" routerLink="/dashboard/sponsor-dependent-child"> - Sponsor your Dependent children</a>
+                                <a class="dashboard-url" routerLink="/dashboard/sponsor-parents-grandparents"> - Parents &amp; Grandparents</a>
+                                <a class="dashboard-url" routerLink="/dashboard/sponsor-relatives"> - Relatives</a>
+                                <a class="dashboard-url" routerLink="/dashboard/adopted-child"> - Adopted child</a>
+                                <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Northwest Territories (NTNP)</a>
+                                <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Yukon (YNP)</a>
+                                <a class="dashboard-url" routerLink="/dashboard/quebec"> - Quebec</a>
+                               </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3"><br/>
+                                <div class="bg-white">
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Alberta (AINP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - British Columbia (BC PNP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Manitoba (MPNP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - New Brunswick (NBPNP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Newfoundland and Labrador (NLPNP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Nova Scotia (NSNP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Ontario (OINP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Prince Edward Island (PEI PNP)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon"> - Saskatchewan (SINP)</a> 
+                                </div>            
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-lg-3 col-xl-3"><br/>
+                                <div class="bg-white">
+                                    <a class="dashboard-url" routerLink="/dashboard/startup-visa-prog">Start Up Visa</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/self-employed-immigration-prog">Self Employed Immigration</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/rural-immigration-pilot-prog">Rural and Northern Immigration Pilot</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/refugees">Refugees</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Appeals</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Pet Immigration</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li (mouseover)="submenuOpener('work')" (mouseout)="submenuOpener('work')">
+                    <a class="daspurl">Work &amp; Study</a>
+                    <div #submenuwork class="sub-menu-area">
+                        <div class="row">
+                            <div style="margin-bottom: 15px;" class="col-md-4 col-sm-6 col-lg-4 col-xl-4 text-center"><br/>
+                                <img style="max-height: 300px; width: auto;" src="./assets/home2.jpg" />
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-4 col-xl-4"><br/>
+                                <div class="bg-white">
+                                    <h3 class="adminmenuhead">Work</h3><hr class="hrline"/>
+                                    <a class="dashboard-url" routerLink="/dashboard/open-work-permit">Open Work Permit</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/employee-specific-work-permit">Employer Specific Work Permit</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/laber-market-impact-assestment">Labour Marker Impact Assessments</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/work-permit-extension">Work Permit Extension</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/agricultural-workers">Agricultural Workers</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Live-in Caregiver Program</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/international-experiences">International Experience Canada</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/global-skills-strategy">Global Skills Strategy</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-4 col-xl-4"><br/>
+                                <div class="bg-white">
+                                    <h3 class="adminmenuhead">Study</h3><hr/>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Study Permit</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/student-direct-stream">Student Direct Stream(SDS)</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Study Permit Extension</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Change of DLI</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/oncampus-work">Work on Campus</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Work off Campus</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coop-work-permit">Co Op Work Permit</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Spousal Work Permit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>            
+                <li (mouseover)="submenuOpener('visit')" (mouseout)="submenuOpener('visit')">
+                    <a class="daspurl">Visit & Citizenship</a>
+                    <div #submenuvisit class="sub-menu-area">
+                        <div class="row">
+                            <div style="margin-bottom: 15px;" class="col-md-4 col-sm-6 col-lg-4 col-xl-4 text-right"><br/>
+                                <img style="max-height: 270px; width: auto;" src="./assets/home2.jpg" />
+                            </div>
+                            <div style="margin-bottom: 15px;" class="col-md-4 col-sm-6 col-lg-4 col-xl-4 text-left"><br/>
+                                <div class="bg-white">
+                                    <h3 class="adminmenuhead">Visit</h3><hr class="hrline"/>
+                                    <a class="dashboard-url" routerLink="/dashboard/super-visa">Super Visa</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Visit Visa</a>         
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Business Visa</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Transit Visa</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">ETA- Electronic Travel Authorisation</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/coming-soon">Visitor Visa extension</a>
+                                </div>
+                            </div>
+                            <div style="margin-bottom: 15px;" class="col-md-4 col-sm-6 col-lg-4 col-xl-4 text-left"><br/>
+                                <div class="bg-white">
+                                    <h3 class="adminmenuhead">Citizenship</h3><hr class="hrline"/>
+                                    <a class="dashboard-url" routerLink="/citizenship/coming-soon">Canadian Citizenship</a>
+                                    <a class="dashboard-url" routerLink="/citizenship/coming-soon">Proof of citizenship</a>         
+                                    <a class="dashboard-url" routerLink="/citizenship/coming-soon">Give up citizenship</a>
+                                    <a class="dashboard-url" routerLink="/citizenship/coming-soon">Resume citizenship</a>  
+                                    <a class="dashboard-url" routerLink="/citizenship/coming-soon">Citizenship test </a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </li>
+                <li (mouseover)="submenuOpener('other')" (mouseout)="submenuOpener('other')">
+                    <a class="daspurl">Other</a>
+                    <div #submenuother class="sub-menu-area">
+                        <div class="row">
+                            <div style="margin-bottom: 15px;" class="col-md-6 col-sm-6 col-lg-6 col-xl-6 text-right"><br/>
+                                <img style="max-height: 270px; width: auto;" src="./assets/home2.jpg" />
+                            </div>
+                            <div style="margin-bottom: 15px;" class="col-md-6 col-sm-6 col-lg-6 col-xl-6 text-left"><br/>
+                                <div class="bg-white">
+                                    <h3 class="adminmenuhead">Other</h3><hr class="hrline"/>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                                            <a class="dashboard-url" routerLink="/dashboardcoming-soon">GCMS Notes/ ATIP notes</a>
+                                            <a class="dashboard-url" routerLink="/dashboardcoming-soon">Police Clearance Certificate</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Canadian Passport (Application & Renewal</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">ECA</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">OCI</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Renounce Indian citizenship</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">US Visa (B1/B2)</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">GIC</a>                                     
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Notary Service</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Translation Service</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Transcript Service</a>
+                                            <a class="dashboard-url" routerLink="/dashboardcoming-soon">Exam Slot Booking</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Banking Services</a>
+                                            <a class="dashboard-url" routerLink="/dashboardcoming-soon">International Sim Card</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Foreign Exchange</a>
+                                            <a class="dashboard-url" routerLink="/dashboard/coming-soon">Insurance</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </li>
+                <li (mouseover)="submenuOpener('citizenship')" (mouseout)="submenuOpener('citizenship')">
+                    <a class="daspurl">Quick Links</a>
+                    <div #submenucitizenship class="sub-menu-area">
+                        <div class="row">
+                            <div style="margin-bottom: 15px;" class="col-md-6 col-sm-6 col-lg-6 col-xl-6 text-right"><br/>
+                                <img style="max-height: 270px; width: auto;" src="./assets/home2.jpg" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-lg-6 col-xl-6 text-left">
+                                <div class="bg-white">
+                                <br/>
+                                    <h3 class="adminmenuhead">Quick Links</h3><hr class="hrline"/>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Business Ideas</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Consulting</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Financial Support</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Invesment</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Marketing</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Seminar</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Strategies</a>
+                                    <a class="dashboard-url" routerLink="/dashboard/business-ideas">Uncategorized</a>
+                                </div>    
+                            </div>
+                        </div>    
+                    </div>
+                </li>
+                <li (mouseover)="submenuOpener('calculator')" (mouseout)="submenuOpener('calculator')">
+                    <a class="daspurl">Calculator</a>
+                    <div #submenucalculator class="sub-menu-area">
+                        <div class="row">
+                            <div style="margin-bottom: 15px;" class="col-md-6 col-sm-6 col-lg-6 col-xl-6 text-right"><br/>
+                                <img style="max-height: 270px; width: auto;" src="./assets/home2.jpg" />
+                            </div>
+                            <div style="margin-bottom: 15px;" class="col-md-4 col-sm-6 col-lg-4 col-xl-4 text-left"><br/>
+                                <div class="bg-white">
+                                    <h3 class="adminmenuhead">Calculator</h3><hr class="hrline"/>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Express Entry-CRS</a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">BCPNP-SIRS</a>         
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">BCPNP-Business Immigration</a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Canada Skilled Worker</a>  
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Quebec Skilled Worker</a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Nova Scotia point calculator</a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Saskatchewan Points </a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Language Converter</a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Canada Wage Calculator</a>
+                                    <a class="dashboard-url" routerLink="/calculator/coming-soon">Canadian Citizenship Calculator</a>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </li>
+                <li>
+                    <a class="daspurl" href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+                </li>
+                <li>
+                    <a class="daspurl" href="#"><i class="fa fa-fw fa-user"></i> Logout</a>
+                </li>
+            </ul>
+        </div><span class="clearFix"></span>
     </div>
-    <div class="row">
-        <div class="col-md-12 col">
-                <router-outlet>
-                   
-                </router-outlet>
-                <app-top></app-top>
-
-                <app-footer></app-footer> 
-        </div>
-    </div>
+    
+    <!-- <div id="mySidepanel" class="sidepanel" #sideMenu>
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
+        <a href="#home"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#services"><i class="fa fa-fw fa-wrench"></i> About Us</a>
+        <a href="#clients"><i class="fa fa-fw fa-user"></i> Clients</a>
+        <a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      </div> -->
 </div>
+</div>
+</div>
+<router-outlet></router-outlet>
+                
