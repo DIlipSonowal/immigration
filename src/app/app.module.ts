@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 //import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule , CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
@@ -25,7 +27,8 @@ import { CalculatorModule } from './modules/calculator/calculator.module';
 import { ProvincialModule } from './modules/provincial/provincial.module';
 import { QuickLinksModule } from './modules/quick-links/quick-links.module';
 import { PoliciesInfoModule } from './modules/policies-info/policies-info.module';
-
+import { RecentPostsComponent } from './pages/recent-posts/recent-posts.component';
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,8 @@ import { PoliciesInfoModule } from './modules/policies-info/policies-info.module
     LoginComponent,
     UploadComponent,
     ServicePlansComponent,
-    NewsComponent
+    NewsComponent,
+    RecentPostsComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,8 @@ import { PoliciesInfoModule } from './modules/policies-info/policies-info.module
     CalculatorModule,
     ProvincialModule,
     QuickLinksModule,
-    PoliciesInfoModule
+    PoliciesInfoModule,
+    HttpClientModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   //providers: [{provide : LocationStrategy , useClass: HashLocationStrategy}],

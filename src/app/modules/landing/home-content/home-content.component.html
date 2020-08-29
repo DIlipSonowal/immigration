@@ -46,15 +46,13 @@
       <div class="col-md-4">
         <header>
           <div class="text-small">
-            <h4 class="text-small-red">OUR GOALS</h4>
+            <h4 class="text-small-red">{{our_goals.sub_header}}</h4>
             <hr class="visa-hr" style="width: 54px; margin-left: 0;">
-            <h4 class="tm-custom-heading-blue ">Drive More Customers Through Digital</h4>
+            <h4 class="tm-custom-heading-blue ">{{our_goals.header}}</h4>
           </div>
           <div class="content-wrapper">
-            <p class="visa-card-para">The Canadian federal government has announced that it will be admitting more than one million new immigrants
-              over the next three years With more than 70 immigration programs, choosing the one that will give you the best
-              chance of success can be confusing. In this post, we break down the easiest ways to immigrate to Canada, saving
-              you time and allowing you to get started on the application process today!
+            <p class="visa-card-para">
+              {{our_goals.text_content}}
             </p>
           </div>
         </header>
@@ -64,10 +62,10 @@
       <div class="col-md-8">
         <div class="row homecontent-formobile">
           <div class="col-md-4">
-            <img class="animatedssecond" src="./assets/content/post-two.jpg">
+            <img class="animatedssecond" [src]="our_goals.img[0]" alt="A">
           </div>
           <div class="col-md-8">
-            <img class="animated" src="./assets/home2.jpg">
+            <img class="animated" [src]="our_goals.img[1]" alt="B">
           </div>
         </div>
       </div>
@@ -89,15 +87,13 @@
       <div class="col-md-12 col-sm-12 col-lg-12 col-xl-12">
         <header>
           <div class="text-small">
-            <h4 class="text-small-white ">ABOUT V9 IMMIGRATION</h4>
-            <h3 class="heading-white ">We Work with you to address your most critical business priorities</h3>
+            <h4 class="text-small-white ">{{aboutHome.sub_header}}</h4>
+            <h3 class="heading-white ">{{aboutHome.header}}</h3>
           </div>
         </header>
-        <p class="p-content-wrapper" style="color: antiquewhite;">V9 Immigration Services, The leading immigartion service provider in Canada and india. With immense experience of
-          client servicing and facilitating to achieve their dreams, v9 Immigartion Services has carved his own elite niche
-          for providing the best immigartion services. V9 Immigartion services is the leader in the market for two things;
-          first its honesty and tranparency while dealling with the clients and second its accuracy and effeciency while
-          workingfor the clients </p>
+        <p class="p-content-wrapper" style="color: antiquewhite;">
+          {{aboutHome.text_content}}
+        </p>
         <div class="marginTopCls hero-text ">
           <button>
             <a class="acnchor-tag" routerLink="/about">Read More</a>
@@ -112,58 +108,57 @@
     <div class="row">
       <div class="col-md-12">
         <div class="text-small">
-          <h4 class="text-small-white ">WHY CHOOSE US</h4>
-          <h3 class="heading-white ">Since our founding, our primary goal has been to provide immigration in all over country and universities. Our
-            impact is speak louder than our word</h3>
+          <h4 class="text-small-white ">{{whyus.sub_header}}</h4>
+          <h3 class="heading-white ">{{whyus.header}}</h3>
         </div>
         <div class="content-wrapper">
           <div class="row">
             <div class="col-sm-3">
               <div class="impact-block">
                 <div class="impact-icon mb40 icon-default">
-                  <img class="icon-style" src="./assets/icons/home6_icon1.png">
+                  <img class="icon-style" [src]="whyus['immigration'].icon" alt="Immigration">
                 </div>
                 <h2 class="impact-title">
-                  <span class="counterup count" data-suffix="+">480</span>
+                  <span class="counterup count">{{whyus['immigration'].count}}</span>
                 </h2>
-                <p class="text-small-white">Student</p>
-                <p class="visa-card-para">National top 50 consulting firms</p>
+                <p class="text-small-white">{{whyus['immigration'].title1}}</p>
+                <p class="visa-card-para">{{whyus['immigration'].title2}}</p>
               </div>
             </div>
             <div class="col-sm-3">
               <div class="impact-block">
                 <div class="impact-icon mb40 icon-default">
-                  <img class="icon-style" src="./assets/icons/home6_icon2.png">
+                  <img class="icon-style" [src]="whyus['customer'].icon" alt="Customer">
                 </div>
                 <h2 class="impact-title">
-                  <span class="counterup count" data-suffix="+">480</span>
+                  <span class="counterup count">{{whyus['customer'].count}}</span>
                 </h2>
-                <p class="text-small-white">Immigration</p>
-                <p class="visa-card-para">99.9% client satisfaction</p>
+                <p class="text-small-white">{{whyus['customer'].title1}}</p>
+                <p class="visa-card-para">{{whyus['customer'].title2}}</p>
               </div>
             </div>
             <div class="col-sm-3">
               <div class="impact-block">
                 <div class="impact-icon mb40 icon-default">
-                  <img class="icon-style3" src="./assets/icons/home6_icon3.png">
+                  <img class="icon-style" [src]="whyus['student'].icon" alt="Student">
                 </div>
                 <h2 class="impact-title">
-                  <span class="counterup count" data-suffix="+">480</span>
+                  <span class="counterup count">{{whyus['student'].count}}</span>
                 </h2>
-                <p class="text-small-white">Succsessful Customers</p>
-                <p class="visa-card-para">2,000+ Business Cases</p>
+                <p class="text-small-white">{{whyus['student'].title1}}</p>
+                <p class="visa-card-para">{{whyus['student'].title2}}</p>
               </div>
             </div>
             <div class="col-sm-3">
               <div class="impact-block">
                 <div class="impact-icon mb40 icon-default">
-                  <img class="icon-style" src="./assets/icons/home6_icon4.png">
+                  <img class="icon-style" [src]="whyus['country'].icon" alt="Country">
                 </div>
                 <h2 class="impact-title">
-                  <span class="counterup count" data-suffix="+">480</span>
+                  <span class="counterup count">{{whyus['country'].count}}</span>
                 </h2>
-                <p class="text-small-white">Country</p>
-                <p class="visa-card-para">Operated in 15+ Countries</p>
+                <p class="text-small-white">{{whyus['country'].title1}}</p>
+                <p class="visa-card-para">{{whyus['country'].title2}}</p>
               </div>
             </div>
           </div>
@@ -175,36 +170,32 @@
 <section>
   <div class="container home-mar-top">
     <div class="text-center">
-      <h3 class="feature-blurb" class="tm-custom-heading-blue">Immigration Service for You</h3>
+      <h3 class="feature-blurb" class="tm-custom-heading-blue">{{ourService.sub_header}}</h3>
       <hr class="visa-hr">
-      <p>Our experts are able to find new growth opportunities in your business. sodales erat et libero ultricies auctor et
-        rhoncus sapien. </p>
+      <p>{{ourService.header}}</p>
     </div>
-
     <br/>
-
-
     <div class="row">
       <div class="col-md-4">
-        <app-visa [imagename]="'./assets/content/parents.jpg'" [link]="'/family/familySponsership'" [visatitle]="'Family Sponsorship'" [visasummary]="'As mentioned by the minister on 11-Jan-2019 Family reunification is always an immigration priority for the Government of Canada as it supports economic prosperity and strengthens the communities'"></app-visa>
+        <app-visa [imagename]="ourService['family'].img" [link]="'/family/familySponsership'" [visatitle]="ourService['family'].title" [visasummary]="ourService['family'].para"></app-visa>
       </div>
       <div class="col-md-4">
-        <app-visa [imagename]="'./assets/Work-Visa-Policy-Change.jpg'" [link]="'/work/employee-specific-work-permit'" [visatitle]="'Work Visa'"
-          [visasummary]="'Canada is one of the worlds fastest growing economy, actively seeking to bring foreign skilled workers to fill labour and skills shortage for the Canadian employers where citizens and permanent residents are not available.'"></app-visa>
+        <app-visa [imagename]="ourService['work'].img" [link]="'/work/employee-specific-work-permit'" [visatitle]="ourService['work'].title"
+          [visasummary]="ourService['work'].para"></app-visa>
       </div>
       <div class="col-md-4">
-        <app-visa [imagename]="'./assets/study-visa.jpg'" [link]="'/visit/coming-soon'" [visatitle]="'Study Visa'" [visasummary]="'Many students choose Canada over other developed countries as students receive top quality education, affordable fees, cost of living and respect, preparing them for the professional needs, to enhance the careers in Canada and abroad.'"></app-visa>
+        <app-visa [imagename]="ourService['study'].img" [link]="'/visit/coming-soon'" [visatitle]="ourService['study'].title" [visasummary]="ourService['study'].para"></app-visa>
       </div>
     </div>
     <div class="row">
       <div class="col-md-4">
-        <app-visa [imagename]="'./assets/travel-visa.jpg'" [link]="'/visit/coming-soon'" [visatitle]="'Visit Visa'" [visasummary]="'Canada-The world’s second largest country is a significant tourist attractor, which is a home of Polar bears, 17 UNESCO heritage sites, 100’s of breweries, hiking, icebergs, whale watching and many more to do.'"></app-visa>
+        <app-visa [imagename]="ourService['visit'].img" [link]="'/visit/coming-soon'" [visatitle]="ourService['visit'].title" [visasummary]="ourService['visit'].para"></app-visa>
       </div>
       <div class="col-md-4">
-        <app-visa [imagename]="'./assets/working-visa.jpg'" [link]="'/visit/coming-soon'" [visatitle]="'Citizenship Visa'" [visasummary]="'Citizenship means a lot. Many permanent residents want to get Canadian Citizenship. They are proud to say it is home as it provides the status, rights, pride, security, safety and freedom.'"></app-visa>
+        <app-visa [imagename]="ourService['citizenship'].img" [link]="'/visit/coming-soon'" [visatitle]="ourService['citizenship'].title" [visasummary]="ourService['citizenship'].para"></app-visa>
       </div>
       <div class="col-md-4">
-        <app-visa [imagename]="'./assets/Canada-e1575328774497.jpg'" [link]="'/visit/coming-soon'" [visatitle]="'Other Visa'" [visasummary]="'In addition to above we have a wide range of services that will help you to successfully immigrate and live in Canada. Check out our other services including GCMS, PR Card renewals, settlement, services etc.'"></app-visa>
+        <app-visa [imagename]="ourService['other'].img" [link]="'/visit/coming-soon'" [visatitle]="ourService['other'].title" [visasummary]="ourService['other'].para"></app-visa>
       </div>
     </div>
   </div>

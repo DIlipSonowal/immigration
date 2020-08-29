@@ -49,12 +49,11 @@
   <div class="swiper-container-top">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <table style="background-image: url(./assets/home-main-slider2.jpg); background-repeat: no-repeat;background-size: cover; height: 100%; width: 100%;clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%); text-align: center;" align="center">
+        <table [ngStyle]="{'background-image': 'url('+images[0].img+')'}" style="background-repeat: no-repeat;background-size: cover; height: 100%; width: 100%;clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%); text-align: center;" align="center">
           <tr><td style="text-align: left; padding-left: 5%;">
-          <p class="carousel-small">WE SHOW YOU</p>
-          <h3 class="carousel-textcolor">Fastest Way to  <br/>Achieve Your Goal</h3>
-          <p class="carousel-textcolor mobile-hide">Comprehensive immigration advice and post arrival services<br/>
-            that are tailored to meet your individual needs.
+          <p class="carousel-small">{{images[0].sub_header}}</p>
+          <h3 class="carousel-textcolor">{{images[0].header}}</h3>
+          <p class="carousel-textcolor mobile-hide" *ngIf="images[0].text_content">{{images[0].text_content}}
           </p>
           <div class=" hero-text">
               <button class="carousel-btn-background mobile-hide">
@@ -65,10 +64,11 @@
       </div>
 
       <div class="swiper-slide">
-        <table style="background-image: url(./assets/home-main-slider3.jpg); background-repeat: no-repeat;background-size: cover; height: 100%; width: 100%;clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%); text-align: center;" align="center"><tr>
+        <table [ngStyle]="{'background-image': 'url('+images[1].img+')'}" style="background-repeat: no-repeat;background-size: cover; height: 100%; width: 100%;clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%); text-align: center;" align="center"><tr>
           <td style="text-align: left; padding-left: 5%;">
-          <p class="carousel-small">BUSINESS IMMIGRATION</p>
-          <h3 class="carousel-textcolor">Manage and Grow <br/>Your Business with us</h3>         
+            <p class="carousel-small">{{images[1].sub_header}}</p>
+            <h3 class="carousel-textcolor">{{images[1].header}}</h3>
+            <p class="carousel-textcolor mobile-hide" *ngIf="images[1].text_content">{{images[1].text_content}}
           <div class=" hero-text">
               <button class="carousel-btn-background mobile-hide">
                 <a class="acnchor-tag" routerLink="/our-services">Our Services</a>
@@ -84,13 +84,12 @@
         <!-- <div class="main">
           <img class="img picsum-img-wrapper1" src="./assets/home-main-slider4.jpg"  alt="Best immigration advice">
         </div> -->
-        <table style="background-image: url(./assets/home-main-slider4.jpg); background-repeat: no-repeat;background-size: cover; height: 100%; width: 100%;clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%); text-align: center;" align="center"><tr>
+        <table [ngStyle]="{'background-image': 'url('+images[0].img+')'}" style="background-repeat: no-repeat;background-size: cover; height: 100%; width: 100%;clip-path: polygon(0 1%, 100% 1%, 100% 79%, 0% 100%); text-align: center;" align="center"><tr>
           <td style="width: 55%;" class="mobile-hide"></td>
           <td style="text-align: left;">
-          <p class="carousel-small">GREAT EXPERIENCE</p>
-          <h3 class="carousel-textcolor3">We Provide The Best <br/>Immigration Advice</h3>
-          <p class="carousel-textcolor3 mobile-hide">We have professional consultants who provide Quality<br/>
-            services that’s free of stress and confusion in time.
+          <p class="carousel-small">{{images[1].sub_header}}</p>
+          <h3 class="carousel-textcolor3">{{images[1].header}}</h3>
+          <p class="carousel-textcolor3 mobile-hide">{{images[1].text_content}}
           </p>
           <div class=" hero-text">
               <button class="carousel-btn-background mobile-hide">

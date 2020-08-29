@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../../../service/home.service';
+import {HttpHeaders, HttpClient } from '@angular/common/http';
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay]);
+import {map} from 'rxjs/Operators';
+let endpoint = "http://localhost:8000";
 
 @Component({
   selector: 'app-carousel',
@@ -9,15 +13,30 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 })
 export class CarouselComponent implements OnInit {
 
-  images = [533, 700, 807, 124].map((n) => `https://picsum.photos/id/${n}/900/500`);
 
-  constructor() {
-    // // customize default values of carousels used by this component tree
-    // config.interval = 10000;
-    // config.wrap = false;
-    // config.keyboard = false;
-    // config.pauseOnHover = false;
+
+  images = [
+    {
+      sub_header: "",
+      header: "",
+      text_content: "",
+      img: ""
+  },
+  {
+    sub_header: "",
+    header: "",
+    text_content: "",
+    img: ""
+  },
+  {
+    sub_header: "",
+    header: "",
+    text_content: "",
+    img: ""
   }
+  ];
+
+  constructor(private http: HttpClient, private hs:HomeService) {}
 
   ngOnInit(): void {
     new Swiper('.swiper-container-top', {
@@ -27,6 +46,11 @@ export class CarouselComponent implements OnInit {
         delay: 3000
       }
     });
+
+  this.hs.topSlider().subscribe( (res:any)=>{
+     this.images = res;
+     console.log(res);
+  });
   }
 
   

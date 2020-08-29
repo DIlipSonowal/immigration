@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 import { UploadComponent } from './components/upload/upload.component';
 
+import { RecentPostsComponent } from './pages/recent-posts/recent-posts.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { CommingSoonComponent } from './components/comming-soon/comming-soon.component';
 
@@ -43,6 +44,7 @@ const routes: Routes = [
     {path: 'care-giver', component:CareGiverComponent },
   ]}, */
   { path: '', loadChildren:()=> import('./modules/landing/landing.module').then(m=>m.LandingModule)},
+  { path: 'recent_posts', component: RecentPostsComponent},
   { path: 'information', loadChildren:()=> import('./modules/other-page/otherpg.module').then(m => m.OtherpgModule) },
   { path: 'dashboard', loadChildren:() =>import('./dashboard/dashboard/dashboard.module').then(m => m.DashboardModule)},
   { path: 'family', loadChildren:() =>import('./modules/family/family.module').then(m => m.FamilydModule)},

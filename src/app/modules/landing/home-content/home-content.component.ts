@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
 // import { SwiperContainer } from '../../../swiper/swiper.component';
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+import { HomeService } from '../../../service/home.service';
 Swiper.use([Navigation, Pagination, Autoplay]);
 @Component({
   selector: 'app-home-content',
@@ -31,6 +32,37 @@ export class HomeContentComponent implements OnInit {
   //     prevEl: '.swiper-button-prev',
   //   },
   // };
+  public our_goals = {sub_header:'', header:'', text_content:'', img:[]};
+  public aboutHome = {sub_header:'', header:'', text_content:''};
+  public ourService = {sub_header:'', header:'', family:{title:'', para:'', img:''}, work:{title:'', para:'', img:''}, study:{title:'', para:'', img:''}, visit:{title:'', para:'', img:''}, citizenship:{title:'', para:'', img:''}, other:{title:'', para:'', img:''}};
+  public whyus = { 
+    sub_header: "",
+    header: "",
+    immigration: {
+      title1: "",
+      count: "",
+      title2: "",
+      icon: ""
+    },
+    customer: {
+      title1: "",
+      count: "",
+      title2: "",
+      icon: ""
+    },
+    student: {
+      title1: "",
+      count: "",
+      title2: "",
+      icon: ""
+    },
+    country: {
+      title1: "",
+      count: "",
+      title2: "",
+      icon: ""
+    }
+  };
   swiperContainerFeedback = { 
     centeredSlides: true,
     autoplay: {
@@ -49,12 +81,12 @@ export class HomeContentComponent implements OnInit {
       }
   };
 
-  constructor() {
+  constructor(private hs:HomeService) {
    }
 
   ngOnInit(): void {
-     this.swipercomponent();
-    var spr = new Swiper('.swiper-container-feedback', {
+      this.swipercomponent();
+      var spr = new Swiper('.swiper-container-feedback', {
       speed: 1000,
       centeredSlides: true,
       autoplay: {
@@ -65,6 +97,25 @@ export class HomeContentComponent implements OnInit {
       //   el: '.swiper-pagination',
       //   type: 'bullets',
       // }
+    });
+
+    this.hs.goalSlider().subscribe( (rs:any) => {
+        this.our_goals = rs[0];
+        //console.log(this.our_goals);
+    });
+
+    this.hs.homeAbout().subscribe( (res:any)=> {
+      this.aboutHome = res;
+      //console.log(this.aboutHome);
+    });
+
+    this.hs.whychooseus().subscribe( (res:any)=> {
+      this.whyus = res;
+    });
+
+    this.hs.immigrationService().subscribe( (res:any)=> {
+      this.ourService = res;
+      console.log(res);
     });
   }
 
