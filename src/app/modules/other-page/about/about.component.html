@@ -17,45 +17,26 @@
             <header>
                 <div class="text-small">
                    <!-- <h4 class="text-small-red ">ABOUT US</h4>-->
-                    <h4 class="tm-custom-heading-blue">Why V9 Immigration</h4>
+                    <h4 class="tm-custom-heading-blue">{{aboutv9.header}}</h4>
                 </div>
                 <div class="content-wrapper">
-                    <p>At V9 immigration you are guaranteed quality, advanced technology, a wide range of immigration
-                        case management tools, not to mention our top talented professional,
-                        ensuring that your immigration case is well handled with the utmost care.</p>
+                    <p>{{aboutv9.text_content}}</p>
                 </div>
             </header>
             <div class="ul_wrapper">
                 <div class="row">
                     <div class="col-md-6">
-                        <ul
-                            class="tm-list tm-list-style-icon tm-list-icon-color-skincolor tm- tm-icon-skincolor tm-list-textsize- tm-list-icon-library-fontawesome vc_custom_1585778668771">
-                            <li><i class="icon fa fa-arrow-circle-right"></i>
-                                <span class="tm-list-li-content">RCIC Member</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i>
-                                <span class="tm-list-li-content">Client-centric focus</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i>
-                                <span class="tm-list-li-content">Evidence-based analysis</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i>
-                                <span class="tm-list-li-content">To time and Money</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right">
-
-                                </i> <span class="tm-list-li-content">Our thinking</span></li>
+                        <ul class="tm-list tm-list-style-icon tm-list-icon-color-skincolor tm- tm-icon-skincolor tm-list-textsize- tm-list-icon-library-fontawesome vc_custom_1585778668771">
+                            <li *ngFor="let l1 of list1"><i class="icon fa fa-arrow-circle-right"></i>
+                                <span class="tm-list-li-content">{{l1.list}}</span>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <ul
-                            class="tm-list tm-list-style-icon tm-list-icon-color-skincolor tm- tm-icon-skincolor tm-list-textsize- tm-list-icon-library-fontawesome vc_custom_1585778512029">
-                            <li><i class="icon fa fa-arrow-circle-right"></i> <span class="tm-list-li-content">Our
-                                    thinking</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i> <span class="tm-list-li-content">Our
-                                    Expertise</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i> <span class="tm-list-li-content">We
-                                    care</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i> <span class="tm-list-li-content">Our
-                                    Policy</span></li>
-                            <li><i class="icon fa fa-arrow-circle-right"></i> <span
-                                    class="tm-list-li-content">Affordability</span></li>
+                        <ul class="tm-list tm-list-style-icon tm-list-icon-color-skincolor tm- tm-icon-skincolor tm-list-textsize- tm-list-icon-library-fontawesome vc_custom_1585778512029">
+                            <li *ngFor="let l2 of list2"><i class="icon fa fa-arrow-circle-right"></i> 
+                                <span class="tm-list-li-content">{{l2.list}}</span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -66,10 +47,8 @@
 
             <div class="immg_wrapper">
                 <div class="img-container">
-                    <img src="./assets/content/post-two.jpg" style="width:100%">
+                    <img [src]="aboutv9.img" style="width:100%">
                 </div>
-
-
             </div>
         </div>
 
@@ -81,18 +60,17 @@
 
             <div class="immg_wrapper">
                 <div class="img-container">
-                    <img id="vission" src="./assets/content/massion.png">
+                    <img id="vission" [src]="ourmission.img">
                 </div>
             </div>
         </div>
         <div class="col-md-8">
             <header id="mission">
                 <div class="text-small">
-                    <h4 class="heading-white">OUR MISSION</h4>
+                    <h4 class="heading-white">{{ourmission.header}}</h4>
                 </div>
                 <div class="p-content-wrapper">
-                    <p class="visa-card-para" style="color: #cecdcd">To inspire people to immigrate across borders where ideas, skills, expertise, education and
-                        knowledge are recognized and celebrate success moments &amp; happiness in their lives.</p>
+                    <p class="visa-card-para" style="color: #cecdcd">{{ourmission.text_content}}</p>
                 </div>
             </header>
         </div>
@@ -104,18 +82,17 @@
         <div class="col-md-6">
             <header id="vission">
                 <div class="text-small">
-                    <h4 class="tm-custom-heading-blue">OUR VISSION</h4>
+                    <h4 class="tm-custom-heading-blue">{{ourvission.header}}</h4>
                 </div>
                 <div class="p-content-wrapper">
-                    <p >To be the best global immigration consultancy by demonstrating steady growth
-                        driven by V9 core values, making immigration easier and faster.</p>
+                    <p>{{ourvission.text_content}}</p>
                 </div>
             </header>
             </div>
             <div class="col-md-6">
             <div class="immg_wrapper">
                 <div class="img-container">
-                    <img src="./assets/content/money-2724238_1280-1024x570.jpg" style="width:100%">
+                    <img [src]="ourvission.img" style="width:100%">
                 </div>
             </div>
         </div>
@@ -128,63 +105,60 @@
         <div class="col-md-12">
             <header>
                 <div class="text-small" style="text-align:center;margin-bottom:24px;">
-                        <h4 class="tm-custom-heading-blue">OUR VALUES</h4>
+                        <h4 class="tm-custom-heading-blue">{{ourValues.header}}</h4>
                         <hr class="visa-hr">
                 </div>
                 <div class="content-wrapper" style="padding:25px;">
-                    <p style="text-align:center;width:600px; margin: auto;">Immigration is our passion and committed to do our best. We follow code of ethics all times and
-                        never compromise.
-                        We advice and serve our clients with honesty and respect at all times.</p>
+                    <p style="text-align:center;width:600px; margin: auto;">{{ourValues.sub_header}}</p>
                 </div>
             </header>
     <div class="timeline">
+            <div class="tm-container left">
+            <div class="tm-content">
+                <h2 class="visa-card-title">{{ourValues.text_content.commitment.title1}}</h2>
+                <p>{{ourValues.text_content.commitment.description}}</p>
+            </div>
+            </div>
+            <div class="tm-container right">
+            <div class="tm-content">
+                <h2 class="visa-card-title">{{ourValues.text_content.innovation.title1}}</h2>
+                <p class="p-content-wrapper">{{ourValues.text_content.innovation.description}}</p>
+            </div>
+            </div>
         <div class="tm-container left">
           <div class="tm-content">
-            <h2 class="visa-card-title">COMMITMENT</h2>
-            <p>  A commitment to doing good for our clients, colleagues and our company. Always reliable to our
-                clients, we remain loyal and steadfast no matter what. Protect the client’s privacy.</p>
+              <h2 class="visa-card-title">{{ourValues.text_content.integrity.title1}}</h2>
+            <p class="p-content-wrapper"> {{ourValues.text_content.integrity.description}}</p>
           </div>
         </div>
         <div class="tm-container right">
           <div class="tm-content">
-              <h2 class="visa-card-title">INNOVATION</h2>
-            <p class="p-content-wrapper">We always strive to be better using innovative methods and technologies.</p>
-          </div>
-        </div>
-        <div class="tm-container left">
-          <div class="tm-content">
-              <h2 class="visa-card-title">INTEGRITY</h2>
-            <p class="p-content-wrapper"> We have strong moral principles which we stick on to.</p>
-          </div>
-        </div>
-        <div class="tm-container right">
-          <div class="tm-content">
-              <h2 class="visa-card-title">OWNERSHIP</h2>
-            <p> We hold ourselves accountable for what we do and keep ourselves in the shoes of our clients.</p>
+              <h2 class="visa-card-title">{{ourValues.text_content.ownership.title1}}</h2>
+            <p> {{ourValues.text_content.ownership.description}}</p>
           </div>
         </div>
         <div class="tm-container left">
             <div class="tm-content">
-                <h2 class="visa-card-title">PASSION</h2>
-              <p class="p-content-wrapper"> We are passionate for Immigration and take pride in our work</p>
+                <h2 class="visa-card-title">{{ourValues.text_content.passion.title1}}</h2>
+              <p class="p-content-wrapper"> {{ourValues.text_content.passion.description}}</p>
             </div>
           </div>
           <div class="tm-container right">
             <div class="tm-content">
-                <h2 class="visa-card-title">PERSERVERANCE</h2>
-              <p>  We keep going even when faced with seemingly insurmountable obstacles.</p>
+                <h2 class="visa-card-title">{{ourValues.text_content.perserverance.title1}}</h2>
+              <p>  {{ourValues.text_content.perserverance.description}}</p>
             </div>
           </div>
           <div class="tm-container left">
               <div class="tm-content">
-                  <h2 class="visa-card-title">TEAMWORK</h2>
-                <p class="p-content-wrapper"> We are stronger as a team. We act with honesty, integrity and ethically.</p>
+                  <h2 class="visa-card-title">{{ourValues.text_content.teamwork.title1}}</h2>
+                <p class="p-content-wrapper">{{ourValues.text_content.teamwork.description}}</p>
               </div>
             </div>
             <div class="tm-container right">
               <div class="tm-content">
-                  <h2 class="visa-card-title">TRANSPARENCY</h2>
-                <p> We are straightforward, communicate openly and clear.</p>
+                  <h2 class="visa-card-title">{{ourValues.text_content.transparency.title1}}</h2>
+                <p> {{ourValues.text_content.transparency.description}}</p>
               </div>
             </div>
 

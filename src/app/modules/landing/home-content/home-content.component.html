@@ -167,6 +167,9 @@
     </div>
   </div>
 </section>
+
+
+
 <section>
   <div class="container home-mar-top">
     <div class="text-center">
@@ -202,9 +205,9 @@
 </section>
 <section>
   <div class="how-it-works-hdr">
-    <p class="text-center carousel-small">HOW IT WORK</p>
+    <p class="text-center carousel-small">{{howit_works.header}}</p>
     <hr class="visa-hr" style="width: 54px; ">
-    <h4 style="text-align: center;" class="tm-custom-heading-blue">Three Simple Step To Started Working Process</h4>
+    <h4 style="text-align: center;" class="tm-custom-heading-blue">{{howit_works.sub_header}}</h4>
   </div>
  
   <div class="themetechmount-boxes-row-wrapper tm-processbox-wrapper">
@@ -214,14 +217,14 @@
           <div class="tm-processbox">
             <div class="tm-box-image">
               <div class="process-num">
-                <span class="number">01</span>
+                <span class="number">{{howit_works['discussion'].count}}</span>
               </div>
             </div>
             <div class="tm-box-content">
               <div class="tm-box-title">
-                <h5 class="how-it-work">Discussion</h5>
+                <h5 class="how-it-work">{{howit_works['discussion'].title}}</h5>
               </div>
-              <div class="tm-box-description">Suggest the best immigration program suitable for the client needs.</div>
+              <div class="tm-box-description">{{howit_works['discussion'].para}}</div>
             </div>
           </div>
         </div>
@@ -229,14 +232,14 @@
           <div style="margin-top: 40px;" class="tm-processbox">
             <div class="tm-box-image">
               <div class="process-num">
-                <span class="number">02</span>
+                <span class="number">{{howit_works['documentation'].count}}</span>
               </div>
             </div>
             <div class="tm-box-content">
               <div class="tm-box-title">
-                <h5 class="how-it-work">Documentation</h5>
+                <h5 class="how-it-work">{{howit_works['documentation'].title}}</h5>
               </div>
-              <div class="tm-box-description">Collect all the required documents, evaluate, verify and analyze.</div>
+              <div class="tm-box-description">{{howit_works['documentation'].para}}</div>
             </div>
           </div>
         </div>
@@ -244,14 +247,14 @@
           <div class="tm-processbox">
             <div class="tm-box-image">
               <div class="process-num">
-                <span class="number">03</span>
+                <span class="number">{{howit_works['submission'].count}}</span>
               </div>
             </div>
             <div class="tm-box-content">
               <div class="tm-box-title">
-                <h5 class="how-it-work">Submission</h5>
+                <h5 class="how-it-work">{{howit_works['submission'].title}}</h5>
               </div>
-              <div class="tm-box-description">submits to CIC (Citizenship & Immigration Canada) or respective Canadian visa offices.</div>
+              <div class="tm-box-description">{{howit_works['submission'].para}}</div>
             </div>
           </div>
         </div>
@@ -268,38 +271,36 @@
         <div class="swiper-slide">
           <div class="swiper-inc-container">
               <div>
-                  <img class="swiper-img-height" src="./assets/content/commenter.webp">
+                  <img class="swiper-img-height" [src]="feedback[0].image" [alt]="feedback[0].name">
               </div>
               <div>
-                Very polite staff and took care of all my documentation. Done all my documentation in less than 2 days.
-              I will definitely recommend to all my friends and family. Before meeting Mr. Venkat I met 3 different immigration consultants 
-              and they scared me a lot, but he handled everything so smooth. Thank you so much for that V9 immigration team and a very 
-              special thanks to Mr. Venkat.
+                {{feedback[0].feedback}}
               
-              <p class="commenter">Jagadish Muramalla</p>
+              <p class="commenter">{{feedback[0].name}}</p>
               </div>
            </div>   
         </div>
         <div class="swiper-slide">
           <div class="swiper-inc-container">
               <div>
-                <img class="swiper-img-height" src="./assets/content/commenter.webp">
+                <img class="swiper-img-height" [src]="feedback[1].image" [alt]="feedback[1].name">
               </div>
               <div>
-                  I just got my PR approved and wanted to leave feedback for V9’s potential clients. 
-                  Venkat and Tej are amazing, I have been with them for 3 years now and they were always there for me. Unlike other consultants, they give advice that serves best in their client’s interests. I can trust them for my future applications and would recommend to all my friends.
-                  <p class="commenter">Jaspreet Kaur</p>
+                {{feedback[1].feedback}}
+              
+                <p class="commenter">{{feedback[1].name}}</p>
               </div> 
           </div>       
         </div>
         <div class="swiper-slide">
           <div class="swiper-inc-container">
               <div>
-                <img class="swiper-img-height" src="./assets/content/commenter.webp">
+                <img class="swiper-img-height"  [src]="feedback[2].image" [alt]="feedback[2].name">
               </div>
               <div>
-                Great Service and Very informative, highly recommended for any kind of immigration service and advice. Mr. Venkat, very politely helps us with accurate and appropriate information.
-                  <p class="commenter">Chaitanya Krishna</p>
+                {{feedback[2].feedback}}
+              
+                <p class="commenter">{{feedback[2].name}}</p>
               </div> 
           </div>       
         </div>
@@ -317,30 +318,9 @@
   <!-- <app-swiper [options]="swiperContainer"  [dclass]="'ootion2'"> -->
     <div class="swiper-container">
       <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div><div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div><div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div><div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div><div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div><div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div><div class="swiper-slide">
-        <img src="./assets/content/team-img.jpg">
-      </div>
+        <div *ngFor="let img of teams" class="swiper-slide">
+          <img [src]="img.image" />
+        </div>
       </div>
   <!-- </app-swiper> -->
   </div>

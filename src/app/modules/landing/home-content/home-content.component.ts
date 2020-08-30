@@ -35,6 +35,9 @@ export class HomeContentComponent implements OnInit {
   public our_goals = {sub_header:'', header:'', text_content:'', img:[]};
   public aboutHome = {sub_header:'', header:'', text_content:''};
   public ourService = {sub_header:'', header:'', family:{title:'', para:'', img:''}, work:{title:'', para:'', img:''}, study:{title:'', para:'', img:''}, visit:{title:'', para:'', img:''}, citizenship:{title:'', para:'', img:''}, other:{title:'', para:'', img:''}};
+  public howit_works = {sub_header:'', header:'', discussion:{title:'', count:'', para:''}, documentation:{title:'', count:'', para:''}, submission:{title:'', count:'', para:''}};
+  public feedback = [{name:'',feedback:'', image:''}];
+  public teams = [{image:''}];
   public whyus = { 
     sub_header: "",
     header: "",
@@ -117,6 +120,20 @@ export class HomeContentComponent implements OnInit {
       this.ourService = res;
       console.log(res);
     });
+
+    this.hs.howitworks().subscribe( (res:any)=> {
+        this.howit_works = res;
+    });
+    
+    this.hs.feedBack().subscribe( (res:any)=>{
+      this.feedback = res;
+    });
+
+    this.hs.getTeams().subscribe( (res:any)=> {
+      this.teams = res;
+      console.log(res)
+    });
+
   }
 
   swipercomponent() {

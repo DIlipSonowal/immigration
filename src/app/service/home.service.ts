@@ -51,4 +51,53 @@ export class HomeService {
       return res;
     }));
   }
+
+  howitworks() {
+    return this.http.get(`${endpoint}/home/how_itworks`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
+
+  feedBack() {
+    return this.http.get(`${endpoint}/home/feedback`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
+
+  getTeams() {
+    return this.http.get(`${endpoint}/home/teams_photo`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
+
+  getAboutv9About() {
+    return this.http.get(`${endpoint}/home/aboutV9immigration`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
+
+  ourMission() {
+    return this.http.get(`${endpoint}/home/about_mission`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
+
+  ourVission() {
+    return this.http.get(`${endpoint}/home/our_vission`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
+
+  ourvalues() {
+    return this.http.get(`${endpoint}/home/our_values`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
 }
