@@ -175,39 +175,28 @@
                     <header>
                         <div class="tm-vc_cta3-headers tm-wrap-cell">
                             <!-- <p class="text-small-white ">WHO WE ARE</p> -->
-                            <h3 class="heading-white ">We don't need to say more about ourselves, as you will have lot
-                                more to say when you get acquainted with the V9 team.</h3>
+                            <h3 class="heading-white ">{{ceo.header}}</h3>
                         </div>
                     </header>
                 </div>
                 <div class="bgBanner">
                     <div class="row">
                         <div class="col-sm-6">
-                            <img src="./assets/content/team-img.jpg" />
+                            <img [src]="ceo.img" alt="CEO"/>
                         </div>
                         <div class="col-sm-6">
                                 <div class="side-content">
                                     <header >
 
                                             <h3 style="font-size:30px;line-height:40px;color:#000;font-family:'Poppins',Arial,Helvetica;font-weight:600;"
-                                                class="tm-custom-heading ">Govardhan Sai Venkat, Venna</h3>
-                                            <h4 class="text-small-red">CEO &amp; Founder- V9 Immigration Inc.</h4>
+                                                class="tm-custom-heading ">{{ceo.name}}</h3>
+                                            <h4 class="text-small-red">{{ceo.sub_title}}</h4>
 
                                     </header>
                                     <div class="content-wrapper">
-                                        <p align="justify">Govardhan Sai Venkat, Director of V9 Immigration is Regulated
-                                            Canadian Immigration Consultant (R519344) offers right advice to Immigrate,
-                                            Study, Work, Visit to Canada and having great success due to his ethics,
-                                            professional knowledge and friendly nature. He handles every case
-                                            individually and directs his professionally qualified team members. Hailed
-                                            from a family of legal professionals from India, Govardhan knows the
-                                            challenges new immigrants face in a new community, new country like Canada
-                                            to study, work, live or visit.</p>
-                                        <p align="justify">V9 specialized in immigration to Canada for independent
-                                            applicants and businesses. V9 is 100% committed to giving clients our full
-                                            support at every step of the immigration process. We recognize that every
-                                            individual has a specific need and choice and that is why we treat every
-                                            individual with the utmost care and respect.</p>
+                                        <p align="justify">
+                                            {{ceo.text_content}}
+                                        </p>
                                         <p></p>
                                     </div>
                                 </div>

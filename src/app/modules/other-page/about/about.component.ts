@@ -35,6 +35,14 @@ export class AboutComponent implements OnInit {
       transparency:{title1:'', description:''},
     }
   };
+
+  public ceo = {
+    header: '',
+    name: '',
+    sub_title:'',
+    text_content:'',
+    img:''
+  }
   constructor(private cs:CommonService, public router: Router, private hs:HomeService) {}
   
   ngOnInit(): void {
@@ -63,6 +71,10 @@ export class AboutComponent implements OnInit {
 
     this.hs.ourvalues().subscribe((res:any)=>{
       this.ourValues = res;
+    });
+
+    this.hs.aboutCeo().subscribe( (res:any)=> {
+      this.ceo = res;
     });
   }
 }

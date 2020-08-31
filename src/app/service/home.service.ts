@@ -100,4 +100,11 @@ export class HomeService {
       return res;
     }));
   }
+
+  aboutCeo() {
+    return this.http.get(`${endpoint}/home/about_ceo`)
+    .pipe(map(res=>{
+      return res;
+    }));
+  }
 }
