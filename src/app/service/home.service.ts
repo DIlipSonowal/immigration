@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
 import {HttpHeaders, HttpClient } from '@angular/common/http';
-import {map} from 'rxjs/Operators';
-let endpoint = "http://localhost:8000";
+import {map} from 'rxjs/operators';
+let endpoint = "http://plotree.com/v9Backend/";
 
 @Injectable({
   'providedIn': 'root'
 })
 export class HomeService {
   constructor(private http: HttpClient) { }
-  ngOnInit(){
-
-  }
+  ngOnInit(){}
   
   topSlider(){
   //   const httpOptions = {

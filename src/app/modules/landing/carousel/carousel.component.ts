@@ -3,7 +3,6 @@ import { HomeService } from '../../../service/home.service';
 import {HttpHeaders, HttpClient } from '@angular/common/http';
 import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay]);
-import {map} from 'rxjs/Operators';
 let endpoint = "http://localhost:8000";
 
 @Component({
